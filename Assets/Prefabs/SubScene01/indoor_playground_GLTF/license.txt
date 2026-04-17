@@ -1,0 +1,11 @@
+Model Information:
+* title:	Indoor Playground
+* source:	https://sketchfab.com/3d-models/indoor-playground-02ab7fe3575e4e8085f34e370c0c115b
+* author:	Rose (https://sketchfab.com/Rosebxd77)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Indoor Playground" (https://sketchfab.com/3d-models/indoor-playground-02ab7fe3575e4e8085f34e370c0c115b) by Rose (https://sketchfab.com/Rosebxd77) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
