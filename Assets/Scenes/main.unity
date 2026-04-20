@@ -1651,6 +1651,7 @@ GameObject:
   - component: {fileID: 1178119087}
   - component: {fileID: 1178119093}
   - component: {fileID: 1178119092}
+  - component: {fileID: 1178119094}
   m_Layer: 0
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Untagged
@@ -1863,6 +1864,33 @@ MonoBehaviour:
   moveSpeed: 3
   turnSpeed: 90
   turnDeadzone: 0.1
+--- !u!54 &1178119094
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178119086}
+  serializedVersion: 4
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1186589490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +1934,7 @@ GameObject:
   - component: {fileID: 1306107269}
   - component: {fileID: 1306107270}
   - component: {fileID: 1306107271}
+  - component: {fileID: 1306107272}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -1995,6 +2024,27 @@ MonoBehaviour:
   transitionSpeed: 30
   rotatableItem: {fileID: 1306107268}
   triggerAngle: 45
+--- !u!114 &1306107272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306107267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124f4583f657475469a45ab6fca8f921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pivotTransform: {fileID: 1306107268}
+  _rotationAxis: 0
+  _constraints:
+    MinAngle:
+      Constrain: 0
+      Value: 0
+    MaxAngle:
+      Constrain: 0
+      Value: 0
 --- !u!1 &1360792409
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,7 +2066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1360792410
 MonoBehaviour:
   m_ObjectHideFlags: 0
