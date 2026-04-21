@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4359787270374388504
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 1
+  gaussianStart:
+    m_OverrideState: 0
+    m_Value: 10
+  gaussianEnd:
+    m_OverrideState: 0
+    m_Value: 30
+  gaussianMaxRadius:
+    m_OverrideState: 0
+    m_Value: 1
+  highQualitySampling:
+    m_OverrideState: 0
+    m_Value: 0
+  focusDistance:
+    m_OverrideState: 0
+    m_Value: 10
+  aperture:
+    m_OverrideState: 0
+    m_Value: 5.6
+  focalLength:
+    m_OverrideState: 0
+    m_Value: 50
+  bladeCount:
+    m_OverrideState: 0
+    m_Value: 5
+  bladeCurvature:
+    m_OverrideState: 0
+    m_Value: 1
+  bladeRotation:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,6 +63,7 @@ MonoBehaviour:
   - {fileID: 2607773597414970615}
   - {fileID: 4468951390952257667}
   - {fileID: 7587912588611350335}
+  - {fileID: -4359787270374388504}
 --- !u!114 &2607773597414970615
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -32,13 +79,13 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.2287736, g: 0.34844083, b: 0.5, a: 1}
+    m_Value: {r: 0.43433005, g: 0, b: 0.6830188, a: 1}
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_Value: {r: 0.97735846, g: 0.5071199, b: 0.6214186, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: -32
 --- !u!114 &4468951390952257667
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -91,13 +138,13 @@ MonoBehaviour:
     m_Value: 20
   scatter:
     m_OverrideState: 1
-    m_Value: 0.722
+    m_Value: 0.785
   clamp:
     m_OverrideState: 1
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.96981126, g: 0.41537198, b: 0.8410751, a: 1}
   highQualityFiltering:
     m_OverrideState: 1
     m_Value: 0
