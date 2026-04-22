@@ -8,14 +8,18 @@ public class GameFlow : MonoBehaviour
 
     public Vector3 startPosition = new Vector3(-30f, 1f, 18f);
     public Vector3 startRotationEuler = new Vector3(0f, 0f, 0f);
-
     public Vector3 targetPosition = new Vector3(23f, 3.77f, 33.5f);
+    public Vector3 targetRotationEuler = new Vector3(0f, 90f, 0f);
 
     [Header("設定")]
     public float timeLimit = 180f;          // 3分鐘 = 180秒
     public float arriveDistance = 1.5f;     // 距離目標多近算到達
 
     private bool hasArrived = false;
+    private bool AutoMoving = false;
+    private bool AutoTurning = false;
+    private float autoMoveSpeed = 2f;
+    private float autoTurnSpeed = 2f;
     private float time = 0.0f;
 
     void Start()
@@ -39,10 +43,42 @@ public class GameFlow : MonoBehaviour
             {
                 hasArrived = true;
                 Debug.Log("玩家已到達目標點");
+                AutoMoving = true;
             }
             time += UnityEngine.Time.deltaTime;
-            if (time > timeLimit) {
+            if (time > timeLimit)
+            {
                 MovePlayerToStart();
+            }
+        }
+        else if (AutoMoving)
+        {
+            CharacterController cc = playerLocomotion.GetComponent<CharacterController>();
+            if (cc != null) cc.enabled = false;
+
+            playerLocomotion.position = Vector3.MoveTowards(
+                    playerLocomotion.position,
+                    targetPosition,
+                    autoMoveSpeed * Time.deltaTime
+            );
+            if (Vector3.Distance(playerLocomotion.position, targetPosition) <= 0.1f)
+            {
+                playerLocomotion.position = targetPosition;
+                AutoMoving = false;
+                AutoTurning = true;
+            }
+        }
+        else if (AutoTurning)
+        {
+            Quaternion targetRot = Quaternion.Euler(targetRotationEuler);
+            playerLocomotion.rotation = Quaternion.Slerp(
+                playerLocomotion.rotation,
+                targetRot,
+                autoTurnSpeed * Time.deltaTime
+            );
+            if(Quaternion.Angle(playerLocomotion.rotation, targetRot) < 0.5f)
+            {
+                AutoTurning = false;
             }
         }
     }
