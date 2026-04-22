@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b3616df9362cd441b58c97ca561e4ea
+timeCreated: 1439657501
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/Maracas/Materials/Maracas_D.mat
+  uploadId: 79272

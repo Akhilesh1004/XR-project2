@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4f735ab056eab604187a3e7df11099cb
+timeCreated: 1438853957
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/Drums_solid.prefab
+  uploadId: 79272

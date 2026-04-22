@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6d36d6dd5b3113746b552be2d318e9f9
+timeCreated: 1439132126
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/GuitarE/Materials/GuitarE_red.mat
+  uploadId: 79272

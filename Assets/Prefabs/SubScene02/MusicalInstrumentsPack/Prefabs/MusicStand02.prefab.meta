@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66b7abd27da26df40b9245df7007ee59
+timeCreated: 1440933824
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/MusicStand02.prefab
+  uploadId: 79272

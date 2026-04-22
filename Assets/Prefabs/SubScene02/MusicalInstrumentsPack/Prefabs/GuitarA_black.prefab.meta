@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fc4e3fba77d2e454cac8ff3bc3a5cdf3
+timeCreated: 1438856561
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/GuitarA_black.prefab
+  uploadId: 79272

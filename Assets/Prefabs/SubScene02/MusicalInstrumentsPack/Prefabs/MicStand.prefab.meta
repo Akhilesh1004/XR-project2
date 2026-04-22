@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eb0f3756fdec8fd48b32de6a65d5515f
+timeCreated: 1440933595
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/MicStand.prefab
+  uploadId: 79272

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 40b87398da4529e44af00b5516efa67e
+timeCreated: 1438428183
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/Combo/Materials/Combo_D.mat
+  uploadId: 79272

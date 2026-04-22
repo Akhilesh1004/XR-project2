@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 32f618b908617a44e9aabb0b44080b42
+timeCreated: 1440929693
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/Monitor/Materials/Monitor_D.mat
+  uploadId: 79272

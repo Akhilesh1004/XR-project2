@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0bd6868c0693c9f4c9d410e7f67fbedb
+timeCreated: 1439132120
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/GuitarE_black.prefab
+  uploadId: 79272

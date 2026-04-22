@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 14b263e8fa5ccb34d9b52969ec4e806b
+timeCreated: 1439133883
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/GuitarE_white.prefab
+  uploadId: 79272

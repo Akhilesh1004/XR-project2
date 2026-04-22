@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 871678045fc44a946a45179dd4c43dd1
+timeCreated: 1440936101
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/Trombone/Materials/Trombone_D.mat
+  uploadId: 79272

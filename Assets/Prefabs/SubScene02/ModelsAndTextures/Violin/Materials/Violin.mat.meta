@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: efaafc91ff62d544c83c7a223848cae6
+timeCreated: 1440938892
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/Violin/Materials/Violin.mat
+  uploadId: 79272

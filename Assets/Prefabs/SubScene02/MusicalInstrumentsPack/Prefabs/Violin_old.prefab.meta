@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3809a5f566cd2944084e372db84fd3fe
+timeCreated: 1440939114
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/Violin_old.prefab
+  uploadId: 79272

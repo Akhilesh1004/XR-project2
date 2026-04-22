@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ad0cd0b54704b304fa6d3e902faecb68
+timeCreated: 1439136145
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/GuitarStack/Materials/GuitarStack_D.mat
+  uploadId: 79272

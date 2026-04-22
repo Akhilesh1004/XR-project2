@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7556dddbcb160114eb435f2840c7229f
+timeCreated: 1440956201
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/DemoScene/DemoScene_PBR.unity
+  uploadId: 79272

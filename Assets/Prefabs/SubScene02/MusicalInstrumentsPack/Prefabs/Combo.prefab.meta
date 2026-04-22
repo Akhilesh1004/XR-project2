@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b4c10624b7a34b947bfb25eab7eec58e
+timeCreated: 1438428367
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/Combo.prefab
+  uploadId: 79272

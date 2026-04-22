@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 350858a30d9a32e43be405eb1949afeb
+timeCreated: 1438854580
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/Drums_separate.prefab
+  uploadId: 79272

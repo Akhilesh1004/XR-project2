@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 20546e3928a5739479d18664433ba500
+timeCreated: 1438856959
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/GuitarA/Materials/GuitarA_blue.mat
+  uploadId: 79272

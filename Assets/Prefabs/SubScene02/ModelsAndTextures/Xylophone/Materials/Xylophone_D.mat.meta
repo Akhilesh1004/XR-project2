@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ebc4e22ffbb4d854a804b90c4319a946
+timeCreated: 1440939700
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/Xylophone/Materials/Xylophone_D.mat
+  uploadId: 79272

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5bb96ade15be07049b15d9df5acb3e07
+timeCreated: 1440935569
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/Synth.prefab
+  uploadId: 79272

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ff852f5d34f866d4c8e0ab869aef088a
+timeCreated: 1439129944
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/ModelsAndTextures/GuitarE/Materials/GuitarE_black.mat
+  uploadId: 79272

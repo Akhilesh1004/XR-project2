@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ff47105332bd07542968627121ac1e82
+timeCreated: 1440933336
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/GuitarStand_Opened.prefab
+  uploadId: 79272

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0be4387147de76f4fa9e6a4a5b4691b8
+timeCreated: 1440934003
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/SynthStand01.prefab
+  uploadId: 79272

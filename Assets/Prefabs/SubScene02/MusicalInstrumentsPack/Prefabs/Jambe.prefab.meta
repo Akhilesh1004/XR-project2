@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb0b05b8ad589b64699bb38ea801eed9
+timeCreated: 1439655851
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/Jambe.prefab
+  uploadId: 79272

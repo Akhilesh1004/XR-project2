@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1ae4fb92384a6424e8878ea124c38008
+timeCreated: 1440939821
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20066
+  packageName: Musical Instruments Pack
+  packageVersion: 1.2
+  assetPath: Assets/MusicalInstrumentsPack/Prefabs/Xylophone.prefab
+  uploadId: 79272
