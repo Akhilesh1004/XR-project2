@@ -11,9 +11,11 @@ public class ColorTriggerByRotation : MonoBehaviour
     [Header("Rotation Trigger Settings")]
     public Transform rotatableItem;     // Assign your "rotatable object" here
     public float triggerAngle = 45f;    // Rotation threshold to trigger color change
+    public GameObject[] objectsToReveal;
 
     private ColorAdjustments colorAdjustments;
     private bool isTransitioning = false;
+    private bool hasRevealed = false;
     private float initialRotationX;
 
     void Start()
@@ -28,6 +30,14 @@ public class ColorTriggerByRotation : MonoBehaviour
         if (rotatableItem != null)
         {
             initialRotationX = rotatableItem.localEulerAngles.x;
+        }
+
+        if (objectsToReveal != null)
+        {
+            foreach (GameObject obj in objectsToReveal)
+            {
+                if (obj != null) obj.SetActive(false);
+            }
         }
     }
 
@@ -54,18 +64,43 @@ public class ColorTriggerByRotation : MonoBehaviour
         if (isTransitioning && colorAdjustments != null)
         {
             float current = colorAdjustments.saturation.value;
-            if (current < 0)
+            
+            if (current < 0f)
             {
-                // Continuously push saturation towards 0
-                colorAdjustments.saturation.value = 
-                    Mathf.MoveTowards(current, 0f, transitionSpeed * Time.deltaTime);
+                float newValue = Mathf.MoveTowards(current, 0f, transitionSpeed * Time.deltaTime);
+                colorAdjustments.saturation.Override(newValue);
+                
+                Debug.Log($"color change: {newValue}");
             }
             else
             {
-                // Stop transitioning once saturation is fully restored
+                colorAdjustments.saturation.Override(0f);
                 isTransitioning = false; 
                 this.enabled = false;
+                RevealAllObjects();
+                Debug.Log("color fully restored! Transition complete.");
             }
         }
+    }
+
+    private void RevealAllObjects()
+    {
+        if (hasRevealed) return;
+
+        Debug.Log("color fully restored! Revealing all hidden objects!");
+        
+        if (objectsToReveal != null)
+        {
+            foreach (GameObject obj in objectsToReveal)
+            {
+                if (obj != null)
+                {
+                    obj.SetActive(true);
+                }
+            }
+        }
+
+        hasRevealed = true;
+        this.enabled = false;
     }
 }

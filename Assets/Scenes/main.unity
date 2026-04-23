@@ -3299,6 +3299,10 @@ MonoBehaviour:
   transitionSpeed: 5
   rotatableItem: {fileID: 1306107268}
   triggerAngle: 45
+  objectsToReveal:
+  - {fileID: 1247872564}
+  - {fileID: 1837147058}
+  - {fileID: 694549370}
 --- !u!114 &1306107272
 MonoBehaviour:
   m_ObjectHideFlags: 0
