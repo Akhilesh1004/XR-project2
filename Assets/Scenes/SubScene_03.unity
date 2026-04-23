@@ -6044,7 +6044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 0
-  nextSceneName: mainv1
+  nextSceneName: main
   globalVolume: {fileID: 15594070}
   wrongColor: {r: 1, g: 0.2, b: 0.2, a: 1}
 --- !u!1001 &475595730
@@ -14470,7 +14470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 1
-  nextSceneName: mainv1
+  nextSceneName: main
   globalVolume: {fileID: 15594070}
   wrongColor: {r: 1, g: 0.2, b: 0.2, a: 1}
 --- !u!4 &1248270497 stripped

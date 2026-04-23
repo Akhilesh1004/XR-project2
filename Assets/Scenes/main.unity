@@ -258,7 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29969181}
   - component: {fileID: 29969180}
-  - component: {fileID: 29969179}
+  - component: {fileID: 29969182}
   m_Layer: 0
   m_Name: collider
   m_TagString: Untagged
@@ -266,20 +266,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &29969179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29969178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ee43806806804c6eb8584f38cca444a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSceneName: SubScene_01
-  playerTag: Player
 --- !u!65 &29969180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -316,6 +302,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1247872565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &29969182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29969178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594efad8b8904edf9f400401d1a0841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: SubScene_01
+  portalID: SubScene01
+  objectToHide: {fileID: 1247872564}
+  triggerTag: Player
 --- !u!1001 &147109009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -742,7 +744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301974218}
   - component: {fileID: 301974220}
-  - component: {fileID: 301974219}
+  - component: {fileID: 301974221}
   m_Layer: 0
   m_Name: collider
   m_TagString: Untagged
@@ -765,20 +767,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1837147059}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &301974219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301974217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ee43806806804c6eb8584f38cca444a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSceneName: SubScene_02
-  playerTag: Player
 --- !u!65 &301974220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -800,6 +788,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &301974221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301974217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594efad8b8904edf9f400401d1a0841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: SubScene_02
+  portalID: SubScene02
+  objectToHide: {fileID: 1837147058}
+  triggerTag: Player
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,7 +3143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1287808846}
   - component: {fileID: 1287808848}
-  - component: {fileID: 1287808847}
+  - component: {fileID: 1287808849}
   m_Layer: 0
   m_Name: collider
   m_TagString: Untagged
@@ -3162,20 +3166,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 694549371}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1287808847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287808845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ee43806806804c6eb8584f38cca444a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSceneName: SubScene_03
-  playerTag: Player
 --- !u!65 &1287808848
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3197,6 +3187,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1287808849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287808845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594efad8b8904edf9f400401d1a0841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: SubScene_03
+  portalID: SubScene03
+  objectToHide: {fileID: 694549370}
+  triggerTag: Player
 --- !u!1 &1306107267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,6 +3301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be59e7470fbe4cecafb6a37892fbac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleID: MainHub_ColorPuzzle
   globalVolume: {fileID: 1740201171}
   transitionSpeed: 50
   rotatableItem: {fileID: 1306107268}

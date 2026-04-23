@@ -4,6 +4,10 @@ using UnityEngine.Rendering.Universal;
 
 public class ColorTriggerByRotation : MonoBehaviour
 {
+    [Header("Save Settings")]
+    [Tooltip("ID")]
+    public string puzzleID = "MainHub_ColorPuzzle";
+
     [Header("Environment Settings")]
     public Volume globalVolume;      // Assign your Global Volume here
     public float transitionSpeed = 30f; // Color transition speed
@@ -25,6 +29,29 @@ public class ColorTriggerByRotation : MonoBehaviour
         {
             globalVolume.profile.TryGet(out colorAdjustments);
         }
+
+        if (PlayerPrefs.GetInt(puzzleID, 0) == 1)
+        {
+            Debug.Log($"{puzzleID} already solved! Restoring color and revealing objects immediately.");
+
+            // Directly set color to full color (0)
+            if (colorAdjustments != null) colorAdjustments.saturation.Override(0f);
+
+            // Directly open all hidden objects (portals), this will trigger their OnEnable()
+            if (objectsToReveal != null)
+            {
+                foreach (GameObject obj in objectsToReveal)
+                {
+                    if (obj != null) obj.SetActive(true);
+                }
+            }
+
+            hasRevealed = true;
+            this.enabled = false;
+            return;
+        }
+
+        if (colorAdjustments != null) colorAdjustments.saturation.Override(-100f);
 
         // Record the initial X-axis rotation of the object at the start of the game
         if (rotatableItem != null)
@@ -99,6 +126,10 @@ public class ColorTriggerByRotation : MonoBehaviour
                 }
             }
         }
+
+        PlayerPrefs.SetInt(puzzleID, 1);
+        PlayerPrefs.Save();
+        Debug.Log($"Puzzle state saved: {puzzleID} = 1");
 
         hasRevealed = true;
         this.enabled = false;

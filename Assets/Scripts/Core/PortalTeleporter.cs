@@ -12,13 +12,13 @@ public class PortalTeleporter : MonoBehaviour
 
     [Header("Object Control")]
     [Tooltip("If already cleared, which object to hide? (Please drag the portal model or parent object)")]
-    public GameObject objectToHide; // ✨ 你提議的新參數！
+    public GameObject objectToHide;
 
     [Header("Fail-Safe Settings")]
     [Tooltip("Only objects with specific tags will trigger (default is Player)")]
     public string triggerTag = "Player";
 
-    void Start()
+    void OnEnable()
     {
         if (PlayerPrefs.GetInt(portalID, 0) == 1)
         {
@@ -44,7 +44,7 @@ public class PortalTeleporter : MonoBehaviour
             // 2. Execute scene transition
             if (!string.IsNullOrEmpty(targetSceneName))
             {
-                SceneManager.LoadSceneAsync(targetSceneName);
+                SceneManager.LoadScene(targetSceneName);
             }
             else
             {
