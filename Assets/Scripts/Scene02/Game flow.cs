@@ -9,7 +9,7 @@ public class GameFlow : MonoBehaviour
 
     public Vector3 startPosition = new Vector3(-30f, 1f, 18f);
     public Vector3 startRotationEuler = new Vector3(0f, 0f, 0f);
-    public Vector3 targetPosition = new Vector3(23f, 3.77f, 33.5f);
+    public Vector3 targetPosition = new Vector3(19f, 3.561244f, 36.734f);
     public Vector3 targetRotationEuler = new Vector3(0f, 90f, 0f);
 
     [Header("³]©w")]
@@ -77,7 +77,7 @@ public class GameFlow : MonoBehaviour
                 targetRot,
                 autoTurnSpeed * Time.deltaTime
             );
-            if(Quaternion.Angle(playerLocomotion.rotation, targetRot) < 0.5f)
+            if(Quaternion.Angle(playerLocomotion.rotation, targetRot) < 0.01f)
             {
                 AutoTurning = false;
             }
