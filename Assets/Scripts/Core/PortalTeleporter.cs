@@ -44,7 +44,7 @@ public class PortalTeleporter : MonoBehaviour
             // 2. Execute scene transition
             if (!string.IsNullOrEmpty(targetSceneName))
             {
-                SceneManager.LoadScene(targetSceneName);
+                SceneManager.LoadSceneAsync(targetSceneName);
             }
             else
             {

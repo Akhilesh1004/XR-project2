@@ -18,7 +18,7 @@ public class TriggerSceneLoader : MonoBehaviour
             // Ensure the target scene name is not empty
             if (!string.IsNullOrWhiteSpace(targetSceneName))
             {
-                SceneManager.LoadScene(targetSceneName);
+                SceneManager.LoadSceneAsync(targetSceneName);
             }
             else
             {

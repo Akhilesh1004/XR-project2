@@ -26,9 +26,10 @@ public class PlayerLocomotion : MonoBehaviour
     void Update()
     {
         // 以頭盔面向計算移動方向（不影響角色本身 rotation）
-        Transform moveRef = head ? head : transform;
+        Transform moveRef = head;
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        Debug.Log(Camera.main.transform.forward);
         Vector3 move = (moveRef.right * h + moveRef.forward * v).normalized;
         Vector3 velocity = new Vector3(move.x * moveSpeed, rb.velocity.y, move.z * moveSpeed);
         rb.velocity = velocity;
