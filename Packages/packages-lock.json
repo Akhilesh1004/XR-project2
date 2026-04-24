@@ -118,13 +118,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.meta.xr.simulator": {
-      "version": "81.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.addressables": {
       "version": "2.4.6",
       "depth": 1,

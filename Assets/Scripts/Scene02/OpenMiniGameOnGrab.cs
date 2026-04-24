@@ -1,17 +1,20 @@
+using Oculus.Interaction;
 using UnityEngine;
 
 public class OpenMiniGameOnGrab : MonoBehaviour
 {
+    public Grabbable grabbable;
     public MiniGameUIManager uiManager;
+
     private bool opened = false;
 
-    public void TriggerMiniGame()
+    void Update()
     {
         if (opened) return;
-        opened = true;
 
-        if (uiManager != null)
+        if (grabbable.SelectingPointsCount > 0 && uiManager != null)
         {
+            opened = true;
             Debug.Log("Grab");
             uiManager.OpenMiniGame();
             
