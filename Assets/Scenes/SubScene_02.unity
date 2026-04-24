@@ -2269,6 +2269,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 41565311}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a221647713ebb4444b157979c0e8734b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 41565314}
   m_SourcePrefab: {fileID: 100100000, guid: a221647713ebb4444b157979c0e8734b, type: 3}
 --- !u!1 &41565309 stripped
 GameObject:
@@ -2353,6 +2357,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &41565314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41565309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c23a68a991b8574dad8c459f96e7a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiManager: {fileID: 937493660}
 --- !u!1001 &45875574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52620,6 +52637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 937493659}
   - component: {fileID: 937493658}
+  - component: {fileID: 937493660}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -52662,6 +52680,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &937493660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937493657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407d698d30ed7c74cbb9165b85fd5048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniGamePanel: {fileID: 1336832985}
 --- !u!1001 &937774387
 PrefabInstance:
   m_ObjectHideFlags: 0
