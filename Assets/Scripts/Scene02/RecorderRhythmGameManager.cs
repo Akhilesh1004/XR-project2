@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -13,7 +14,8 @@ public class RecorderRhythmGameManager : MonoBehaviour
         A,
         B
     }
-
+    public OVRInput.Controller controller_R = OVRInput.Controller.RTouch;
+    public OVRInput.Controller controller_L = OVRInput.Controller.LTouch;
     [System.Serializable]
     public class LaneData
     {
@@ -36,6 +38,7 @@ public class RecorderRhythmGameManager : MonoBehaviour
     [Header("Lane / Hit Point")]
     public List<LaneData> lanes = new List<LaneData>();
 
+
     [Header("Note Sprites")]
     public Sprite xSprite;
     public Sprite ySprite;
@@ -54,10 +57,13 @@ public class RecorderRhythmGameManager : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text resultText;
 
+    [Header("Debug")]
+    public bool useTestSong = true;
+
     private float timer = 0f;
     private int spawnIndex = 0;
     private int score = 0;
-
+    private bool isPlaying = false;
     private List<NoteUI> activeNotes = new List<NoteUI>();
 
     void Start()
@@ -84,9 +90,67 @@ public class RecorderRhythmGameManager : MonoBehaviour
             spawnIndex++;
         }
     }
+    public void StartMiniGame()
+    {
+        Debug.Log("Mini game start");
+
+        if (useTestSong)
+        {
+            LoadTestSong();
+        }
+
+        ClearAllNotes();
+
+        timer = 0f;
+        spawnIndex = 0;
+        score = 0;
+        isPlaying = true;
+
+        UpdateScoreText();
+
+        if (resultText != null)
+            resultText.text = "";
+    }
+    public void StopMiniGame()
+    {
+        Debug.Log("Mini game stop");
+        isPlaying = false;
+        ClearAllNotes();
+    }
+    public void LoadTestSong()
+    {
+        Debug.Log("LoadTestSong called");
+
+        songNotes.Clear();
+
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.X, spawnTime = 1f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 2f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 3f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.B, spawnTime = 4f });
+
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.X, spawnTime = 5f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 5.8f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 6.5f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.B, spawnTime = 7.2f });
+
+        Debug.Log("Test notes loaded: " + songNotes.Count);
+    }
+    void ClearAllNotes()
+    {
+        for (int i = 0; i < activeNotes.Count; i++)
+        {
+            if (activeNotes[i] != null)
+            {
+                Destroy(activeNotes[i].gameObject);
+            }
+        }
+
+        activeNotes.Clear();
+    }
 
     void SpawnNote(NoteSpawnData data)
     {
+        Debug.Log("SpawnNote");
         LaneData lane = GetLane(data.holeKey);
         if (lane == null) return;
 
@@ -103,17 +167,27 @@ public class RecorderRhythmGameManager : MonoBehaviour
 
     void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if(OVRInput.GetDown(OVRInput.Button.One, controller_L))
+        {
+            Debug.Log("Press X");
             TryHit(HoleKey.X);
-
-        if (Input.GetKeyDown(KeyCode.Y))
+            
+        }
+        if (OVRInput.GetDown(OVRInput.Button.Two, controller_L))
+        {
+            Debug.Log("Press Y");
             TryHit(HoleKey.Y);
-
-        if (Input.GetKeyDown(KeyCode.A))
+        }
+        if (OVRInput.GetDown(OVRInput.Button.One, controller_R))
+        {
+            Debug.Log("Press A");
             TryHit(HoleKey.A);
-
-        if (Input.GetKeyDown(KeyCode.B))
+        }
+        if (OVRInput.GetDown(OVRInput.Button.Two, controller_R))
+        {
+            Debug.Log("Press B");
             TryHit(HoleKey.B);
+        }
     }
 
     void TryHit(HoleKey key)

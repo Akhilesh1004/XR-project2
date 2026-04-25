@@ -6,6 +6,7 @@ public class RecorderRhythmTestData : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("RecorderRhythmTestData Awake");
         if (gameManager == null) return;
 
         gameManager.songNotes.Clear();
@@ -19,5 +20,6 @@ public class RecorderRhythmTestData : MonoBehaviour
         gameManager.songNotes.Add(new RecorderRhythmGameManager.NoteSpawnData { holeKey = RecorderRhythmGameManager.HoleKey.A, spawnTime = 5.8f });
         gameManager.songNotes.Add(new RecorderRhythmGameManager.NoteSpawnData { holeKey = RecorderRhythmGameManager.HoleKey.Y, spawnTime = 6.5f });
         gameManager.songNotes.Add(new RecorderRhythmGameManager.NoteSpawnData { holeKey = RecorderRhythmGameManager.HoleKey.B, spawnTime = 7.2f });
+        Debug.Log("Test notes loaded: " + gameManager.songNotes.Count);
     }
 }
