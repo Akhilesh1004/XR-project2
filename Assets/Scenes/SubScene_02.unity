@@ -20689,7 +20689,7 @@ Transform:
   m_GameObject: {fileID: 353384156}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7169133, z: -0, w: 0.69716233}
-  m_LocalPosition: {x: 18.54, y: 4.312, z: 38.989}
+  m_LocalPosition: {x: 17.232, y: 4.312, z: 38.952}
   m_LocalScale: {x: 0.30300543, y: 0.01630152, z: 0.41429773}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26314,7 +26314,7 @@ PrefabInstance:
     - target: {fileID: 3903482225804038118, guid: 0a7d2469f24041c4284c66706f84c45e,
         type: 3}
       propertyPath: m_Radius
-      value: 0.4
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 3903482226883268838, guid: 0a7d2469f24041c4284c66706f84c45e,
         type: 3}
@@ -51494,7 +51494,7 @@ RectTransform:
   m_GameObject: {fileID: 908778059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.727102, y: 4.4044, z: 1}
+  m_LocalScale: {x: 9.727102, y: 5.925239, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1336832989}
@@ -53031,6 +53031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniGamePanel: {fileID: 1336832985}
   miniGame: {fileID: 937493662}
+  gameFlow: {fileID: 937493658}
 --- !u!114 &937493662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53068,6 +53069,7 @@ MonoBehaviour:
   songNotes: []
   scoreText: {fileID: 437656215}
   resultText: {fileID: 1124755791}
+  uiManager: {fileID: 937493660}
   useTestSong: 1
 --- !u!114 &937493663
 MonoBehaviour:
@@ -53379,6 +53381,10 @@ PrefabInstance:
     - target: {fileID: 129900, guid: 24cce6b1657518b47a2d77ba50e434c6, type: 3}
       propertyPath: m_Name
       value: TableSchool01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129900, guid: 24cce6b1657518b47a2d77ba50e434c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 431968, guid: 24cce6b1657518b47a2d77ba50e434c6, type: 3}
       propertyPath: m_RootOrder
@@ -57847,6 +57853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TableSchool01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 129900, guid: 24cce6b1657518b47a2d77ba50e434c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 431968, guid: 24cce6b1657518b47a2d77ba50e434c6, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -60416,7 +60426,7 @@ Transform:
   m_GameObject: {fileID: 1023571403}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7169133, z: -0, w: 0.69716233}
-  m_LocalPosition: {x: 18.603, y: 4.312, z: 37.002}
+  m_LocalPosition: {x: 17.262, y: 4.312, z: 36.965}
   m_LocalScale: {x: 0.30300543, y: 0.01630152, z: 0.41429773}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -85435,6 +85445,10 @@ PrefabInstance:
     - target: {fileID: 129900, guid: 24cce6b1657518b47a2d77ba50e434c6, type: 3}
       propertyPath: m_Name
       value: TableSchool01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129900, guid: 24cce6b1657518b47a2d77ba50e434c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 431968, guid: 24cce6b1657518b47a2d77ba50e434c6, type: 3}
       propertyPath: m_RootOrder

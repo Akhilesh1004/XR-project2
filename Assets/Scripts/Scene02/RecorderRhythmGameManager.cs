@@ -50,12 +50,16 @@ public class RecorderRhythmGameManager : MonoBehaviour
     public float perfectRange = 25f;
     public float goodRange = 50f;
 
+
     [Header("Song Data")]
     public List<NoteSpawnData> songNotes = new List<NoteSpawnData>();
 
     [Header("UI Text")]
     public TMP_Text scoreText;
     public TMP_Text resultText;
+
+    [Header("UI Manager")]
+    public MiniGameUIManager uiManager;
 
     [Header("Debug")]
     public bool useTestSong = true;
@@ -66,6 +70,7 @@ public class RecorderRhythmGameManager : MonoBehaviour
     private bool isPlaying = false;
     private List<NoteUI> activeNotes = new List<NoteUI>();
 
+    private bool isGameFinished = false;
     void Start()
     {
         UpdateScoreText();
@@ -75,11 +80,15 @@ public class RecorderRhythmGameManager : MonoBehaviour
 
     void Update()
     {
+        if (!isPlaying) return;
+        if (isGameFinished) return;
+
         timer += Time.deltaTime;
 
         SpawnNotesByTime();
         HandleInput();
         CheckMissNotes();
+        CheckGameEnd();
     }
 
     void SpawnNotesByTime()
@@ -98,13 +107,14 @@ public class RecorderRhythmGameManager : MonoBehaviour
         {
             LoadTestSong();
         }
-
+        StopAllCoroutines();
         ClearAllNotes();
 
         timer = 0f;
         spawnIndex = 0;
         score = 0;
         isPlaying = true;
+        isGameFinished = false;
 
         UpdateScoreText();
 
@@ -115,6 +125,8 @@ public class RecorderRhythmGameManager : MonoBehaviour
     {
         Debug.Log("Mini game stop");
         isPlaying = false;
+        isGameFinished = true;
+        StopAllCoroutines();
         ClearAllNotes();
     }
     public void LoadTestSong()
@@ -245,6 +257,49 @@ public class RecorderRhythmGameManager : MonoBehaviour
             }
         }
     }
+    void CheckGameEnd()
+    {
+        bool allSpawned = spawnIndex >= songNotes.Count;
+        bool noActiveNotes = activeNotes.Count == 0;
+
+        if (allSpawned && noActiveNotes)
+        {
+            EndMiniGame();
+        }
+    }
+    void EndMiniGame()
+    {
+        if (isGameFinished) return;
+
+        isGameFinished = true;
+        isPlaying = false;
+
+        Debug.Log("Mini game finished. Score = " + score);
+
+        if (score >= songNotes.Count * 60)
+        {
+            ShowResult("Success");
+            Debug.Log("Score reached target");
+
+            if (uiManager != null)
+            {
+                uiManager.CloseMiniGame();
+            }
+        }
+        else
+        {
+            ShowResult("Fail - Restart");
+            Debug.Log("Score not enough, restart");
+
+            StartCoroutine(RestartMiniGameAfterDelay());
+        }
+    }
+
+    IEnumerator RestartMiniGameAfterDelay()
+    {
+        yield return new WaitForSeconds(1.5f);
+        StartMiniGame();
+    }
 
     LaneData GetLane(HoleKey key)
     {
@@ -277,7 +332,7 @@ public class RecorderRhythmGameManager : MonoBehaviour
     void UpdateScoreText()
     {
         if (scoreText != null)
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Score: " + score + " / " + (songNotes.Count * 60);
     }
 
     void ShowResult(string msg)

@@ -4,6 +4,8 @@ public class MiniGameUIManager : MonoBehaviour
 {
     public GameObject miniGamePanel;
     public RecorderRhythmGameManager miniGame;
+    public GameFlow gameFlow;
+
     void Start()
     {
         if(miniGamePanel != null)
@@ -33,5 +35,7 @@ public class MiniGameUIManager : MonoBehaviour
             miniGamePanel.SetActive(false);
         if (miniGame != null)
             miniGame.StopMiniGame();
+        gameFlow.locomotor.Velocity = Vector3.zero;
+        gameFlow.locomotor.enabled = true;
     }
 }
