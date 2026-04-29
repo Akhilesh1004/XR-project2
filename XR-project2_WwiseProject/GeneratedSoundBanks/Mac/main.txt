@@ -1,0 +1,27 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1384642536	Play_Dream_BGM			\Default Work Unit\Play_Dream_BGM	
+	2491771796	Stop_Piano_BGM			\Default Work Unit\Stop_Piano_BGM	
+	2785768334	Play_Note_Y			\Default Work Unit\Play_Note_Y	
+	2785768335	Play_Note_X			\Default Work Unit\Play_Note_X	
+	2785768341	Play_Note_B			\Default Work Unit\Play_Note_B	
+	2785768342	Play_Note_A			\Default Work Unit\Play_Note_A	
+	3126765036	Play_bgm			\Default Work Unit\Play_bgm	
+	4197936254	Play_Piano_BGM			\Default Work Unit\Play_Piano_BGM	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3413469912	Env_State			\Default Work Unit\Env_State	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Env_State			
+	984691642	InGame	Env_State			
+	1160234136	Normal	Env_State			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	174773832	o902a-tjaou	.cache\54\{54982D42-AFF7-9F9A-D287-C64CEDE69AA4}.wem		\Containers\Default Work Unit\bgm\o902a-tjaou		16759392
+	478166025	Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940	.cache\59\{599F6611-C9C4-4E42-37FC-FB5F1E04418D}.wem		\Containers\Default Work Unit\scence 2\Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940		10477532
+	480352100	Zhi di so	.cache\BE\{BE29CD7C-BE9F-B3FE-0C4C-C83DE32477A2}.wem		\Containers\Default Work Unit\scence 2\Zhi di so		78260
+	541834474	Zhi di re	.cache\B8\{B8646E52-7088-344D-37A8-3296BE599603}.wem		\Containers\Default Work Unit\scence 2\Zhi di re		129244
+	806380124	Zhi di la	.cache\DC\{DCB0B3D9-7126-7260-8CCD-C91D89DA2103}.wem		\Containers\Default Work Unit\scence 2\Zhi di la		86944
+	987720715	Zhi di si	.cache\59\{591F0BF3-E733-A264-2839-411CD724FC36}.wem		\Containers\Default Work Unit\scence 2\Zhi di si		96648
+	1021866025	dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248	.cache\86\{868E010D-5B5D-996C-4B7B-27878C55F37F}.wem		\Containers\Default Work Unit\scence 2\dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248		14106500
+

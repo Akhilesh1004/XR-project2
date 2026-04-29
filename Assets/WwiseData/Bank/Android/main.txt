@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3126765036	Play_bgm			\Default Work Unit\Play_bgm	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	174773832	o902a-tjaou	.cache\54\{54982D42-AFF7-9F9A-D287-C64CEDE69AA4}.wem		\Containers\Default Work Unit\bgm\o902a-tjaou		16759392
+

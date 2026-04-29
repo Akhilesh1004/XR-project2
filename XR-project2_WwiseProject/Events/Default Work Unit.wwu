@@ -1,6 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0235EC72-414D-4871-9C80-91CB84838F0B}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{0235EC72-414D-4871-9C80-91CB84838F0B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0235EC72-414D-4871-9C80-91CB84838F0B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_bgm" ID="{2B3C8EA1-95F4-4361-8165-013817E8402E}">
+					<ChildrenList>
+						<Action Name="" ID="{FE915C39-DBDC-426B-BF89-0BCDF3733478}" ShortID="219208984">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bgm" ID="{AF2A99B0-8AA9-4EA9-921D-EE709F0E4B79}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_bgm" ID="{F95F041E-39E6-4015-B58B-51DC4201960A}">
+					<ChildrenList>
+						<Action Name="" ID="{6F74E27C-5A5F-4358-9E37-05234DF0F6B3}" ShortID="162934491">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bgm" ID="{AF2A99B0-8AA9-4EA9-921D-EE709F0E4B79}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Dream_BGM" ID="{51DCD5F4-E813-445F-9C2B-2DDAB00D2142}">
+					<ChildrenList>
+						<Action Name="" ID="{4C2A23EC-5995-46B3-960C-1FDF7D6FF55B}" ShortID="540922983">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{D45898CC-3B2A-4862-B04E-7D590B4DD287}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Piano_BGM" ID="{4FAD7093-082E-4F32-BD82-C61A4D3D5570}">
+					<ChildrenList>
+						<Action Name="" ID="{E32516CC-29D5-454B-8D93-1E1E20C05826}" ShortID="1052279975">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940" ID="{C9A53F97-9305-4DC7-9B37-39576D9ACAB9}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Note_Y" ID="{C8714CE0-6E67-4ABA-8995-8860FD4F58EC}">
+					<ChildrenList>
+						<Action Name="" ID="{634C7F93-4A1E-486C-87AA-65D57DF9631D}" ShortID="270277837">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Zhi di la" ID="{B523D6B0-60F9-492A-A16D-7046C51CF2BF}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Note_B" ID="{5802E58C-CBFE-4F2C-A857-7A8F221C9322}">
+					<ChildrenList>
+						<Action Name="" ID="{57FDF3B3-0FAD-44C0-9BEF-6958C1996BD7}" ShortID="793385406">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Zhi di re" ID="{D5215EE0-B810-4E0C-ADE6-3ACDA1712527}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Note_A" ID="{E5A1F08D-A003-458B-AE87-87300F27B950}">
+					<ChildrenList>
+						<Action Name="" ID="{E582B31B-D887-4DAA-A7B5-FB9E141F30B7}" ShortID="979539433">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Zhi di si" ID="{43CE4069-300E-4E40-98F1-B9960E8E7C1E}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Note_X" ID="{D2A96142-23BC-4B6E-A221-31F6B8DF5370}">
+					<ChildrenList>
+						<Action Name="" ID="{30FE2193-72AD-459C-84D6-74FCA2CCD142}" ShortID="66343578">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Zhi di so" ID="{83C7882E-B8FC-44F0-A376-84404D0E4C72}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Piano_BGM" ID="{BD21513A-285E-4EE8-8E10-95B65D470941}">
+					<ChildrenList>
+						<Action Name="" ID="{B713C462-220A-42F6-8F28-F302CA0D083A}" ShortID="936194941">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940" ID="{C9A53F97-9305-4DC7-9B37-39576D9ACAB9}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

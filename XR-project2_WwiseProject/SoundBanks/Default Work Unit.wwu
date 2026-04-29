@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A49201C2-22F5-42A2-8648-C2D7083666E2}" SchemaVersion="133">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{A49201C2-22F5-42A2-8648-C2D7083666E2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A49201C2-22F5-42A2-8648-C2D7083666E2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="main" ID="{2247F40C-B06D-4A1C-9387-CBE83960CF5A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_bgm" ID="{2B3C8EA1-95F4-4361-8165-013817E8402E}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Dream_BGM" ID="{51DCD5F4-E813-445F-9C2B-2DDAB00D2142}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Note_A" ID="{E5A1F08D-A003-458B-AE87-87300F27B950}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Note_Y" ID="{C8714CE0-6E67-4ABA-8995-8860FD4F58EC}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Note_X" ID="{D2A96142-23BC-4B6E-A221-31F6B8DF5370}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Piano_BGM" ID="{BD21513A-285E-4EE8-8E10-95B65D470941}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Note_B" ID="{5802E58C-CBFE-4F2C-A857-7A8F221C9322}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Piano_BGM" ID="{4FAD7093-082E-4F32-BD82-C61A4D3D5570}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

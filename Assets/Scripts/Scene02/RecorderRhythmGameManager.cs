@@ -76,6 +76,9 @@ public class RecorderRhythmGameManager : MonoBehaviour
         UpdateScoreText();
         if (resultText != null)
             resultText.text = "";
+
+        // 【新增】：確保場景一載入時，環境音狀態是正常的 (沒有被靜音)
+        AkSoundEngine.SetState("Env_State", "Normal");
     }
 
     void Update()
@@ -120,6 +123,12 @@ public class RecorderRhythmGameManager : MonoBehaviour
 
         if (resultText != null)
             resultText.text = "";
+
+        // 【新增】：小遊戲開始，播放鋼琴伴奏
+        AkSoundEngine.PostEvent("Play_Piano_BGM", this.gameObject);
+
+        // 【新增】：把全域狀態切換到 InGame，環境底噪會根據 Wwise 設定慢慢淡出！
+        AkSoundEngine.SetState("Env_State", "InGame");
     }
     public void StopMiniGame()
     {
@@ -128,6 +137,12 @@ public class RecorderRhythmGameManager : MonoBehaviour
         isGameFinished = true;
         StopAllCoroutines();
         ClearAllNotes();
+
+        // 【新增】：小遊戲中斷，停止鋼琴伴奏
+        AkSoundEngine.PostEvent("Stop_Piano_BGM", this.gameObject);
+
+        // 【新增】：把全域狀態切換回 Normal，環境底噪會慢慢淡入回來！
+        AkSoundEngine.SetState("Env_State", "Normal");
     }
     public void LoadTestSong()
     {
@@ -135,15 +150,46 @@ public class RecorderRhythmGameManager : MonoBehaviour
 
         songNotes.Clear();
 
-        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.X, spawnTime = 1f });
-        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 2f });
-        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 3f });
-        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.B, spawnTime = 4f });
+        // 載入瑪莉有隻小綿羊 - 玩家直笛譜版 (60 BPM)
 
-        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.X, spawnTime = 5f });
-        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 5.8f });
-        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 6.5f });
-        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.B, spawnTime = 7.2f });
+        // 第一句：si la so la (A Y X Y)
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 1.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 2.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.X, spawnTime = 3.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 4.0f });
+
+        // 第二句：si si si (A A A)
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 5.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 6.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 7.0f });
+
+        // 第三句：la la la (Y Y Y)
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 9.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 10.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 11.0f });
+
+        // 第四句：si re re (A B B)
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 13.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.B, spawnTime = 14.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.B, spawnTime = 15.0f });
+
+        // 第五句：si la so la (A Y X Y)
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 17.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 18.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.X, spawnTime = 19.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 20.0f });
+
+        // 第六句：si si si (A A A)
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 21.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 22.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 23.0f });
+
+        // 第七句 (完美收尾)：la la si la so (Y Y A Y X)
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 25.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 26.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.A, spawnTime = 27.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.Y, spawnTime = 28.0f });
+        songNotes.Add(new NoteSpawnData { holeKey = HoleKey.X, spawnTime = 29.0f });
 
         Debug.Log("Test notes loaded: " + songNotes.Count);
     }
@@ -179,25 +225,28 @@ public class RecorderRhythmGameManager : MonoBehaviour
 
     void HandleInput()
     {
-        if(OVRInput.GetDown(OVRInput.Button.One, controller_L))
+        if (OVRInput.GetDown(OVRInput.Button.One, controller_L))
         {
             Debug.Log("Press X");
+            AkSoundEngine.PostEvent("Play_Note_X", this.gameObject);
             TryHit(HoleKey.X);
-            
         }
         if (OVRInput.GetDown(OVRInput.Button.Two, controller_L))
         {
             Debug.Log("Press Y");
+            AkSoundEngine.PostEvent("Play_Note_Y", this.gameObject);
             TryHit(HoleKey.Y);
         }
         if (OVRInput.GetDown(OVRInput.Button.One, controller_R))
         {
             Debug.Log("Press A");
+            AkSoundEngine.PostEvent("Play_Note_A", this.gameObject);
             TryHit(HoleKey.A);
         }
         if (OVRInput.GetDown(OVRInput.Button.Two, controller_R))
         {
             Debug.Log("Press B");
+            AkSoundEngine.PostEvent("Play_Note_B", this.gameObject);
             TryHit(HoleKey.B);
         }
     }
@@ -275,6 +324,12 @@ public class RecorderRhythmGameManager : MonoBehaviour
         isPlaying = false;
 
         Debug.Log("Mini game finished. Score = " + score);
+
+        // 【新增】：遊戲正常結束時，停止鋼琴伴奏
+        AkSoundEngine.PostEvent("Stop_Piano_BGM", this.gameObject);
+
+        // 【新增】：把全域狀態切換回 Normal，環境底噪會慢慢淡入回來！
+        AkSoundEngine.SetState("Env_State", "Normal");
 
         if (score >= songNotes.Count * 60)
         {

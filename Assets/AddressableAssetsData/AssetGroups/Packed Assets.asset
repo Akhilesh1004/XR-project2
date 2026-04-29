@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Packed Assets
+  m_GUID: ea2e670d70f1a1f478aee69e72e9db6c
+  m_SerializeEntries:
+  - m_GUID: 4ef4c13c349ecac4f9f043ab751072e8
+    m_Address: Assets/Wwise/ScriptableObjects/AkWwiseInitializationSettings.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 598bb1a3eed53844dae82ea5b2977fec
+    m_Address: Assets/WwiseData/Bank/main.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9bbd83d816553824094b8e4b0ee375a1
+    m_Address: Assets/Wwise/ScriptableObjects/InitBank.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a41d318156702d94cab1f316c278df99, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1df6da65d8939c745acd77a02bb987f2, type: 2}
+    - {fileID: 11400000, guid: ef9d5a8e88405c54a8a8ac1436154f5b, type: 2}

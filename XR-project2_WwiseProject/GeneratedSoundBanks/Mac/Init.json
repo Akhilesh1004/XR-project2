@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8CBC2CD0-42C0-9F20-AFE8-5201E29BE1BB}",
+    "Hash": "{F9922AB8-2F3D-9D6C-6E02-84E5676860B2}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -41,9 +41,37 @@
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3413469912",
+      "Name": "Env_State",
+      "ObjectPath": "\\States\\Default Work Unit\\Env_State",
+      "GUID": "{34BD916B-4D23-4DCA-8754-7BE4AAC7B7EC}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Env_State\\None",
+        "GUID": "{774E5281-DBC9-4853-808C-143E89375A22}"
+       },
+       {
+        "Id": "984691642",
+        "Name": "InGame",
+        "ObjectPath": "\\States\\Default Work Unit\\Env_State\\InGame",
+        "GUID": "{DC70F7B0-D291-422B-9931-C848B0D6F870}"
+       },
+       {
+        "Id": "1160234136",
+        "Name": "Normal",
+        "ObjectPath": "\\States\\Default Work Unit\\Env_State\\Normal",
+        "GUID": "{9AD7B17C-724D-4293-9014-4FF59C0FE439}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{F17E9E2F-E4AF-48F9-D13A-EB6F2EEA28F1}"
+  "FileHash": "{169EA564-514F-8B56-4376-CFD28A17FE49}"
  }
 }

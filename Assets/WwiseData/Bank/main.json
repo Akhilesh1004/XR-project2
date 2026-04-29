@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{2247F40C-B06D-4A1C-9387-CBE83960CF5A}",
+    "Language": "SFX",
+    "Hash": "{94BE4C38-5A91-B7C8-27A8-6D6FF2A957ED}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
+    "ShortName": "main",
+    "Path": "main.bnk",
+    "Media": [
+     {
+      "Id": "174773832",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "o902a-tjaou.wav",
+      "CachePath": "54/{54982D42-AFF7-9F9A-D287-C64CEDE69AA4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3126765036",
+      "Name": "Play_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_bgm",
+      "GUID": "{2B3C8EA1-95F4-4361-8165-013817E8402E}",
+      "DurationType": "OneShot",
+      "DurationMin": "95.00735",
+      "DurationMax": "95.00735",
+      "MediaRefs": [
+       {
+        "Id": "174773832"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F7231CE0-C2C0-CE74-1A5B-920E144400D5}"
+ }
+}

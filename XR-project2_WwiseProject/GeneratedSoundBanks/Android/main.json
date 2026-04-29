@@ -1,0 +1,187 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Android",
+  "BasePlatform": "Android",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{2247F40C-B06D-4A1C-9387-CBE83960CF5A}",
+    "Language": "SFX",
+    "Hash": "{4F5C2718-F74C-65A9-C1A8-365D5606A47B}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
+    "ShortName": "main",
+    "Path": "main.bnk",
+    "Media": [
+     {
+      "Id": "174773832",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "o902a-tjaou.wav",
+      "CachePath": "54/{54982D42-AFF7-9F9A-D287-C64CEDE69AA4}.wem"
+     },
+     {
+      "Id": "478166025",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940.wav",
+      "CachePath": "59/{599F6611-C9C4-4E42-37FC-FB5F1E04418D}.wem"
+     },
+     {
+      "Id": "480352100",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Zhi di so.wav",
+      "CachePath": "BE/{BE29CD7C-BE9F-B3FE-0C4C-C83DE32477A2}.wem"
+     },
+     {
+      "Id": "541834474",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Zhi di re.wav",
+      "CachePath": "B8/{B8646E52-7088-344D-37A8-3296BE599603}.wem"
+     },
+     {
+      "Id": "806380124",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Zhi di so.wav",
+      "CachePath": "DC/{DCB0B3D9-7126-7260-8CCD-C91D89DA2103}.wem"
+     },
+     {
+      "Id": "987720715",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Zhi di so.wav",
+      "CachePath": "59/{591F0BF3-E733-A264-2839-411CD724FC36}.wem"
+     },
+     {
+      "Id": "1021866025",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248.wav",
+      "CachePath": "86/{868E010D-5B5D-996C-4B7B-27878C55F37F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3126765036",
+      "Name": "Play_bgm",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_bgm",
+      "GUID": "{2B3C8EA1-95F4-4361-8165-013817E8402E}",
+      "DurationType": "OneShot",
+      "DurationMin": "95.00735",
+      "DurationMax": "95.00735",
+      "MediaRefs": [
+       {
+        "Id": "174773832"
+       }
+      ]
+     },
+     {
+      "Id": "1384642536",
+      "Name": "Play_Dream_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Dream_BGM",
+      "GUID": "{51DCD5F4-E813-445F-9C2B-2DDAB00D2142}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1021866025"
+       }
+      ]
+     },
+     {
+      "Id": "2785768342",
+      "Name": "Play_Note_A",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Note_A",
+      "GUID": "{E5A1F08D-A003-458B-AE87-87300F27B950}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.54736",
+      "DurationMax": "0.54736",
+      "MediaRefs": [
+       {
+        "Id": "987720715"
+       }
+      ]
+     },
+     {
+      "Id": "2785768341",
+      "Name": "Play_Note_B",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Note_B",
+      "GUID": "{5802E58C-CBFE-4F2C-A857-7A8F221C9322}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.73212",
+      "DurationMax": "0.73212",
+      "MediaRefs": [
+       {
+        "Id": "541834474"
+       }
+      ]
+     },
+     {
+      "Id": "2785768335",
+      "Name": "Play_Note_X",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Note_X",
+      "GUID": "{D2A96142-23BC-4B6E-A221-31F6B8DF5370}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4431",
+      "DurationMax": "0.4431",
+      "MediaRefs": [
+       {
+        "Id": "480352100"
+       }
+      ]
+     },
+     {
+      "Id": "2785768334",
+      "Name": "Play_Note_Y",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Note_Y",
+      "GUID": "{C8714CE0-6E67-4ABA-8995-8860FD4F58EC}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.49233",
+      "DurationMax": "0.49233",
+      "MediaRefs": [
+       {
+        "Id": "806380124"
+       }
+      ]
+     },
+     {
+      "Id": "4197936254",
+      "Name": "Play_Piano_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Piano_BGM",
+      "GUID": "{4FAD7093-082E-4F32-BD82-C61A4D3D5570}",
+      "DurationType": "OneShot",
+      "DurationMin": "59.395897",
+      "DurationMax": "59.395897",
+      "MediaRefs": [
+       {
+        "Id": "478166025"
+       }
+      ]
+     },
+     {
+      "Id": "2491771796",
+      "Name": "Stop_Piano_BGM",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_Piano_BGM",
+      "GUID": "{BD21513A-285E-4EE8-8E10-95B65D470941}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8AA36A33-DF07-46DA-D027-507803758FD1}"
+ }
+}
