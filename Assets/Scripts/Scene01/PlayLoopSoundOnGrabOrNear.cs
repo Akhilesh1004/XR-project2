@@ -9,7 +9,7 @@ public class PlayLoopSoundOnGrabOrNear : MonoBehaviour
 
     [Header("Near Detection")]
     public Transform targetObject;
-    public float nearDistance = 0.2f;
+    public float nearDistance = 1f;
 
     [Header("Audio")]
     public AudioSource audioSource;
