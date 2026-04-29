@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using System.Collections;
 
 public class ColorTriggerByRotation : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class ColorTriggerByRotation : MonoBehaviour
     [Header("Environment Settings")]
     public Volume globalVolume;      // Assign your Global Volume here
     public float transitionSpeed = 30f; // Color transition speed
+    public float revealDuration = 5f;
 
     [Header("Rotation Trigger Settings")]
     public Transform rotatableItem;     // Assign your "rotatable object" here
@@ -110,6 +112,38 @@ public class ColorTriggerByRotation : MonoBehaviour
         }
     }
 
+    private IEnumerator FadeInObject(GameObject obj)
+    {
+        obj.SetActive(true);
+
+        Renderer[] renderers = obj.GetComponentsInChildren<Renderer>();
+        MaterialPropertyBlock block = new MaterialPropertyBlock();
+
+        float timer = 0f;
+
+        while (timer < revealDuration)
+        {
+            float alpha = Mathf.SmoothStep(0f, 1f, timer / revealDuration);
+
+            foreach (Renderer r in renderers)
+            {
+                r.GetPropertyBlock(block);
+
+                if (r.sharedMaterial.HasProperty("_Color"))
+                {
+                    Color c = r.sharedMaterial.color;
+                    c.a = alpha;
+                    block.SetColor("_Color", c);
+                }
+
+                r.SetPropertyBlock(block);
+            }
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+    }
+
     private void RevealAllObjects()
     {
         if (hasRevealed) return;
@@ -122,7 +156,7 @@ public class ColorTriggerByRotation : MonoBehaviour
             {
                 if (obj != null)
                 {
-                    obj.SetActive(true);
+                   obj.SetActive(true);
                 }
             }
         }
