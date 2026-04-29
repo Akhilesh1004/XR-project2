@@ -23,6 +23,10 @@ public class PlayLoopSoundOnGrabOrNear : MonoBehaviour
     [Tooltip("是否用 2D 距離忽略高度差")]
     public bool ignoreYDistance = false;
 
+    public NoteCompletionManager noteCompletionManager;
+
+    bool count = false;
+
     private void Start()
     {
         if (audioSource == null)
@@ -65,6 +69,16 @@ public class PlayLoopSoundOnGrabOrNear : MonoBehaviour
         {
             Debug.Log("STOP");
             StopLoopSound();
+        }
+        if (near && !count)
+        {
+            count = true;
+            noteCompletionManager.AddCompletedCount();
+        }
+        if(!near && count)
+        {
+            count = false;
+            noteCompletionManager.SubCompletedCount();
         }
     }
 
