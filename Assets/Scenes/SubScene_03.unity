@@ -5730,7 +5730,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5002938956245774456, guid: 1be5825e16a302a4f915b3239bd4681b,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 316341394}
+      addedObject: {fileID: 316341389}
   m_SourcePrefab: {fileID: 100100000, guid: 1be5825e16a302a4f915b3239bd4681b, type: 3}
 --- !u!4 &316341383 stripped
 Transform:
@@ -5823,8 +5823,8 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!136 &316341394
-CapsuleCollider:
+--- !u!65 &316341389
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5841,11 +5841,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.3082617
-  m_Height: 0.8333336
-  m_Direction: 1
-  m_Center: {x: -0.00013325026, y: 0.3989151, z: 0.0017755739}
+  serializedVersion: 3
+  m_Size: {x: 0.15, y: 0.8, z: 0.15}
+  m_Center: {x: -0.00013325027, y: 0.39888465, z: 0.0017755777}
 --- !u!1 &318070321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7556877271754113001, guid: 6f950a51c02bcd24c89b3cd250bc7c84,
@@ -9035,7 +9033,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1954959419997571405, guid: cbb4316eae4439341a591bd246291873,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 468753678}
+      addedObject: {fileID: 468753673}
   m_SourcePrefab: {fileID: 100100000, guid: cbb4316eae4439341a591bd246291873, type: 3}
 --- !u!4 &468753667 stripped
 Transform:
@@ -9128,8 +9126,8 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!136 &468753678
-CapsuleCollider:
+--- !u!65 &468753673
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9146,11 +9144,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.49211076
-  m_Height: 0.8924551
-  m_Direction: 1
-  m_Center: {x: -0.00038444632, y: 0.4106813, z: -0.0056405943}
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.89245516, z: 0.25}
+  m_Center: {x: -0.00038444635, y: 0.41071185, z: -0.005640652}
 --- !u!114 &468753680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19332,7 +19328,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4, y: 0.1, z: 0.9578324}
+  m_Size: {x: 0.15, y: 0.1, z: 0.85}
   m_Center: {x: -0.00008679408, y: 0.039445747, z: 0.43795598}
 --- !u!1001 &1072443988
 PrefabInstance:
@@ -22557,7 +22553,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3519973159164461666, guid: 9c17d598fae962d40a9da109af76e8b6,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1241515962}
+      addedObject: {fileID: 1241515957}
   m_SourcePrefab: {fileID: 100100000, guid: 9c17d598fae962d40a9da109af76e8b6, type: 3}
 --- !u!4 &1241515951 stripped
 Transform:
@@ -22650,8 +22646,8 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!136 &1241515962
-CapsuleCollider:
+--- !u!65 &1241515957
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -22668,11 +22664,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.3320605
-  m_Height: 0.8670212
-  m_Direction: 1
-  m_Center: {x: -0.0004113923, y: 0.41112116, z: 0.010075948}
+  serializedVersion: 3
+  m_Size: {x: 0.3, y: 0.8670213, z: 0.2}
+  m_Center: {x: -0.00041139196, y: 0.41112116, z: 0.010075949}
 --- !u!114 &1241515964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33361,7 +33355,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8780504022632828907, guid: 4e7d847ae148a2c4abf1a5bf1790f307,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1869012528}
+      addedObject: {fileID: 1869012523}
   m_SourcePrefab: {fileID: 100100000, guid: 4e7d847ae148a2c4abf1a5bf1790f307, type: 3}
 --- !u!4 &1869012517 stripped
 Transform:
@@ -33454,8 +33448,8 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!136 &1869012528
-CapsuleCollider:
+--- !u!65 &1869012523
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -33472,11 +33466,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.30299184
-  m_Height: 0.844104
-  m_Direction: 1
-  m_Center: {x: -0.00022753044, y: 0.4029311, z: 0.007937885}
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.8, z: 0.15}
+  m_Center: {x: -0.00022757344, y: 0.40296167, z: 0.007937952}
 --- !u!4 &1869062669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4339956883261696, guid: a198419e400959d4987717da50d5d7ca,
@@ -44665,7 +44657,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9094518321381821301, guid: 4e8303a0bdf2cfe4090d8333d2baff9e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2050704411}
+      addedObject: {fileID: 2050704406}
   m_SourcePrefab: {fileID: 100100000, guid: 4e8303a0bdf2cfe4090d8333d2baff9e, type: 3}
 --- !u!4 &2050704400 stripped
 Transform:
@@ -44758,8 +44750,8 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!136 &2050704411
-CapsuleCollider:
+--- !u!65 &2050704406
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -44776,11 +44768,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.32993492
-  m_Height: 0.8846778
-  m_Direction: 1
-  m_Center: {x: -0.0011959679, y: 0.4045839, z: 0.0016304087}
+  serializedVersion: 3
+  m_Size: {x: 0.3, y: 0.6, z: 0.2}
+  m_Center: {x: -0.0011959828, y: 0.40461442, z: 0.0016304683}
 --- !u!1001 &2052965812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45486,6 +45476,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc664b8dfe987a54fa5db74bfac5a5fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rtpcName: Player_Hand_Height
+  targetController: 2
+  heightOffset: 0.6
 --- !u!114 &2103398144
 MonoBehaviour:
   m_ObjectHideFlags: 0

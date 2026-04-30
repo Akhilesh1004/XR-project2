@@ -8973,6 +8973,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc664b8dfe987a54fa5db74bfac5a5fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rtpcName: Player_Hand_Height
+  targetController: 2
+  heightOffset: 0.6
 --- !u!114 &1171204456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13319,7 +13322,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 0.635
+  weight: 1
   sharedProfile: {fileID: 11400000, guid: b25bb07cb87aac545a4286be9de108c8, type: 2}
 --- !u!1 &1740444629
 GameObject:
