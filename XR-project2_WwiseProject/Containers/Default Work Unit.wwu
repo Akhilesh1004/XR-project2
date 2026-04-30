@@ -71,6 +71,39 @@
 								</PropertyList>
 							</MusicCue>
 						</ObjectList>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{542DBD02-1236-443E-9E21-90C99DC26EBB}" ShortID="495957492">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="Player_Hand_Height" ID="{0FFA4A01-D4E9-45C9-BE6F-4771576AB58C}" WorkUnitID="{5F62AD5F-A6CF-45C9-A774-8B180B1D7237}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{69C20542-059F-4305-A434-653C2EFA1DB1}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>80</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
 					</ObjectLists>
 				</MusicSegment>
 				<Folder Name="scence 2" ID="{562342A7-98C8-4027-8BE5-CD2357A962D1}" ShortID="613327119">
@@ -229,6 +262,186 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="BGM_Scene3" ID="{301E73B7-6B4C-4797-BFAB-F9C1ACA48643}" ShortID="699790846">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Bedroom_Shadows_2026-04-30T055334" ID="{6C1CB951-A0E0-4485-81B6-9D8FF4D82112}">
+							<Language>SFX</Language>
+							<AudioFile>Bedroom_Shadows_2026-04-30T055334.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="579797328"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{74CCF361-CDDD-481D-973A-A5EA996974ED}" ShortID="996855222">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="Player_Hand_Height" ID="{0FFA4A01-D4E9-45C9-BE6F-4771576AB58C}" WorkUnitID="{5F62AD5F-A6CF-45C9-A774-8B180B1D7237}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{8628AC31-E259-481A-A8A9-C82797F33936}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>80</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Bedroom_Shadows_2026-04-30T055334" ID="{6C1CB951-A0E0-4485-81B6-9D8FF4D82112}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BGM_Scene0" ID="{76DEC6D0-9496-466E-8462-573541B9A016}" ShortID="902443581">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Collective_Unconscious_2026-04-30T052432" ID="{71A3977C-84F4-4522-B549-9C3CB22BBE9C}">
+							<Language>SFX</Language>
+							<AudioFile>Collective_Unconscious_2026-04-30T052432.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="497062086"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{7AB94CC2-04C4-4D94-A123-CEEF49AEFCD0}" ShortID="530682404">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="Player_Hand_Height" ID="{0FFA4A01-D4E9-45C9-BE6F-4771576AB58C}" WorkUnitID="{5F62AD5F-A6CF-45C9-A774-8B180B1D7237}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{C35ED6BB-3488-4351-B7FD-6863EC4C6473}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>80</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Collective_Unconscious_2026-04-30T052432" ID="{71A3977C-84F4-4522-B549-9C3CB22BBE9C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BGM_Scene1" ID="{23FDE809-3ADF-40C7-944D-E2E11AE8CE1E}" ShortID="44182677">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{AE55F342-21EF-480D-9B4D-09A81D4DD642}">
+							<Language>SFX</Language>
+							<AudioFile>Indoor_Playground_Memory_2026-04-30T052843.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="468492319"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{03CC8079-C01C-4099-94FF-F432C80290DC}" ShortID="943493798">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="Player_Hand_Height" ID="{0FFA4A01-D4E9-45C9-BE6F-4771576AB58C}" WorkUnitID="{5F62AD5F-A6CF-45C9-A774-8B180B1D7237}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{58D63CAE-883F-4647-934D-1DF568659AFB}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>80</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{AE55F342-21EF-480D-9B4D-09A81D4DD642}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

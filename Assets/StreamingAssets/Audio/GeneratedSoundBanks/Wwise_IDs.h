@@ -14,6 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BGM = 3126765036U;
+        static const AkUniqueID PLAY_BGM_SCENE0 = 318919647U;
+        static const AkUniqueID PLAY_BGM_SCENE1 = 318919646U;
+        static const AkUniqueID PLAY_BGM_SCENE3 = 318919644U;
         static const AkUniqueID PLAY_DREAM_BGM = 1384642536U;
         static const AkUniqueID PLAY_NOTE_A = 2785768342U;
         static const AkUniqueID PLAY_NOTE_B = 2785768341U;
@@ -24,21 +27,10 @@ namespace AK
         static const AkUniqueID STOP_PIANO_BGM = 2491771796U;
     } // namespace EVENTS
 
-    namespace STATES
+    namespace GAME_PARAMETERS
     {
-        namespace ENV_STATE
-        {
-            static const AkUniqueID GROUP = 3413469912U;
-
-            namespace STATE
-            {
-                static const AkUniqueID INGAME = 984691642U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID NORMAL = 1160234136U;
-            } // namespace STATE
-        } // namespace ENV_STATE
-
-    } // namespace STATES
+        static const AkUniqueID PLAYER_HAND_HEIGHT = 3087519344U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

@@ -125657,6 +125657,7 @@ GameObject:
   - component: {fileID: 2101901752}
   - component: {fileID: 2101901754}
   - component: {fileID: 2101901753}
+  - component: {fileID: 2101901755}
   m_Layer: 0
   m_Name: Audio_Dreamcore_Ambient
   m_TagString: Untagged
@@ -125738,6 +125739,18 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &2101901755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101901751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc664b8dfe987a54fa5db74bfac5a5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2101928500
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -108,6 +108,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_BGM_Scene0" ID="{42BE59B3-8FFC-4407-96BB-1A101B986F17}">
+					<ChildrenList>
+						<Action Name="" ID="{89694B51-DA2F-4034-B64E-DFCB834B13A3}" ShortID="751517149">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BGM_Scene0" ID="{76DEC6D0-9496-466E-8462-573541B9A016}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BGM_Scene1" ID="{5651F78C-6CB7-4044-A0BC-AAA65646CF17}">
+					<ChildrenList>
+						<Action Name="" ID="{17C4D178-7413-454F-9371-9DF46B0E5959}" ShortID="1046656800">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BGM_Scene1" ID="{23FDE809-3ADF-40C7-944D-E2E11AE8CE1E}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BGM_Scene3" ID="{9F910B6E-D7BA-49E9-92DD-D9F139596D5A}">
+					<ChildrenList>
+						<Action Name="" ID="{EDA35780-59EF-4ED0-B3E9-7ABDDECF14F0}" ShortID="927687746">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BGM_Scene3" ID="{301E73B7-6B4C-4797-BFAB-F9C1ACA48643}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

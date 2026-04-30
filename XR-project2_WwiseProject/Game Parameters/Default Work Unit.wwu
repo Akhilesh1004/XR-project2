@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5F62AD5F-A6CF-45C9-A774-8B180B1D7237}" SchemaVersion="133">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{5F62AD5F-A6CF-45C9-A774-8B180B1D7237}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5F62AD5F-A6CF-45C9-A774-8B180B1D7237}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Player_Hand_Height" ID="{0FFA4A01-D4E9-45C9-BE6F-4771576AB58C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

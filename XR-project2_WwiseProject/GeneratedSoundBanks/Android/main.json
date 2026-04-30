@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2247F40C-B06D-4A1C-9387-CBE83960CF5A}",
     "Language": "SFX",
-    "Hash": "{4F5C2718-F74C-65A9-C1A8-365D5606A47B}",
+    "Hash": "{F786379D-BD63-05D5-0D0D-84532A706754}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "o902a-tjaou.wav",
       "CachePath": "54/{54982D42-AFF7-9F9A-D287-C64CEDE69AA4}.wem"
+     },
+     {
+      "Id": "468492319",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Indoor_Playground_Memory_2026-04-30T052843.wav",
+      "CachePath": "62/{629E68B7-9667-6B6B-8680-B4C93C5FCBCD}.wem"
      },
      {
       "Id": "478166025",
@@ -40,12 +48,28 @@
       "CachePath": "BE/{BE29CD7C-BE9F-B3FE-0C4C-C83DE32477A2}.wem"
      },
      {
+      "Id": "497062086",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Collective_Unconscious_2026-04-30T052432.wav",
+      "CachePath": "2C/{2CEE6679-CA22-EDAB-B87F-38A65C5F06EF}.wem"
+     },
+     {
       "Id": "541834474",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Zhi di re.wav",
       "CachePath": "B8/{B8646E52-7088-344D-37A8-3296BE599603}.wem"
+     },
+     {
+      "Id": "579797328",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bedroom_Shadows_2026-04-30T055334.wav",
+      "CachePath": "7F/{7FB74330-EC61-0463-71A5-ABFCC5C07543}.wem"
      },
      {
       "Id": "806380124",
@@ -69,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248.wav",
-      "CachePath": "86/{868E010D-5B5D-996C-4B7B-27878C55F37F}.wem"
+      "CachePath": "52/{5295C35F-A17B-727A-8572-88A34A01387F}.wem"
      }
     ],
     "Events": [
@@ -88,11 +112,49 @@
       ]
      },
      {
+      "Id": "318919647",
+      "Name": "Play_BGM_Scene0",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_Scene0",
+      "GUID": "{42BE59B3-8FFC-4407-96BB-1A101B986F17}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "497062086"
+       }
+      ]
+     },
+     {
+      "Id": "318919646",
+      "Name": "Play_BGM_Scene1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_Scene1",
+      "GUID": "{5651F78C-6CB7-4044-A0BC-AAA65646CF17}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "468492319"
+       }
+      ]
+     },
+     {
+      "Id": "318919644",
+      "Name": "Play_BGM_Scene3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_Scene3",
+      "GUID": "{9F910B6E-D7BA-49E9-92DD-D9F139596D5A}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "579797328"
+       }
+      ]
+     },
+     {
       "Id": "1384642536",
       "Name": "Play_Dream_BGM",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Dream_BGM",
       "GUID": "{51DCD5F4-E813-445F-9C2B-2DDAB00D2142}",
-      "DurationType": "Infinite",
+      "DurationType": "OneShot",
+      "DurationMin": "79.96828",
+      "DurationMax": "79.96828",
       "MediaRefs": [
        {
         "Id": "1021866025"
@@ -179,9 +241,17 @@
       "DurationMin": "0",
       "DurationMax": "0"
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3087519344",
+      "Name": "Player_Hand_Height",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Hand_Height",
+      "GUID": "{0FFA4A01-D4E9-45C9-BE6F-4771576AB58C}"
+     }
     ]
    }
   ],
-  "FileHash": "{8AA36A33-DF07-46DA-D027-507803758FD1}"
+  "FileHash": "{A729CEC2-A937-253B-D370-4FA733E8A4CB}"
  }
 }

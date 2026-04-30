@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F9922AB8-2F3D-9D6C-6E02-84E5676860B2}",
+    "Hash": "{483621E0-3848-52B5-DC55-2CD24EA50DC2}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -42,36 +42,16 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
     ],
-    "StateGroups": [
+    "GameParameters": [
      {
-      "Id": "3413469912",
-      "Name": "Env_State",
-      "ObjectPath": "\\States\\Default Work Unit\\Env_State",
-      "GUID": "{34BD916B-4D23-4DCA-8754-7BE4AAC7B7EC}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\Env_State\\None",
-        "GUID": "{774E5281-DBC9-4853-808C-143E89375A22}"
-       },
-       {
-        "Id": "984691642",
-        "Name": "InGame",
-        "ObjectPath": "\\States\\Default Work Unit\\Env_State\\InGame",
-        "GUID": "{DC70F7B0-D291-422B-9931-C848B0D6F870}"
-       },
-       {
-        "Id": "1160234136",
-        "Name": "Normal",
-        "ObjectPath": "\\States\\Default Work Unit\\Env_State\\Normal",
-        "GUID": "{9AD7B17C-724D-4293-9014-4FF59C0FE439}"
-       }
-      ]
+      "Id": "3087519344",
+      "Name": "Player_Hand_Height",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Hand_Height",
+      "GUID": "{0FFA4A01-D4E9-45C9-BE6F-4771576AB58C}"
      }
     ]
    }
   ],
-  "FileHash": "{169EA564-514F-8B56-4376-CFD28A17FE49}"
+  "FileHash": "{BCE74431-8E6C-DC34-687A-A336DA90BF71}"
  }
 }
