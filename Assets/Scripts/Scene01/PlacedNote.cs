@@ -11,7 +11,7 @@ public class PlacedNote : MonoBehaviour
         if (counted) return;
 
         counted = true;
-        Debug.Log(gameObject.name + " ©ñ¸m¦¨¥\");
+        Debug.Log(gameObject.name + " ï¿½ï¿½mï¿½ï¿½ï¿½");
 
         if (manager != null)
         {
@@ -19,7 +19,7 @@ public class PlacedNote : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("PlacedNote ªº manager ¨S¦³«ü©w");
+            Debug.LogWarning("PlacedNote ï¿½ï¿½ manager ï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½w");
         }
     }
 
