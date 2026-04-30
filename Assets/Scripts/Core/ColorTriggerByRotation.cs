@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ColorTriggerByRotation : MonoBehaviour
 {
@@ -116,8 +117,25 @@ public class ColorTriggerByRotation : MonoBehaviour
     {
         obj.SetActive(true);
 
-        Renderer[] renderers = obj.GetComponentsInChildren<Renderer>();
-        MaterialPropertyBlock block = new MaterialPropertyBlock();
+        Renderer[] renderers = obj.GetComponentsInChildren<Renderer>(true);
+
+        List<Material> mats = new List<Material>();
+
+        foreach (Renderer r in renderers)
+        {
+            foreach (Material mat in r.materials)
+            {
+                if (mat.HasProperty("_BaseColor"))
+                {
+                    mats.Add(mat);
+
+                    // 👉 先設透明（避免閃現）
+                    Color c = mat.color;
+                    c.a = 0f;
+                    mat.color = c;
+                }
+            }
+        }
 
         float timer = 0f;
 
@@ -125,18 +143,11 @@ public class ColorTriggerByRotation : MonoBehaviour
         {
             float alpha = Mathf.SmoothStep(0f, 1f, timer / revealDuration);
 
-            foreach (Renderer r in renderers)
+            foreach (Material mat in mats)
             {
-                r.GetPropertyBlock(block);
-
-                if (r.sharedMaterial.HasProperty("_Color"))
-                {
-                    Color c = r.sharedMaterial.color;
-                    c.a = alpha;
-                    block.SetColor("_Color", c);
-                }
-
-                r.SetPropertyBlock(block);
+                Color c = mat.color;
+                c.a = alpha;
+                mat.color = c;
             }
 
             timer += Time.deltaTime;
@@ -156,7 +167,7 @@ public class ColorTriggerByRotation : MonoBehaviour
             {
                 if (obj != null)
                 {
-                   obj.SetActive(true);
+                    StartCoroutine(FadeInObject(obj));
                 }
             }
         }
