@@ -90,3 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holeKey: 0
   isJudged: 0
+  noteSize: {x: 80, y: 80}
