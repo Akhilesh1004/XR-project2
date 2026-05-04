@@ -3,6 +3,7 @@ using UnityEngine;
 public class MiniGameUIManager : MonoBehaviour
 {
     public GameObject miniGamePanel;
+    public GameObject recorder;
     public RecorderRhythmGameManager miniGame;
     public GameFlow gameFlow;
 
@@ -15,6 +16,7 @@ public class MiniGameUIManager : MonoBehaviour
     }
     public void OpenMiniGame()
     {
+        recorder.GetComponent<Renderer>().enabled = false;
         Debug.Log("Open");
         if (miniGamePanel != null)
         {
@@ -31,6 +33,7 @@ public class MiniGameUIManager : MonoBehaviour
 
     public void CloseMiniGame()
     {
+        recorder.GetComponent<Renderer>().enabled = true;
         if (miniGamePanel != null)
             miniGamePanel.SetActive(false);
         if (miniGame != null)
