@@ -30,9 +30,14 @@ public class DropAndEnableGrabbable : MonoBehaviour
     [Tooltip("到達判定誤差")]
     public float arriveThreshold = 0.01f;
 
+    [Header("Start Control")]
+    [Tooltip("勾選的話，遊戲一開始就自動開始下降；不勾則需手動呼叫 StartDrop()")]
+    public bool startOnAwake = false;
+
+    private bool hasStartedDrop = false;
     private bool hasArrived = false;
 
-    private void Start()
+    private void Awake()
     {
         if (grabbable == null)
         {
@@ -51,10 +56,17 @@ public class DropAndEnableGrabbable : MonoBehaviour
         }
 
         DisableGrabComponentsAtStart();
+
+        if (startOnAwake)
+        {
+            hasStartedDrop = true;
+        }
     }
 
     private void Update()
     {
+        if (!hasStartedDrop) return;
+
         if (!hasArrived)
         {
             RotateObject();
@@ -72,6 +84,23 @@ public class DropAndEnableGrabbable : MonoBehaviour
                 RotateObject();
             }
         }
+    }
+
+    public void StartDrop()
+    {
+        if (hasStartedDrop) return;
+
+        hasStartedDrop = true;
+        Debug.Log($"{gameObject.name} 開始下降");
+    }
+
+    public void ResetDropState()
+    {
+        hasStartedDrop = false;
+        hasArrived = false;
+
+        DisableGrabComponentsAtStart();
+        Debug.Log($"{gameObject.name} 已重置下降狀態");
     }
 
     private void RotateObject()
@@ -132,7 +161,7 @@ public class DropAndEnableGrabbable : MonoBehaviour
         }
 
         EnableGrabComponents();
-        Debug.Log($"{gameObject.name} arrived at target and enabled grabbable.");
+        Debug.Log($"{gameObject.name} 已到達目標位置並開啟抓取元件");
     }
 
     private void DisableGrabComponentsAtStart()

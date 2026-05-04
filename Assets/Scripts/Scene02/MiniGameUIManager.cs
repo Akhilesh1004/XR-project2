@@ -1,3 +1,4 @@
+using JetBrains.Rider.Unity.Editor;
 using UnityEngine;
 
 public class MiniGameUIManager : MonoBehaviour
@@ -6,7 +7,7 @@ public class MiniGameUIManager : MonoBehaviour
     public GameObject recorder;
     public RecorderRhythmGameManager miniGame;
     public GameFlow gameFlow;
-
+    public DropAndEnableGrabbable gameDrop;
     void Start()
     {
         if(miniGamePanel != null)
@@ -18,11 +19,17 @@ public class MiniGameUIManager : MonoBehaviour
     {
         recorder.GetComponent<Renderer>().enabled = false;
         Debug.Log("Open");
-        if (miniGamePanel != null)
+        Transform[] children = gameFlow.locomotor.gameObject.GetComponentsInChildren<Transform>(true);
+        foreach (Transform t in children)
         {
-            miniGamePanel.SetActive(true);
-            Debug.Log("SetActive");
+            if (t.name == "CenterEyeAnchor")
+            {
+                miniGamePanel.GetComponent<Canvas>().worldCamera = t.GetComponent<Camera>();
+                break;
+            }
         }
+        miniGamePanel.SetActive(true);
+        Debug.Log("SetActive");
         if (miniGame != null)
         {
             miniGame.StartMiniGame();
@@ -38,7 +45,8 @@ public class MiniGameUIManager : MonoBehaviour
             miniGamePanel.SetActive(false);
         if (miniGame != null)
             miniGame.StopMiniGame();
-        gameFlow.locomotor.Velocity = Vector3.zero;
-        gameFlow.locomotor.enabled = true;
+        gameFlow.locomotor.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        gameFlow.locomotor.SetHaltUpdateMovement(false); ;
+        gameDrop.StartDrop();
     }
 }
