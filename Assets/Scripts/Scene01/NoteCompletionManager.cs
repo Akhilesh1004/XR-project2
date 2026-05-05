@@ -35,7 +35,7 @@ public class NoteCompletionManager : MonoBehaviour
     {
         if (gameFinished) return;
 
-        completedCount++;
+        completedCount--;
         Debug.Log("Complete: " + completedCount + " / " + totalNoteCount);
 
         UpdateUI();
