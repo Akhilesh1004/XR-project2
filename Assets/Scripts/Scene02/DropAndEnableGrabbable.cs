@@ -5,17 +5,17 @@ using UnityEngine;
 public class DropAndEnableGrabbable : MonoBehaviour
 {
     [Header("Movement")]
-    [Tooltip("©¹¤U²¾°Êªº¥Ø¼Ð¦ì¸m")]
+    [Tooltip("ï¿½ï¿½ï¿½Uï¿½ï¿½ï¿½Êªï¿½ï¿½Ø¼Ð¦ï¿½m")]
     public Transform targetPoint;
 
-    [Tooltip("¤U­°³t«×¡A³æ¦ì: units/second")]
+    [Tooltip("ï¿½Uï¿½ï¿½ï¿½tï¿½×¡Aï¿½ï¿½ï¿½: units/second")]
     public float moveSpeed = 0.5f;
 
-    [Tooltip("¬O§_¨Ï¥Î¥@¬É®y¼Ð²¾°Ê¨ì targetPoint")]
+    [Tooltip("ï¿½Oï¿½_ï¿½Ï¥Î¥@ï¿½É®yï¿½Ð²ï¿½ï¿½Ê¨ï¿½ targetPoint")]
     public bool useWorldPosition = true;
 
     [Header("Rotation")]
-    [Tooltip("¨C¬íÂ¶ Y ¶b±ÛÂà´X«×")]
+    [Tooltip("ï¿½Cï¿½ï¿½Â¶ Y ï¿½bï¿½ï¿½ï¿½ï¿½Xï¿½ï¿½")]
     public float rotateSpeed = 90f;
 
     [Header("Enable On Arrive")]
@@ -24,14 +24,14 @@ public class DropAndEnableGrabbable : MonoBehaviour
     public List<Collider> targetColliders = new List<Collider>();
 
     [Header("Optional")]
-    [Tooltip("¨ì¹F¥Ø¼Ð«á¡A¬O§_°±¤î±ÛÂà")]
+    [Tooltip("ï¿½ï¿½Fï¿½Ø¼Ð«ï¿½Aï¿½Oï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public bool stopRotateWhenArrived = false;
 
-    [Tooltip("¨ì¹F§P©w»~®t")]
+    [Tooltip("ï¿½ï¿½Fï¿½Pï¿½wï¿½~ï¿½t")]
     public float arriveThreshold = 0.01f;
 
     [Header("Start Control")]
-    [Tooltip("¤Ä¿ïªº¸Ü¡A¹CÀ¸¤@¶}©l´N¦Û°Ê¶}©l¤U­°¡F¤£¤Ä«h»Ý¤â°Ê©I¥s StartDrop()")]
+    [Tooltip("ï¿½Ä¿ïªºï¿½Ü¡Aï¿½Cï¿½ï¿½ï¿½@ï¿½}ï¿½lï¿½Nï¿½Û°Ê¶}ï¿½lï¿½Uï¿½ï¿½ï¿½Fï¿½ï¿½ï¿½Ä«hï¿½Ý¤ï¿½Ê©Iï¿½s StartDrop()")]
     public bool startOnAwake = false;
 
     private bool hasStartedDrop = false;
@@ -91,7 +91,7 @@ public class DropAndEnableGrabbable : MonoBehaviour
         if (hasStartedDrop) return;
 
         hasStartedDrop = true;
-        Debug.Log($"{gameObject.name} ¶}©l¤U­°");
+        Debug.Log($"{gameObject.name} start drop");
     }
 
     public void ResetDropState()
@@ -100,7 +100,7 @@ public class DropAndEnableGrabbable : MonoBehaviour
         hasArrived = false;
 
         DisableGrabComponentsAtStart();
-        Debug.Log($"{gameObject.name} ¤w­«¸m¤U­°ª¬ºA");
+        Debug.Log($"{gameObject.name} reset drop state");
     }
 
     private void RotateObject()
@@ -161,7 +161,7 @@ public class DropAndEnableGrabbable : MonoBehaviour
         }
 
         EnableGrabComponents();
-        Debug.Log($"{gameObject.name} ¤w¨ì¹F¥Ø¼Ð¦ì¸m¨Ã¶}±Ò§ì¨ú¤¸¥ó");
+        Debug.Log($"{gameObject.name} arrived at target");
     }
 
     private void DisableGrabComponentsAtStart()

@@ -167,7 +167,7 @@ public class ColorTriggerByRotation : MonoBehaviour
             {
                 if (obj != null)
                 {
-                    StartCoroutine(FadeInObject(obj));
+                    obj.SetActive(true);
                 }
             }
         }
