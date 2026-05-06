@@ -21,26 +21,12 @@ public class PortalTeleporter : MonoBehaviour
     public Camera playerCamera;
     public string targetSceneLayerName = "Sub1Scene";
 
-    [Header("Object Control")]
-    public GameObject objectToHide;
-
     [Header("Fail-Safe Settings")]
     public string triggerTag = "Player";
 
     public GameObject final_object;
 
     private bool localTriggered = false;
-
-    private void Start()
-    {
-        if (PlayerPrefs.GetInt(portalID, 0) == 1)
-        {
-            if (objectToHide != null)
-            {
-                objectToHide.SetActive(false);
-            }
-        }
-    }
 
     private void OnTriggerEnter(Collider other)
     {

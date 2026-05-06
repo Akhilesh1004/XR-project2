@@ -9,10 +9,10 @@ public class finish : MonoBehaviour
     public DistanceMoveAndSwap a;
     public DistanceMoveAndSwap b;
     public DistanceMoveAndSwap c;
-    public string sceneName;
+    public GameObject final_door;
     void Start()
     {
-        
+        final_door.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,11 +20,7 @@ public class finish : MonoBehaviour
     {
         if(a.hasTriggered && b.hasTriggered && c.hasTriggered)
         {
-            if (!string.IsNullOrEmpty(sceneName))
-            {
-                SceneManager.LoadScene(sceneName);
-                a.hasTriggered = false;
-            }
+            final_door.SetActive(true);
         }
     }
 }
