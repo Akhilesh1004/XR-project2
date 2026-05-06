@@ -132954,7 +132954,6 @@ GameObject:
   m_Component:
   - component: {fileID: 702739851}
   - component: {fileID: 702739854}
-  - component: {fileID: 702739855}
   - component: {fileID: 702739856}
   m_Layer: 0
   m_Name: Audio_Dreamcore_BGM
@@ -133002,32 +133001,6 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &702739855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702739850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60a063e081432543abed63642cc19e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: ae8d9d44
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5c22246a77346a04b9c9b7fb48a5f12f,
-      type: 2}
-  decodeBank: 0
-  overrideLoadSetting: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!114 &702739856
 MonoBehaviour:
   m_ObjectHideFlags: 0

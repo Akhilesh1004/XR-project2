@@ -212,10 +212,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="BGM_Scene1" ID="{64945382-6F9A-4E8D-8649-21A01195188A}" ShortID="469408588">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="59999.6145124716"/>
-									</PropertyList>
+								<MusicPlaylistContainer Name="New Music Playlist Container" ID="{04193226-9F85-4A31-958E-627E05E8FDB2}" ShortID="736563472">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
@@ -223,69 +220,105 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
 										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{495160DC-5863-4AC6-A775-F79ACF2073AE}" ShortID="215055142">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{19CB879B-9973-4F84-AFE2-C08621CC2DDF}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{5F506E2A-6C19-4BD8-943A-06DDD85B857B}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{A125C172-5310-44F2-9321-D559F791FBDA}" ShortID="514630860">
+										<MusicSegment Name="BGM_Scene0" ID="{D10BAAAE-D403-4F5E-9505-3E0922C68D4A}" ShortID="706559453">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="59999.6145124716"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
 												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{B7D455FA-FBE3-4785-BBE0-A46C5B8F8378}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{1D3AEDBB-1652-4D70-AB10-0F279F3A715D}">
-													<Language>SFX</Language>
-													<AudioFile>Indoor_Playground_Memory_2026-04-30T052843.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="468492319"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Collective_Unconscious_2026-04-30T052432" ID="{70D883FB-2351-4FE3-B678-BF36EF8DE523}" ShortID="323999489">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{FC811AE1-4BC0-4C1C-A6E7-1EB3A5B7BF3B}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Collective_Unconscious_2026-04-30T052432" ID="{0D44FF31-4957-4215-AE99-0223A3B707BF}">
+															<Language>SFX</Language>
+															<AudioFile>Collective_Unconscious_2026-04-30T052432.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="497062086"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{33FC7AF7-02C8-4E9E-AB0D-01D0523EB278}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="Collective_Unconscious_2026-04-30T052432" ID="{5C09F673-E0AF-4888-A848-2A93FE6969B6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="59999.6145124716"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Collective_Unconscious_2026-04-30T052432" ID="{0D44FF31-4957-4215-AE99-0223A3B707BF}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<MusicTrackSequence Name="" ID="{2631FDEC-6A64-44B6-A1FC-F2BD0789D675}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{0A1876BB-F529-4BA6-B5A4-A3AAD6A481CE}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="59999.6145124716"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{1D3AEDBB-1652-4D70-AB10-0F279F3A715D}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{7CD27A02-C042-4286-B8E3-8E5DFB57D61B}"/>
+													<MusicCue Name="Exit Cue" ID="{4258D85F-6548-4C7E-8B88-1AA4A469CB91}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="59999.6145124716"/>
+														</PropertyList>
+													</MusicCue>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<MusicCue Name="Entry Cue" ID="{A33E0DFF-16D4-4CBE-A5B0-3964F63BD8C5}"/>
-											<MusicCue Name="Exit Cue" ID="{94EA14A5-7072-43F7-AF35-F1D04D1A212A}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="59999.6145124716"/>
-												</PropertyList>
-											</MusicCue>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-								<MusicSegment Name="BGM_Scene3" ID="{6758EF99-203E-453A-94A8-B6BF38487BC4}" ShortID="348725884">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="59999.6145124716"/>
-									</PropertyList>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="New Music Playlist Container_01" ID="{FD336101-8EC0-4199-9E6D-846E6AED5639}" ShortID="693609134">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
@@ -293,69 +326,105 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
 										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{F0508E71-F812-4834-8076-7A73C1FA7EA2}" ShortID="46413976">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{C82D6AE6-F0EA-4631-A04D-D82828A90119}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{92F86252-892F-4582-A4FE-612773CC01B1}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Bedroom_Shadows_2026-04-30T055334" ID="{A2819706-8EEE-4E60-8EBF-BC39FB8CB3D9}" ShortID="45578243">
+										<MusicSegment Name="BGM_Scene1" ID="{64945382-6F9A-4E8D-8649-21A01195188A}" ShortID="469408588">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="59999.6145124716"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
 												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{6FF030E9-A948-4582-8725-DD7CF76334ED}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Bedroom_Shadows_2026-04-30T055334" ID="{01643643-D5FF-49EE-AA79-0895F95FACD4}">
-													<Language>SFX</Language>
-													<AudioFile>Bedroom_Shadows_2026-04-30T055334.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="579797328"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{A125C172-5310-44F2-9321-D559F791FBDA}" ShortID="514630860">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{B7D455FA-FBE3-4785-BBE0-A46C5B8F8378}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{1D3AEDBB-1652-4D70-AB10-0F279F3A715D}">
+															<Language>SFX</Language>
+															<AudioFile>Indoor_Playground_Memory_2026-04-30T052843.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="468492319"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{2631FDEC-6A64-44B6-A1FC-F2BD0789D675}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{0A1876BB-F529-4BA6-B5A4-A3AAD6A481CE}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="59999.6145124716"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Indoor_Playground_Memory_2026-04-30T052843" ID="{1D3AEDBB-1652-4D70-AB10-0F279F3A715D}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<MusicTrackSequence Name="" ID="{767FC7DB-B54A-4053-8E47-8A23F9E0A242}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="Bedroom_Shadows_2026-04-30T055334" ID="{74643C8A-56D8-42AD-897E-9C3BB7B43E42}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="59999.6145124716"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="Bedroom_Shadows_2026-04-30T055334" ID="{01643643-D5FF-49EE-AA79-0895F95FACD4}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{A33E0DFF-16D4-4CBE-A5B0-3964F63BD8C5}"/>
+													<MusicCue Name="Exit Cue" ID="{94EA14A5-7072-43F7-AF35-F1D04D1A212A}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="59999.6145124716"/>
+														</PropertyList>
+													</MusicCue>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<MusicCue Name="Entry Cue" ID="{0570FCDD-2BF1-4733-A8C1-DF818BCE804E}"/>
-											<MusicCue Name="Exit Cue" ID="{4AB886FD-D884-448D-9916-126E477C035A}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="59999.6145124716"/>
-												</PropertyList>
-											</MusicCue>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-								<MusicSegment Name="BGM_Scene0" ID="{D10BAAAE-D403-4F5E-9505-3E0922C68D4A}" ShortID="706559453">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="59999.6145124716"/>
-									</PropertyList>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="New Music Playlist Container_02" ID="{7686C4B9-E1F5-41B2-8374-CC24475A661A}" ShortID="365072537">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
@@ -363,69 +432,105 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
 										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{7A8D6041-B422-4AEC-BCA4-67437F867E8F}" ShortID="376420390">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{9CCD97EB-4316-4F0E-BC55-A756838F8D55}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{949AF2E4-940B-41A6-B1CC-3587D80A9B46}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Collective_Unconscious_2026-04-30T052432" ID="{70D883FB-2351-4FE3-B678-BF36EF8DE523}" ShortID="323999489">
+										<MusicSegment Name="BGM_Scene2" ID="{03656716-2F37-47CA-882B-597500539B74}" ShortID="663399824">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="79968.2766439909"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
 												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{FC811AE1-4BC0-4C1C-A6E7-1EB3A5B7BF3B}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Collective_Unconscious_2026-04-30T052432" ID="{0D44FF31-4957-4215-AE99-0223A3B707BF}">
-													<Language>SFX</Language>
-													<AudioFile>Collective_Unconscious_2026-04-30T052432.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="497062086"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{AE70A3FF-9380-470E-8D52-50F3F36FD220}" ShortID="435356251">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{8EEFBF4E-2930-4DDA-A7DB-39C1FE1A8D16}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{9A6C967B-E433-436E-BE77-6128E76C777E}">
+															<Language>SFX</Language>
+															<AudioFile>dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="873423020"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{C5413186-B8A0-44B9-8EA2-ABF390F38D36}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{3DB2D5E9-5B0F-45AD-AFE4-A5B26535C50D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="79968.2766439909"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{9A6C967B-E433-436E-BE77-6128E76C777E}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<MusicTrackSequence Name="" ID="{33FC7AF7-02C8-4E9E-AB0D-01D0523EB278}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="Collective_Unconscious_2026-04-30T052432" ID="{5C09F673-E0AF-4888-A848-2A93FE6969B6}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="59999.6145124716"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="Collective_Unconscious_2026-04-30T052432" ID="{0D44FF31-4957-4215-AE99-0223A3B707BF}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{E8AC7725-8CBC-47EC-AE82-DDB895B41AA9}"/>
+													<MusicCue Name="Exit Cue" ID="{8C1C1B6F-6625-42D5-9563-6DBCE853FBF2}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="59395.89569161"/>
+														</PropertyList>
+													</MusicCue>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<MusicCue Name="Entry Cue" ID="{7CD27A02-C042-4286-B8E3-8E5DFB57D61B}"/>
-											<MusicCue Name="Exit Cue" ID="{4258D85F-6548-4C7E-8B88-1AA4A469CB91}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="59999.6145124716"/>
-												</PropertyList>
-											</MusicCue>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-								<MusicSegment Name="BGM_Scene2" ID="{03656716-2F37-47CA-882B-597500539B74}" ShortID="663399824">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="79968.2766439909"/>
-									</PropertyList>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="New Music Playlist Container_03" ID="{30E03802-54DF-4883-A6E1-93337A513C8D}" ShortID="59791982">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
@@ -433,65 +538,104 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
 										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{E04CE7E5-EA04-499B-871F-1C1AD57D9537}" ShortID="38501803">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{AB9E2ED1-26CC-45CB-A2AA-B8F616281762}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{C600202B-9171-48E9-9335-84969610AB21}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{AE70A3FF-9380-470E-8D52-50F3F36FD220}" ShortID="435356251">
+										<MusicSegment Name="BGM_Scene3" ID="{6758EF99-203E-453A-94A8-B6BF38487BC4}" ShortID="348725884">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="59999.6145124716"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
 												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{8EEFBF4E-2930-4DDA-A7DB-39C1FE1A8D16}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{9A6C967B-E433-436E-BE77-6128E76C777E}">
-													<Language>SFX</Language>
-													<AudioFile>dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="873423020"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Bedroom_Shadows_2026-04-30T055334" ID="{A2819706-8EEE-4E60-8EBF-BC39FB8CB3D9}" ShortID="45578243">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{6FF030E9-A948-4582-8725-DD7CF76334ED}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Bedroom_Shadows_2026-04-30T055334" ID="{01643643-D5FF-49EE-AA79-0895F95FACD4}">
+															<Language>SFX</Language>
+															<AudioFile>Bedroom_Shadows_2026-04-30T055334.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="579797328"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{767FC7DB-B54A-4053-8E47-8A23F9E0A242}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="Bedroom_Shadows_2026-04-30T055334" ID="{74643C8A-56D8-42AD-897E-9C3BB7B43E42}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="59999.6145124716"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Bedroom_Shadows_2026-04-30T055334" ID="{01643643-D5FF-49EE-AA79-0895F95FACD4}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<MusicTrackSequence Name="" ID="{C5413186-B8A0-44B9-8EA2-ABF390F38D36}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{3DB2D5E9-5B0F-45AD-AFE4-A5B26535C50D}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="79968.2766439909"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248" ID="{9A6C967B-E433-436E-BE77-6128E76C777E}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{0570FCDD-2BF1-4733-A8C1-DF818BCE804E}"/>
+													<MusicCue Name="Exit Cue" ID="{4AB886FD-D884-448D-9916-126E477C035A}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="59999.6145124716"/>
+														</PropertyList>
+													</MusicCue>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<MusicCue Name="Entry Cue" ID="{E8AC7725-8CBC-47EC-AE82-DDB895B41AA9}"/>
-											<MusicCue Name="Exit Cue" ID="{8C1C1B6F-6625-42D5-9563-6DBCE853FBF2}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="59395.89569161"/>
-												</PropertyList>
-											</MusicCue>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
+								</MusicPlaylistContainer>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Arguments">

@@ -33,7 +33,8 @@ public class PortalTeleporter : MonoBehaviour
         if (localTriggered) return;
         if (globalTeleporting) return;
         if (!other.CompareTag(triggerTag)) return;
-        final_object.SetActive(true);
+
+        if (final_object != null) final_object.SetActive(true);
         localTriggered = true;
         StartCoroutine(TeleportRoutine());
     }
@@ -58,6 +59,7 @@ public class PortalTeleporter : MonoBehaviour
 
         Scene targetScene = SceneManager.GetSceneByName(targetSceneName);
 
+        // 如果場景還沒載入，則進行疊加載入
         if (!targetScene.IsValid() || !targetScene.isLoaded)
         {
             Debug.LogWarning($"[PortalTeleporter] {targetSceneName} not loaded. Loading additively.");
@@ -73,7 +75,6 @@ public class PortalTeleporter : MonoBehaviour
             }
 
             yield return null;
-
             targetScene = SceneManager.GetSceneByName(targetSceneName);
         }
 
@@ -93,30 +94,23 @@ public class PortalTeleporter : MonoBehaviour
             yield break;
         }
 
-        Debug.Log($"[PortalTeleporter] Teleporting to scene = {targetScene.name}, spawn = {spawnPoint.name}, pos = {spawnPoint.position}");
+        // --- 傳送邏輯開始 ---
 
-        // 讓玩家主相機看得到目標 sub scene layer
+        // 1. 調整相機 Culling Mask
         if (playerCamera != null && !string.IsNullOrEmpty(targetSceneLayerName))
         {
             int mask = LayerMask.GetMask(targetSceneLayerName);
-            UniversalAdditionalCameraData cameraData =
-                playerCamera.GetComponent<UniversalAdditionalCameraData>();
+            UniversalAdditionalCameraData cameraData = playerCamera.GetComponent<UniversalAdditionalCameraData>();
 
             if (mask != 0 && cameraData != null)
             {
                 playerCamera.cullingMask |= mask;
                 cameraData.volumeLayerMask |= mask;
             }
-            else
-            {
-                Debug.LogWarning($"[PortalTeleporter] Layer not found: {targetSceneLayerName}");
-            }
         }
 
-        // 關掉 CharacterController，避免 SetPosition 後又被 controller 推回去
-        CharacterController[] controllers =
-            cameraRigRoot.GetComponentsInChildren<CharacterController>(true);
-
+        // 2. 暫時關閉 CharacterController 以進行位移
+        CharacterController[] controllers = cameraRigRoot.GetComponentsInChildren<CharacterController>(true);
         bool[] controllerStates = new bool[controllers.Length];
 
         for (int i = 0; i < controllers.Length; i++)
@@ -125,33 +119,29 @@ public class PortalTeleporter : MonoBehaviour
             controllers[i].enabled = false;
         }
 
-        // 清掉 Rigidbody 速度，避免傳送後繼續掉落/彈飛
-        Rigidbody[] rigidbodies =
-            cameraRigRoot.GetComponentsInChildren<Rigidbody>(true);
-
+        // 3. 清除物理速度
+        Rigidbody[] rigidbodies = cameraRigRoot.GetComponentsInChildren<Rigidbody>(true);
         foreach (Rigidbody rb in rigidbodies)
         {
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
         }
 
-        // 直接移整個 Camera Rig Root 到指定 SpawnPoint
+        // 4. 執行位移與旋轉
         cameraRigRoot.transform.SetParent(null, true);
-
-        cameraRigRoot.transform.SetPositionAndRotation(
-            spawnPoint.position,
-            spawnPoint.rotation
-        );
-
+        cameraRigRoot.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
         Physics.SyncTransforms();
 
-        // 把 Rig 所屬 Scene 移到 target scene
+        // 5. 轉移物件所屬場景並設為作用中
         SceneManager.MoveGameObjectToScene(cameraRigRoot, targetScene);
         SceneManager.SetActiveScene(targetScene);
 
+        // --- 新增：Wwise BGM 狀態切換邏輯 ---
+        SwitchWwiseBGMState(targetSceneName);
+
         yield return null;
 
-        // 恢復 CharacterController
+        // 6. 恢復 CharacterController 狀態
         for (int i = 0; i < controllers.Length; i++)
         {
             if (controllers[i] != null)
@@ -160,12 +150,26 @@ public class PortalTeleporter : MonoBehaviour
             }
         }
 
-        Debug.Log($"[PortalTeleporter] Final Rig Position = {cameraRigRoot.transform.position}");
-        Debug.Log($"[PortalTeleporter] Active Scene = {SceneManager.GetActiveScene().name}");
-
         ResetTeleportLock();
         PlayerPrefs.SetInt(portalID, 1);
         PlayerPrefs.Save();
+    }
+
+    /// <summary>
+    /// 根據目標場景名稱切換 Wwise 的 BGM 狀態
+    /// </summary>
+    private void SwitchWwiseBGMState(string sceneName)
+    {
+        string stateName = "Scene0"; // 預設
+
+        if (sceneName == "main") stateName = "Scene0";
+        else if (sceneName == "SubScene_01") stateName = "Scene1";
+        else if (sceneName == "SubScene_02") stateName = "Scene2";
+        else if (sceneName == "SubScene_03") stateName = "Scene3";
+
+        // 執行 Wwise 狀態切換指令
+        AkSoundEngine.SetState("BGM_State", stateName);
+        Debug.Log($"[Wwise] BGM State switched to: {stateName} (from Scene: {sceneName})");
     }
 
     private void ResetTeleportLock()
@@ -176,37 +180,22 @@ public class PortalTeleporter : MonoBehaviour
     private Transform FindObjectInScene(Scene scene, string objectName)
     {
         GameObject[] roots = scene.GetRootGameObjects();
-
         foreach (GameObject root in roots)
         {
             Transform result = FindChildRecursive(root.transform, objectName);
-
-            if (result != null)
-            {
-                return result;
-            }
+            if (result != null) return result;
         }
-
         return null;
     }
 
     private Transform FindChildRecursive(Transform parent, string objectName)
     {
-        if (parent.name == objectName)
-        {
-            return parent;
-        }
-
+        if (parent.name == objectName) return parent;
         foreach (Transform child in parent)
         {
             Transform result = FindChildRecursive(child, objectName);
-
-            if (result != null)
-            {
-                return result;
-            }
+            if (result != null) return result;
         }
-
         return null;
     }
 }
