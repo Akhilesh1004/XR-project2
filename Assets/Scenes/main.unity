@@ -14564,7 +14564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673701301}
   - component: {fileID: 1673701303}
-  - component: {fileID: 1673701302}
+  - component: {fileID: 1673701304}
   m_Layer: 0
   m_Name: collider
   m_TagString: Untagged
@@ -14587,26 +14587,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1760074268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1673701302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673701300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d594efad8b8904edf9f400401d1a0841, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSceneName: FinalScene
-  portalID: FinalScene
-  spawnPointName: PortalBAnchor
-  cameraRigRoot: {fileID: 733692584}
-  playerCamera: {fileID: 1859123043}
-  targetSceneLayerName: FinalScene
-  triggerTag: Player
-  final_object: {fileID: 2107924140}
 --- !u!65 &1673701303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14628,6 +14608,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7, y: 1, z: 18}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1673701304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673701300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ee43806806804c6eb8584f38cca444a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: FinalScene
+  playerTag: Player
 --- !u!1 &1680155155
 GameObject:
   m_ObjectHideFlags: 0
