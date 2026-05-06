@@ -10,20 +10,11 @@
     "Type": "Event",
     "GUID": "{35945703-B9E8-44FB-9FAB-D69B6193616C}",
     "Language": "SFX",
-    "Hash": "{DED4DCBA-B2AC-CFA5-346C-AA87D22DA7E9}",
+    "Hash": "{37901BA2-5EC7-8601-C843-60F556775DE6}",
     "ObjectPath": "Play_Master_BGM",
     "ShortName": "Play_Master_BGM",
     "Path": "Event/Play_Master_BGM.bnk",
     "Media": [
-     {
-      "Id": "307237448",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940.wav",
-      "Path": "Media/307237448.wem",
-      "CachePath": "C2/{C22534BD-E5AE-A554-7863-7F1E4A7DB0A1}.wem"
-     },
      {
       "Id": "468492319",
       "Language": "SFX",
@@ -50,6 +41,15 @@
       "ShortName": "Bedroom_Shadows_2026-04-30T055334.wav",
       "Path": "Media/579797328.wem",
       "CachePath": "7F/{7FB74330-EC61-0463-71A5-ABFCC5C07543}.wem"
+     },
+     {
+      "Id": "873423020",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248.wav",
+      "Path": "Media/873423020.wem",
+      "CachePath": "86/{868E010D-5B5D-996C-4B7B-27878C55F37F}.wem"
      }
     ],
     "Events": [
@@ -95,7 +95,7 @@
         },
         "MediaRefs": [
          {
-          "Id": "307237448"
+          "Id": "873423020"
          }
         ]
        },
@@ -157,6 +157,6 @@
     ]
    }
   ],
-  "FileHash": "{E30390EA-1A9F-E527-53AE-8EA942BABB82}"
+  "FileHash": "{DB76E882-1953-9424-10BE-A9443F642689}"
  }
 }
