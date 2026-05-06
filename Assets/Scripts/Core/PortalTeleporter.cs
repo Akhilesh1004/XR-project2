@@ -27,6 +27,8 @@ public class PortalTeleporter : MonoBehaviour
     [Header("Fail-Safe Settings")]
     public string triggerTag = "Player";
 
+    public GameObject final_object;
+
     private bool localTriggered = false;
 
     private void Start()
@@ -45,7 +47,7 @@ public class PortalTeleporter : MonoBehaviour
         if (localTriggered) return;
         if (globalTeleporting) return;
         if (!other.CompareTag(triggerTag)) return;
-
+        final_object.SetActive(true);
         localTriggered = true;
         StartCoroutine(TeleportRoutine());
     }
