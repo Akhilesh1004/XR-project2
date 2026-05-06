@@ -24,7 +24,7 @@ public class DistanceMoveAndSwap : MonoBehaviour
     [Tooltip("如果為 true，一開始會先把 B 關掉")]
     public bool hideBOnStart = true;
 
-    private bool hasTriggered = false;
+    public bool hasTriggered = false;
     private bool isMoving = false;
 
     private Vector3 moveStartPos;
