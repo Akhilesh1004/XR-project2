@@ -1833,7 +1833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locomotor: {fileID: 0}
-  startPosition: {x: 6130.255, y: 2785.594, z: 6318.074}
+  startPosition: {x: 6137.95, y: 2784.781, z: 6322.95}
   startRotationEuler: {x: 0, y: 0, z: 0}
 --- !u!4 &18205480
 Transform:
@@ -22170,13 +22170,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288478608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6130.255, y: 2785.594, z: 6318.074}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 6137.95, y: 2784.781, z: 6322.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!64 &289160213
 MeshCollider:
   m_ObjectHideFlags: 0
