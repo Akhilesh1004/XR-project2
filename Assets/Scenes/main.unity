@@ -409,7 +409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &29969180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -464,7 +464,6 @@ MonoBehaviour:
   cameraRigRoot: {fileID: 733692584}
   playerCamera: {fileID: 1859123043}
   targetSceneLayerName: Sub1Scene
-  objectToHide: {fileID: 1247872564}
   triggerTag: Player
   final_object: {fileID: 57882045}
 --- !u!1 &47888786
@@ -2672,7 +2671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &301974218
 Transform:
   m_ObjectHideFlags: 0
@@ -2727,7 +2726,6 @@ MonoBehaviour:
   cameraRigRoot: {fileID: 733692584}
   playerCamera: {fileID: 1859123043}
   targetSceneLayerName: Sub2Scene
-  objectToHide: {fileID: 1837147058}
   triggerTag: Player
   final_object: {fileID: 1461923991}
 --- !u!1 &311190797
@@ -3635,7 +3633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &411307611
 Transform:
   m_ObjectHideFlags: 0
@@ -5796,6 +5794,7 @@ GameObject:
   - component: {fileID: 694549372}
   - component: {fileID: 694549375}
   - component: {fileID: 694549374}
+  - component: {fileID: 694549376}
   m_Layer: 0
   m_Name: Wooden Doorframe_005.001
   m_TagString: Untagged
@@ -5911,6 +5910,20 @@ MonoBehaviour:
   rotationInfluence: 0
   maxLocalOffset: 1
   use180Flip: 0
+--- !u!114 &694549376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694549370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalID: SubScene03
+  objectToHide: {fileID: 694549370}
 --- !u!1 &694645849
 GameObject:
   m_ObjectHideFlags: 0
@@ -11168,6 +11181,7 @@ GameObject:
   - component: {fileID: 1247872566}
   - component: {fileID: 1247872569}
   - component: {fileID: 1247872568}
+  - component: {fileID: 1247872570}
   m_Layer: 0
   m_Name: Wooden Doorframe_009
   m_TagString: Untagged
@@ -11283,6 +11297,20 @@ MonoBehaviour:
   rotationInfluence: 0
   maxLocalOffset: 1
   use180Flip: 0
+--- !u!114 &1247872570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247872564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalID: SubScene01
+  objectToHide: {fileID: 1247872564}
 --- !u!1 &1259271970
 GameObject:
   m_ObjectHideFlags: 0
@@ -11418,7 +11446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1287808846
 Transform:
   m_ObjectHideFlags: 0
@@ -11473,7 +11501,6 @@ MonoBehaviour:
   cameraRigRoot: {fileID: 733692584}
   playerCamera: {fileID: 1859123043}
   targetSceneLayerName: Sub3Scene
-  objectToHide: {fileID: 694549370}
   triggerTag: Player
   final_object: {fileID: 1006600546}
 --- !u!1 &1292907776
@@ -12724,7 +12751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1439596944
 Transform:
   m_ObjectHideFlags: 0
@@ -14503,7 +14530,6 @@ MonoBehaviour:
   cameraRigRoot: {fileID: 733692584}
   playerCamera: {fileID: 1859123043}
   targetSceneLayerName: FinalScene
-  objectToHide: {fileID: 1760074267}
   triggerTag: Player
   final_object: {fileID: 2107924140}
 --- !u!65 &1673701303
@@ -15223,6 +15249,7 @@ GameObject:
   - component: {fileID: 1760074271}
   - component: {fileID: 1760074270}
   - component: {fileID: 1760074269}
+  - component: {fileID: 1760074273}
   m_Layer: 0
   m_Name: Wooden Doorframe_final
   m_TagString: Untagged
@@ -15338,6 +15365,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760074267}
   m_Mesh: {fileID: -3192305872078966601, guid: cd408a0ea9217f14ca1fec65ecc8cf52, type: 3}
+--- !u!114 &1760074273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760074267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalID: FinalScene
+  objectToHide: {fileID: 1760074267}
 --- !u!1 &1766794108
 GameObject:
   m_ObjectHideFlags: 0
@@ -15769,7 +15810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1803694131
 Transform:
   m_ObjectHideFlags: 0
@@ -16066,6 +16107,7 @@ GameObject:
   - component: {fileID: 1837147060}
   - component: {fileID: 1837147063}
   - component: {fileID: 1837147062}
+  - component: {fileID: 1837147064}
   m_Layer: 0
   m_Name: Wooden Doorframe_005
   m_TagString: Untagged
@@ -16181,6 +16223,20 @@ MonoBehaviour:
   rotationInfluence: 0
   maxLocalOffset: 1
   use180Flip: 0
+--- !u!114 &1837147064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837147058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalID: SubScene02
+  objectToHide: {fileID: 1837147058}
 --- !u!1 &1859123039
 GameObject:
   m_ObjectHideFlags: 0
