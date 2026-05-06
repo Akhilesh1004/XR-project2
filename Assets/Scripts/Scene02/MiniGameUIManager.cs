@@ -25,6 +25,7 @@ public class MiniGameUIManager : MonoBehaviour
             if (t.name == "CenterEyeAnchor")
             {
                 miniGamePanel.GetComponent<Canvas>().worldCamera = t.GetComponent<Camera>();
+                Debug.Log("SetCamera");
                 break;
             }
         }
@@ -47,6 +48,7 @@ public class MiniGameUIManager : MonoBehaviour
             miniGame.StopMiniGame();
         gameFlow.locomotor.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
         gameFlow.locomotor.SetHaltUpdateMovement(false); ;
+        gameFlow.locomotor.gameObject.GetComponent<OVRJumpCrouchAddon>().enabled = true;
         gameDrop.StartDrop();
     }
 }

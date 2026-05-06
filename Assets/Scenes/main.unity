@@ -5834,6 +5834,7 @@ GameObject:
   - component: {fileID: 733692585}
   - component: {fileID: 733692594}
   - component: {fileID: 733692595}
+  - component: {fileID: 733692596}
   m_Layer: 0
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Player
@@ -6109,8 +6110,43 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &733692596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733692584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c279e34f2e9c14482aae8468f8ce1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  characterController: {fileID: 0}
+  enableJump: 1
+  jumpButton: 1
+  jumpController: 2
+  jumpForce: 0.5
+  gravityModifier: 0.15
+  enableCrouch: 1
+  toggleCrouch: 1
+  crouchButton: 2
+  crouchController: 2
+  standingHeight: 1.7
+  standingCenterY: 0.85
+  standingViewDrop: 0
+  crouchingHeight: 0.6
+  crouchingViewDrop: 1.15
+  crouchDownSpeed: 12
+  standUpSpeed: 4
+  checkHeadRoom: 1
+  headCheckMargin: 0.05
+  headBlockLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &741451896
 GameObject:
   m_ObjectHideFlags: 0
@@ -6564,6 +6600,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    - target: {fileID: 1576790298572649746, guid: 0a7d2469f24041c4284c66706f84c45e,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2336446269904782542, guid: 0a7d2469f24041c4284c66706f84c45e,
         type: 3}
       propertyPath: _leftEyeAnchor
@@ -6579,6 +6620,11 @@ PrefabInstance:
       propertyPath: _centerEyeCamera
       value: 
       objectReference: {fileID: 1859123043}
+    - target: {fileID: 3204864540622434174, guid: 0a7d2469f24041c4284c66706f84c45e,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3469981918431717162, guid: 0a7d2469f24041c4284c66706f84c45e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16319,8 +16365,8 @@ Transform:
   m_GameObject: {fileID: 2060475164}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.455492, y: 2.97, z: -16.90753}
-  m_LocalScale: {x: 209.59001, y: 209.59001, z: 209.59001}
+  m_LocalPosition: {x: -0, y: 2.97, z: -8.7}
+  m_LocalScale: {x: 3.9999998, y: 3.9999998, z: 3.9999998}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}

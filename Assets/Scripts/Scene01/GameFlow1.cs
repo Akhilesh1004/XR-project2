@@ -11,6 +11,20 @@ public class GameFlow1 : MonoBehaviour
 
     public Vector3 startPosition = new Vector3(-8.7f, -4f, -18.33f);
     public Vector3 startRotationEuler = new Vector3(0f, 0f, 0f);
+
+    private bool hasTriggered = false;
+
+    private void OnEnable()
+    {
+        // 註冊 Active Scene 切換事件
+        SceneManager.activeSceneChanged += OnActiveSceneChanged;
+    }
+
+    private void OnDisable()
+    {
+        // 解除註冊
+        SceneManager.activeSceneChanged -= OnActiveSceneChanged;
+    }
     private void Start()
     {
         Debug.Log("Now Scene: " + SceneManager.GetActiveScene().name);
@@ -28,8 +42,11 @@ public class GameFlow1 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void OnActiveSceneChanged(Scene oldScene, Scene newScene)
     {
-        
+        if (newScene.name == "SubScene_01")
+        {
+            Scene1Start();
+        }
     }
 }

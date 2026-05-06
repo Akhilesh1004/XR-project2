@@ -11,8 +11,8 @@ public class NoteCompletionManager : MonoBehaviour
     public TMP_Text progressText;
     public TMP_Text resultText;
 
-    [Header("Mini Game")]
-    public MiniGameUIManager uiManager;
+    [Header("Finish Item")]
+    public DropAndEnableGrabbable dg;
 
     private bool gameFinished = false;
 
@@ -78,10 +78,7 @@ public class NoteCompletionManager : MonoBehaviour
                 resultText.text = "Success";
             }
 
-            if (uiManager != null)
-            {
-                uiManager.CloseMiniGame();
-            }
+            dg.StartDrop();
         }
     }
 }

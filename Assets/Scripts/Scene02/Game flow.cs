@@ -25,6 +25,17 @@ public class GameFlow : MonoBehaviour
     private bool level2 = false;
     private float time = 0f;
 
+    private void OnEnable()
+    {
+        // 註冊 Active Scene 切換事件
+        SceneManager.activeSceneChanged += OnActiveSceneChanged;
+    }
+
+    private void OnDisable()
+    {
+        // 解除註冊
+        SceneManager.activeSceneChanged -= OnActiveSceneChanged;
+    }
     private void Start()
     {
         Debug.Log("Now Scene: " + SceneManager.GetActiveScene().name);
@@ -54,7 +65,13 @@ public class GameFlow : MonoBehaviour
 
         level2 = true;
     }
-
+    private void OnActiveSceneChanged(Scene oldScene, Scene newScene)
+    {
+        if (newScene.name == "SubScene_02")
+        {
+            Scene2Start();
+        }
+    }
     void Update()
     {
         if (!level2 || locomotor == null) return;
@@ -77,6 +94,7 @@ public class GameFlow : MonoBehaviour
                 locomotor.Stop();
                 locomotor.SetHaltUpdateMovement(true);
                 locomotor.EnableRotation = false;
+                locomotor.gameObject.GetComponent<OVRJumpCrouchAddon>().enabled = false;
 
                 Debug.Log("玩家已到達目標點附近，開始自動就位");
             }
