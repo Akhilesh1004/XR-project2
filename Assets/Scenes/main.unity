@@ -2864,7 +2864,7 @@ MonoBehaviour:
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 6144
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
@@ -2937,7 +2937,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: ff2ea031b6c9afb428b9e316653bd10a, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: d3f45a4570105294faaa0ab4e74325a2, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -11881,7 +11881,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e5710b94ffe55a34f82f6252eae4ee2c, type: 2}
+  - {fileID: 2100000, guid: 8ac3d4ff36aedcd4a9d65579a9dcf171, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
