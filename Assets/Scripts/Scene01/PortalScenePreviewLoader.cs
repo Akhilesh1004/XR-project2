@@ -54,7 +54,7 @@ public class PortalScenePreviewLoader : MonoBehaviour
 
             if (mask != 0)
             {
-                portalCamera.cullingMask = mask;
+                portalCamera.cullingMask |= mask;
             }
             else
             {

@@ -464,7 +464,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub1Scene
   objectToHide: {fileID: 1247872564}
   triggerTag: Player
-  final_object: {fileID: 57882045}
+  final_object: {fileID: 189196650}
 --- !u!1 &47888786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +1627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &189196651
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2010,7 +2010,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: c1c4f3863af64494da95ce50c4b70c3d, type: 2}
   m_TargetDisplay: 0
@@ -2651,7 +2651,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub2Scene
   objectToHide: {fileID: 1837147058}
   triggerTag: Player
-  final_object: {fileID: 0}
+  final_object: {fileID: 1371462977}
 --- !u!1 &311190797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4055,7 +4055,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: ff2ea031b6c9afb428b9e316653bd10a, type: 2}
   m_TargetDisplay: 0
@@ -6081,7 +6081,7 @@ GameObject:
   - component: {fileID: 733692594}
   - component: {fileID: 733692595}
   - component: {fileID: 733692596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -10956,7 +10956,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub3Scene
   objectToHide: {fileID: 694549370}
   triggerTag: Player
-  final_object: {fileID: 0}
+  final_object: {fileID: 2107924140}
 --- !u!1 &1292907776
 GameObject:
   m_ObjectHideFlags: 0
@@ -11551,7 +11551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1371462978
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17211,7 +17211,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 81b5118ed649a3142adb0e6bfa3633ac, type: 2}
   m_TargetDisplay: 0
@@ -17544,7 +17544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &2107924141
 MeshCollider:
   m_ObjectHideFlags: 0
