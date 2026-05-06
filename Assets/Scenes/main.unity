@@ -4659,7 +4659,7 @@ Transform:
   m_GameObject: {fileID: 518091124}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00391, y: -0.00031, z: -0.00254}
+  m_LocalPosition: {x: -0.00396, y: 0.00019, z: -0.00254}
   m_LocalScale: {x: 1.01, y: 1, z: 1.0301999}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14345,12 +14345,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d594efad8b8904edf9f400401d1a0841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: SubScene_03
-  portalID: SubScene03
+  targetSceneName: FinalScene
+  portalID: FinalScene
   spawnPointName: PortalBAnchor
   cameraRigRoot: {fileID: 733692584}
   playerCamera: {fileID: 1859123043}
-  targetSceneLayerName: Sub3Scene
+  targetSceneLayerName: FinalScene
   objectToHide: {fileID: 1760074267}
   triggerTag: Player
   final_object: {fileID: 2107924140}
@@ -15087,7 +15087,7 @@ Transform:
   m_GameObject: {fileID: 1760074267}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70622563, y: -0.03528982, z: -0.03528982, w: 0.70622563}
-  m_LocalPosition: {x: -17.577, y: 1.241, z: -1.844}
+  m_LocalPosition: {x: -17.58, y: 1.241, z: 3.808}
   m_LocalScale: {x: 99.999985, y: 99.999985, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
