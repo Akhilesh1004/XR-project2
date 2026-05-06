@@ -117473,10 +117473,10 @@ MonoBehaviour:
   rightHandTargetUI: {fileID: 16015713}
   leftHandPositionTolerance: 80
   rightHandPositionTolerance: 80
-  leftHandTargetEuler: {x: 39, y: -65, z: -53.5}
-  rightHandTargetEuler: {x: 51.4, y: 69.35, z: 64.25}
-  leftHandAngleTolerance: 30
-  rightHandAngleTolerance: 30
+  leftHandTargetEuler: {x: 39, y: -65, z: 199}
+  rightHandTargetEuler: {x: 11, y: 295, z: 177}
+  leftHandAngleTolerance: 100
+  rightHandAngleTolerance: 100
   isOverlayCanvas: 0
   debugLog: 1
   canPlay: 0
