@@ -31,7 +31,7 @@ public class GameFlowFinal : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "FinalScene")
         {
-            Scene1Start();
+            Scene4Start();
         }
     }
     void Scene4Start()
