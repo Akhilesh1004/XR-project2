@@ -16,6 +16,7 @@ public class LoadSceneOnGrab2 : MonoBehaviour
     private bool wasGrabbedLastFrame = false;
     private bool hasTriggered = false;
 
+    public LoadSceneOnGrab lsog;
     private void Awake()
     {
         if (autoFindGrabbable && grabbable == null)
@@ -40,15 +41,15 @@ public class LoadSceneOnGrab2 : MonoBehaviour
         {
             hasTriggered = true;
             Debug.Log("[LoadSceneOnGrab] 物件被抓到，準備切換場景: " + sceneName);
-
-            if (SceneTransitionManager.Instance != null)
+            lsog.OnGrab();
+            /*if (SceneTransitionManager.Instance != null)
             {
                 SceneTransitionManager.Instance.TransitionToScene(sceneName);
             }
             else
             {
                 Debug.LogError("SceneTransitionManager.Instance is null");
-            }
+            }*/
         }
 
         wasGrabbedLastFrame = isGrabbedNow;

@@ -9289,7 +9289,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134946262}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db648eb999e6a9c40b517d72911d1156, type: 3}
   m_Name: 
@@ -9299,6 +9299,7 @@ MonoBehaviour:
   sceneName: main
   loadDelay: 0
   onlyOnce: 1
+  lsog: {fileID: 134946271}
 --- !u!114 &134946271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110581,7 +110582,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 577265481}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 0.3
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -144382,13 +144383,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684387026}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.49032113, y: 0.50949574, z: -0.49034056, w: -0.50947565}
-  m_LocalPosition: {x: -9.337997, y: -0.8062463, z: 1.479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -55.93, y: -5.27, z: -23.5}
   m_LocalScale: {x: 0.53809434, y: 0.3671634, z: 0.5380945}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1829141767}
-  m_LocalEulerAnglesHint: {x: 87.805, y: 269.998, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1686907001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 406810, guid: cda5269e9a50046489d7b868e1c386e9,
