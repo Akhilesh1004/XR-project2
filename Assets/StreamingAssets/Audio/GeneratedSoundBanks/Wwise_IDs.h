@@ -13,19 +13,33 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_BGM = 3126765036U;
-        static const AkUniqueID PLAY_BGM_SCENE0 = 318919647U;
-        static const AkUniqueID PLAY_BGM_SCENE1 = 318919646U;
-        static const AkUniqueID PLAY_BGM_SCENE3 = 318919644U;
         static const AkUniqueID PLAY_DREAM_BGM = 1384642536U;
+        static const AkUniqueID PLAY_MASTER_BGM = 3563492127U;
         static const AkUniqueID PLAY_NOTE_A = 2785768342U;
         static const AkUniqueID PLAY_NOTE_B = 2785768341U;
         static const AkUniqueID PLAY_NOTE_X = 2785768335U;
         static const AkUniqueID PLAY_NOTE_Y = 2785768334U;
         static const AkUniqueID PLAY_PIANO_BGM = 4197936254U;
-        static const AkUniqueID STOP_BGM = 1073466678U;
         static const AkUniqueID STOP_PIANO_BGM = 2491771796U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace BGM_STATE
+        {
+            static const AkUniqueID GROUP = 3086301423U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID SCENE0 = 1544306477U;
+                static const AkUniqueID SCENE1 = 1544306476U;
+                static const AkUniqueID SCENE2 = 1544306479U;
+                static const AkUniqueID SCENE3 = 1544306478U;
+            } // namespace STATE
+        } // namespace BGM_STATE
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

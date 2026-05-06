@@ -15,5 +15,4 @@ MonoBehaviour:
   objectName: Stop_bgm
   id: 1073466678
   guid: F95F041E-39E6-4015-B58B-51DC4201960A
-  AutoBank: {fileID: 11400000, guid: e621cef6adef7394e91dfb39ca7092f2, type: 2}
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

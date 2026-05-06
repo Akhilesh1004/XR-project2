@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3086301423	BGM_State			\Default Work Unit\BGM_State	
+
+State	ID	Name	State Group			Notes
+	748895195	None	BGM_State			
+	1544306476	Scene1	BGM_State			
+	1544306477	Scene0	BGM_State			
+	1544306478	Scene3	BGM_State			
+	1544306479	Scene2	BGM_State			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 

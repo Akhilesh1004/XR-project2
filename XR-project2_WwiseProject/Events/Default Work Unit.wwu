@@ -3,31 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{0235EC72-414D-4871-9C80-91CB84838F0B}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_bgm" ID="{2B3C8EA1-95F4-4361-8165-013817E8402E}">
-					<ChildrenList>
-						<Action Name="" ID="{FE915C39-DBDC-426B-BF89-0BCDF3733478}" ShortID="219208984">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="bgm" ID="{AF2A99B0-8AA9-4EA9-921D-EE709F0E4B79}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_bgm" ID="{F95F041E-39E6-4015-B58B-51DC4201960A}">
-					<ChildrenList>
-						<Action Name="" ID="{6F74E27C-5A5F-4358-9E37-05234DF0F6B3}" ShortID="162934491">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="bgm" ID="{AF2A99B0-8AA9-4EA9-921D-EE709F0E4B79}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Dream_BGM" ID="{51DCD5F4-E813-445F-9C2B-2DDAB00D2142}">
 					<ChildrenList>
 						<Action Name="" ID="{4C2A23EC-5995-46B3-960C-1FDF7D6FF55B}" ShortID="540922983">
@@ -108,34 +83,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_BGM_Scene0" ID="{42BE59B3-8FFC-4407-96BB-1A101B986F17}">
+				<Event Name="Play_Master_BGM" ID="{35945703-B9E8-44FB-9FAB-D69B6193616C}">
 					<ChildrenList>
-						<Action Name="" ID="{89694B51-DA2F-4034-B64E-DFCB834B13A3}" ShortID="751517149">
+						<Action Name="" ID="{F6D42248-94A7-410E-9A96-BF5F454704E6}" ShortID="432279985">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BGM_Scene0" ID="{76DEC6D0-9496-466E-8462-573541B9A016}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BGM_Scene1" ID="{5651F78C-6CB7-4044-A0BC-AAA65646CF17}">
-					<ChildrenList>
-						<Action Name="" ID="{17C4D178-7413-454F-9371-9DF46B0E5959}" ShortID="1046656800">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BGM_Scene1" ID="{23FDE809-3ADF-40C7-944D-E2E11AE8CE1E}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BGM_Scene3" ID="{9F910B6E-D7BA-49E9-92DD-D9F139596D5A}">
-					<ChildrenList>
-						<Action Name="" ID="{EDA35780-59EF-4ED0-B3E9-7ABDDECF14F0}" ShortID="927687746">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BGM_Scene3" ID="{301E73B7-6B4C-4797-BFAB-F9C1ACA48643}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
+									<ObjectRef Name="Master_BGM_Switch" ID="{357978AA-0F6D-4C36-A528-23AB68571968}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -58391,8 +58391,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2103398142}
   - component: {fileID: 2103398145}
-  - component: {fileID: 2103398144}
   - component: {fileID: 2103398143}
+  - component: {fileID: 2103398147}
   - component: {fileID: 2103398146}
   m_Layer: 0
   m_Name: Audio_Dreamcore_BGM
@@ -58431,41 +58431,6 @@ MonoBehaviour:
   rtpcName: Player_Hand_Height
   targetController: 2
   heightOffset: 0.6
---- !u!114 &2103398144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103398141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff78cb4c00eda644b91649421d71e0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 05e2fa8e8d670124f8c35be1622090bb,
-      type: 2}
-  useCallbacks: 0
-  stopSoundOnDestroy: 1
-  Callbacks: []
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []
 --- !u!114 &2103398145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58499,7 +58464,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 2103398141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60a063e081432543abed63642cc19e1, type: 3}
+  m_Script: {fileID: 11500000, guid: bfc7cece9a59f1c40ba2c19a0ad04de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a0c1987e695d8ed44ba86a269cca278f,
+      type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &2103398147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103398141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e567259ebd9e8d47ac840ab785ac904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: ae8d9d44
@@ -58507,15 +58502,14 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5c22246a77346a04b9c9b7fb48a5f12f,
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ef5a66cddcc00804a861a716ec521660,
       type: 2}
-  decodeBank: 0
-  overrideLoadSetting: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
+  valueIdInternal: 0
+  groupIdInternal: 0
   valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &2112709916
 GameObject:
   m_ObjectHideFlags: 0
