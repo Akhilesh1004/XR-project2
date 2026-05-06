@@ -466,7 +466,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub1Scene
   objectToHide: {fileID: 1247872564}
   triggerTag: Player
-  final_object: {fileID: 189196650}
+  final_object: {fileID: 57882045}
 --- !u!1 &47888786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub2Scene
   objectToHide: {fileID: 1837147058}
   triggerTag: Player
-  final_object: {fileID: 1371462977}
+  final_object: {fileID: 1461923991}
 --- !u!1 &311190797
 GameObject:
   m_ObjectHideFlags: 0
@@ -11475,7 +11475,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub3Scene
   objectToHide: {fileID: 694549370}
   triggerTag: Player
-  final_object: {fileID: 2107924140}
+  final_object: {fileID: 1006600546}
 --- !u!1 &1292907776
 GameObject:
   m_ObjectHideFlags: 0
@@ -19061,6 +19061,7 @@ GameObject:
   - component: {fileID: 2774220343931501656}
   - component: {fileID: 2774220343931501657}
   - component: {fileID: 2774220343931501658}
+  - component: {fileID: 2774220343931501659}
   m_Layer: 0
   m_Name: music_box
   m_TagString: music_box
@@ -19164,6 +19165,22 @@ MonoBehaviour:
   rotationLerpSpeed: 6
   hideBOnStart: 1
   hasTriggered: 0
+--- !u!114 &2774220343931501659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534335995757295132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca90fe1778da0a439e5f1a9c8aefe3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: {fileID: 2774220343931501656}
+  b: {fileID: 2774220343931501657}
+  c: {fileID: 2774220343931501658}
+  final_door: {fileID: 1760074267}
 --- !u!23 &3079811545794370691
 MeshRenderer:
   m_ObjectHideFlags: 0

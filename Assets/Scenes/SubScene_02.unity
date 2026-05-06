@@ -57254,7 +57254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &660002192
 Transform:
   m_ObjectHideFlags: 0
@@ -118958,8 +118958,8 @@ MonoBehaviour:
   rightHandTargetUI: {fileID: 16015713}
   leftHandPositionTolerance: 80
   rightHandPositionTolerance: 80
-  leftHandTargetEuler: {x: 39, y: -65, z: 199}
-  rightHandTargetEuler: {x: 11, y: 295, z: 177}
+  leftHandTargetEuler: {x: 57, y: 230, z: 330}
+  rightHandTargetEuler: {x: 57, y: 130, z: 30}
   leftHandAngleTolerance: 100
   rightHandAngleTolerance: 100
   isOverlayCanvas: 0
