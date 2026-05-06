@@ -72,6 +72,10 @@ public class RecorderRhythmGameManager : MonoBehaviour
     [Header("Debug")]
     public bool useTestSong = true;
 
+    [Header("Pose Check")]
+    public RecorderPoseCheckerUI poseChecker;
+    public bool requireCorrectPose = true;
+
     private float timer = 0f;
     private int spawnIndex = 0;
     private int score = 0;
@@ -101,7 +105,13 @@ public class RecorderRhythmGameManager : MonoBehaviour
         CheckMissNotes();
         CheckGameEnd();
     }
+    bool CanPlayWithPose()
+    {
+        if (!requireCorrectPose) return true;
+        if (poseChecker == null) return true;
 
+        return poseChecker.canPlay;
+    }
     void SpawnNotesByTime()
     {
         while (spawnIndex < songNotes.Count && timer >= songNotes[spawnIndex].spawnTime)
@@ -286,16 +296,32 @@ public class RecorderRhythmGameManager : MonoBehaviour
 
     void HandleInput()
     {
+        bool poseOK = CanPlayWithPose();
         // X
         if (OVRInput.GetDown(OVRInput.Button.One, controller_L))
         {
             Debug.Log("Press X");
-            AkSoundEngine.PostEvent("Play_Note_X", this.gameObject);
-            TryTapHit(HoleKey.X);
+            if (!poseOK)
+            {
+                ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Play_Note_X", this.gameObject);
+                TryTapHit(HoleKey.X);
+            }
         }
         if (OVRInput.Get(OVRInput.Button.One, controller_L))
         {
-            if (currentHoldX != null) currentHoldX.UpdateHolding();
+            if (!poseOK)
+            {
+                ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            }
+            else
+            {
+                if (currentHoldX != null) currentHoldX.UpdateHolding();
+            }
+            
         }
         if (OVRInput.GetUp(OVRInput.Button.One, controller_L))
         {
@@ -306,12 +332,26 @@ public class RecorderRhythmGameManager : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.Two, controller_L))
         {
             Debug.Log("Press Y");
-            AkSoundEngine.PostEvent("Play_Note_Y", this.gameObject);
-            TryTapHit(HoleKey.Y);
+            if (!poseOK)
+            {
+                ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Play_Note_Y", this.gameObject);
+                TryTapHit(HoleKey.Y);
+            }
         }
         if (OVRInput.Get(OVRInput.Button.Two, controller_L))
         {
-            if (currentHoldY != null) currentHoldY.UpdateHolding();
+            if (!poseOK)
+            {
+                ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            }
+            else
+            {
+                if (currentHoldY != null) currentHoldY.UpdateHolding();
+            }
         }
         if (OVRInput.GetUp(OVRInput.Button.Two, controller_L))
         {
@@ -322,12 +362,26 @@ public class RecorderRhythmGameManager : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.One, controller_R))
         {
             Debug.Log("Press A");
-            AkSoundEngine.PostEvent("Play_Note_A", this.gameObject);
-            TryTapHit(HoleKey.A);
+            if (!poseOK)
+            {
+                ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Play_Note_A", this.gameObject);
+                TryTapHit(HoleKey.A);
+            }
         }
         if (OVRInput.Get(OVRInput.Button.One, controller_R))
         {
-            if (currentHoldA != null) currentHoldA.UpdateHolding();
+            if (!poseOK)
+            {
+                ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            }
+            else
+            {
+                if (currentHoldA != null) currentHoldA.UpdateHolding();
+            }
         }
         if (OVRInput.GetUp(OVRInput.Button.One, controller_R))
         {
@@ -338,12 +392,26 @@ public class RecorderRhythmGameManager : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.Two, controller_R))
         {
             Debug.Log("Press B");
-            AkSoundEngine.PostEvent("Play_Note_B", this.gameObject);
-            TryTapHit(HoleKey.B);
+            if (!poseOK)
+            {
+                ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Play_Note_B", this.gameObject);
+                TryTapHit(HoleKey.B);
+            }
         }
         if (OVRInput.Get(OVRInput.Button.Two, controller_R))
         {
-            if (currentHoldB != null) currentHoldB.UpdateHolding();
+            if (!poseOK)
+            {
+                ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            }
+            else
+            {
+                if (currentHoldB != null) currentHoldB.UpdateHolding();
+            }
         }
         if (OVRInput.GetUp(OVRInput.Button.Two, controller_R))
         {
@@ -397,7 +465,11 @@ public class RecorderRhythmGameManager : MonoBehaviour
     {
         NoteUI target = FindClosestNote(key);
         if (target == null) return;
-
+        if (!CanPlayWithPose())
+        {
+            ShowResult("½ÐÂ\¦n§j«µ«º¶Õ");
+            return;
+        }
         float minDist = Mathf.Abs(target.GetDistanceToHitPoint());
 
         if (target.IsHoldNote())
