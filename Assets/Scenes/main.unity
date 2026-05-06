@@ -5720,6 +5720,7 @@ GameObject:
   - component: {fileID: 694549372}
   - component: {fileID: 694549375}
   - component: {fileID: 694549374}
+  - component: {fileID: 694549376}
   m_Layer: 0
   m_Name: Wooden Doorframe_005.001
   m_TagString: Untagged
@@ -5835,6 +5836,31 @@ MonoBehaviour:
   rotationInfluence: 0
   maxLocalOffset: 1
   use180Flip: 0
+--- !u!114 &694549376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694549370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e567259ebd9e8d47ac840ab785ac904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ef5a66cddcc00804a861a716ec521660,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &694645849
 GameObject:
   m_ObjectHideFlags: 0
@@ -10231,9 +10257,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1171204454}
   - component: {fileID: 1171204457}
-  - component: {fileID: 1171204456}
   - component: {fileID: 1171204455}
+  - component: {fileID: 1171204459}
   - component: {fileID: 1171204458}
+  - component: {fileID: 1171204460}
   m_Layer: 0
   m_Name: Audio_Dreamcore_BGM
   m_TagString: Untagged
@@ -10271,41 +10298,6 @@ MonoBehaviour:
   rtpcName: Player_Hand_Height
   targetController: 2
   heightOffset: 0.6
---- !u!114 &1171204456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171204453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff78cb4c00eda644b91649421d71e0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fe8427d99da550f4183b5fdb4701614e,
-      type: 2}
-  useCallbacks: 0
-  stopSoundOnDestroy: 1
-  Callbacks: []
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []
 --- !u!114 &1171204457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10339,10 +10331,65 @@ MonoBehaviour:
   m_GameObject: {fileID: 1171204453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60a063e081432543abed63642cc19e1, type: 3}
+  m_Script: {fileID: 11500000, guid: bfc7cece9a59f1c40ba2c19a0ad04de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a0c1987e695d8ed44ba86a269cca278f,
+      type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1171204459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171204453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e567259ebd9e8d47ac840ab785ac904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8cc7c08ae41974842abcb6f25024781e,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &1171204460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171204453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60a063e081432543abed63642cc19e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
   useOtherObject: 0
   data:
     idInternal: 0
@@ -11092,6 +11139,7 @@ GameObject:
   - component: {fileID: 1247872566}
   - component: {fileID: 1247872569}
   - component: {fileID: 1247872568}
+  - component: {fileID: 1247872570}
   m_Layer: 0
   m_Name: Wooden Doorframe_009
   m_TagString: Untagged
@@ -11207,6 +11255,31 @@ MonoBehaviour:
   rotationInfluence: 0
   maxLocalOffset: 1
   use180Flip: 0
+--- !u!114 &1247872570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247872564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e567259ebd9e8d47ac840ab785ac904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 06326a91336fa784eab820717996bd3f,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &1259271970
 GameObject:
   m_ObjectHideFlags: 0
@@ -15914,6 +15987,7 @@ GameObject:
   - component: {fileID: 1837147060}
   - component: {fileID: 1837147063}
   - component: {fileID: 1837147062}
+  - component: {fileID: 1837147064}
   m_Layer: 0
   m_Name: Wooden Doorframe_005
   m_TagString: Untagged
@@ -16029,6 +16103,31 @@ MonoBehaviour:
   rotationInfluence: 0
   maxLocalOffset: 1
   use180Flip: 0
+--- !u!114 &1837147064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837147058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e567259ebd9e8d47ac840ab785ac904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 682d4d083b6e3eb4894b869784e17668,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &1859123039
 GameObject:
   m_ObjectHideFlags: 0

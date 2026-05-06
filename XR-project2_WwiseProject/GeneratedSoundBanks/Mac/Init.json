@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{483621E0-3848-52B5-DC55-2CD24EA50DC2}",
+    "Hash": "{B4B39053-BAEC-E803-FFE1-F4A93EE16E08}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -49,9 +49,49 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Hand_Height",
       "GUID": "{0FFA4A01-D4E9-45C9-BE6F-4771576AB58C}"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3086301423",
+      "Name": "BGM_State",
+      "ObjectPath": "\\States\\Default Work Unit\\BGM_State",
+      "GUID": "{6CBC131B-1D56-4284-91EB-DC4A75B18301}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_State\\None",
+        "GUID": "{FE1EF681-038E-4D6C-905F-BB00718D0D94}"
+       },
+       {
+        "Id": "1544306476",
+        "Name": "Scene1",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_State\\Scene1",
+        "GUID": "{AF718F0B-2BE6-439A-A9B0-DC4E9FF4CC9C}"
+       },
+       {
+        "Id": "1544306477",
+        "Name": "Scene0",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_State\\Scene0",
+        "GUID": "{674736B3-2F15-43A2-9B12-AE2D2A694707}"
+       },
+       {
+        "Id": "1544306478",
+        "Name": "Scene3",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_State\\Scene3",
+        "GUID": "{6B7A9D9D-6062-43E6-8834-5BA46EB0B915}"
+       },
+       {
+        "Id": "1544306479",
+        "Name": "Scene2",
+        "ObjectPath": "\\States\\Default Work Unit\\BGM_State\\Scene2",
+        "GUID": "{5066A45A-20E2-474B-A212-2E2FEBE8BF0A}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{BCE74431-8E6C-DC34-687A-A336DA90BF71}"
+  "FileHash": "{B794ED99-3988-C120-44C9-8E3468EF7173}"
  }
 }
