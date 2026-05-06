@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameFlowFinal : MonoBehaviour
 {
     // Start is called before the first frame update
-    [Header("ª±®a")]
+    [Header("ï¿½ï¿½ï¿½a")]
     public OVRPlayerController locomotor;
 
     public Vector3 startPosition = new Vector3(-8.7f, -4f, -18.33f);
@@ -16,13 +16,13 @@ public class GameFlowFinal : MonoBehaviour
 
     private void OnEnable()
     {
-        // µù¥U Active Scene ¤Á´«¨Æ¥ó
+        // ï¿½ï¿½ï¿½U Active Scene ï¿½ï¿½ï¿½ï¿½ï¿½Æ¥ï¿½
         SceneManager.activeSceneChanged += OnActiveSceneChanged;
     }
 
     private void OnDisable()
     {
-        // ¸Ñ°£µù¥U
+        // ï¿½Ñ°ï¿½ï¿½ï¿½ï¿½U
         SceneManager.activeSceneChanged -= OnActiveSceneChanged;
     }
     private void Start()
@@ -31,7 +31,7 @@ public class GameFlowFinal : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "FinalScene")
         {
-            Scene1Start();
+            Scene4Start();
         }
     }
     void Scene4Start()

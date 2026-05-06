@@ -5924,6 +5924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portalID: SubScene03
   objectToHide: {fileID: 694549370}
+  objectToShow: {fileID: 1006600546}
 --- !u!1 &694645849
 GameObject:
   m_ObjectHideFlags: 0
@@ -11311,6 +11312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portalID: SubScene01
   objectToHide: {fileID: 1247872564}
+  objectToShow: {fileID: 57882045}
 --- !u!1 &1259271970
 GameObject:
   m_ObjectHideFlags: 0
@@ -15379,6 +15381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portalID: FinalScene
   objectToHide: {fileID: 1760074267}
+  objectToShow: {fileID: 0}
 --- !u!1 &1766794108
 GameObject:
   m_ObjectHideFlags: 0
@@ -16237,6 +16240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portalID: SubScene02
   objectToHide: {fileID: 1837147058}
+  objectToShow: {fileID: 1461923991}
 --- !u!1 &1859123039
 GameObject:
   m_ObjectHideFlags: 0
