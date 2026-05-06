@@ -407,7 +407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &29969180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub1Scene
   objectToHide: {fileID: 1247872564}
   triggerTag: Player
-  final_object: {fileID: 57882045}
+  final_object: {fileID: 189196650}
 --- !u!1 &47888786
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 57882050}
   - component: {fileID: 57882049}
   - component: {fileID: 57882053}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: scene 1 end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1627,7 +1627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &189196651
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2010,7 +2010,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: c1c4f3863af64494da95ce50c4b70c3d, type: 2}
   m_TargetDisplay: 0
@@ -2594,7 +2594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &301974218
 Transform:
   m_ObjectHideFlags: 0
@@ -2651,7 +2651,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub2Scene
   objectToHide: {fileID: 1837147058}
   triggerTag: Player
-  final_object: {fileID: 0}
+  final_object: {fileID: 1371462977}
 --- !u!1 &311190797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,7 +3420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &411307611
 Transform:
   m_ObjectHideFlags: 0
@@ -4055,7 +4055,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: ff2ea031b6c9afb428b9e316653bd10a, type: 2}
   m_TargetDisplay: 0
@@ -5957,7 +5957,7 @@ GameObject:
   - component: {fileID: 733587982}
   - component: {fileID: 733587981}
   - component: {fileID: 733587980}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: '[BuildingBlock] HandGrabInstallationRoutine'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6081,7 +6081,7 @@ GameObject:
   - component: {fileID: 733692594}
   - component: {fileID: 733692595}
   - component: {fileID: 733692596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -8492,7 +8492,7 @@ GameObject:
   - component: {fileID: 1006600550}
   - component: {fileID: 1006600549}
   - component: {fileID: 1006600556}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: scene 3 end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10899,7 +10899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1287808846
 Transform:
   m_ObjectHideFlags: 0
@@ -10956,7 +10956,7 @@ MonoBehaviour:
   targetSceneLayerName: Sub3Scene
   objectToHide: {fileID: 694549370}
   triggerTag: Player
-  final_object: {fileID: 0}
+  final_object: {fileID: 2107924140}
 --- !u!1 &1292907776
 GameObject:
   m_ObjectHideFlags: 0
@@ -11551,7 +11551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1371462978
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12046,7 +12046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1439596944
 Transform:
   m_ObjectHideFlags: 0
@@ -12283,7 +12283,7 @@ GameObject:
   - component: {fileID: 1461923996}
   - component: {fileID: 1461923995}
   - component: {fileID: 1461924001}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: scene 2 end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13414,7 +13414,7 @@ GameObject:
   - component: {fileID: 1617674704}
   - component: {fileID: 1617674706}
   - component: {fileID: 1617674705}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Cylinder_MusicBox_Mat_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14879,7 +14879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1803694131
 Transform:
   m_ObjectHideFlags: 0
@@ -17211,7 +17211,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 81b5118ed649a3142adb0e6bfa3633ac, type: 2}
   m_TargetDisplay: 0
@@ -17358,7 +17358,7 @@ GameObject:
   - component: {fileID: 2101881905}
   - component: {fileID: 2101881904}
   - component: {fileID: 2101881903}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: '[BuildingBlock] HandGrabInstallationRoutine'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17544,7 +17544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &2107924141
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18087,6 +18087,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2774220343931501655}
+  - component: {fileID: 2774220343931501656}
+  - component: {fileID: 2774220343931501657}
+  - component: {fileID: 2774220343931501658}
   m_Layer: 0
   m_Name: music_box
   m_TagString: music_box
@@ -18127,6 +18130,66 @@ Transform:
   - {fileID: 5277299045411455642}
   m_Father: {fileID: 1642257428}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -89.98}
+--- !u!114 &2774220343931501656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534335995757295132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c718f325d08d94d88315e303d8b41e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectA: {fileID: 57882045}
+  objectB: {fileID: 5460904847502996905}
+  triggerDistance: 1
+  triggerOnlyOnce: 1
+  moveDuration: 1
+  rotateToTarget: 1
+  rotationLerpSpeed: 6
+  hideBOnStart: 1
+--- !u!114 &2774220343931501657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534335995757295132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c718f325d08d94d88315e303d8b41e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectA: {fileID: 1461923991}
+  objectB: {fileID: 7903213413299477565}
+  triggerDistance: 1
+  triggerOnlyOnce: 1
+  moveDuration: 1
+  rotateToTarget: 1
+  rotationLerpSpeed: 6
+  hideBOnStart: 1
+--- !u!114 &2774220343931501658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534335995757295132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c718f325d08d94d88315e303d8b41e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectA: {fileID: 1006600546}
+  objectB: {fileID: 8203121165156123909}
+  triggerDistance: 1
+  triggerOnlyOnce: 1
+  moveDuration: 1
+  rotateToTarget: 1
+  rotationLerpSpeed: 6
+  hideBOnStart: 1
 --- !u!23 &3079811545794370691
 MeshRenderer:
   m_ObjectHideFlags: 0
