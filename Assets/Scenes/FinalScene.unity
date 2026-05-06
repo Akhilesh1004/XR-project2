@@ -27263,6 +27263,7 @@ GameObject:
   - component: {fileID: 356958608}
   - component: {fileID: 356958610}
   - component: {fileID: 356958609}
+  - component: {fileID: 356958611}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -27286,7 +27287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -549, y: -920}
+  m_AnchoredPosition: {x: -549, y: -864}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356958609
@@ -27309,13 +27310,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u611F\u8B1D\u60A8\u904A\u73A9 DREAM CORE \u5922\u76D2\u904A\u6232! \r\n\u5E0C\u671B\u60A8\u6210\u529F\u627E\u56DE\u90A3\u4E9B\u88AB\u907A\u5FD8\u7684\u7AE5\u5E74\u7247\u6BB5\r\n\u518D\u6B21\u5E36\u8457\u52C7\u6C23
+  m_text: "\u611F\u8B1D\u60A8\u904A\u73A9 DREAM CORE \n\u5922\u76D2\u904A\u6232!
+    \r\n\u5E0C\u671B\u60A8\u6210\u529F\u627E\u56DE\u90A3\u4E9B\u88AB\u907A\u5FD8\u7684\u7AE5\u5E74\u7247\u6BB5\r\n\u518D\u6B21\u5E36\u8457\u52C7\u6C23
     \u524D\u5F80\u6210\u9577\u7684\u9053\u8DEF\u3002\r\n\r\n\u5DE5\u4F5C\u4EBA\u54E1\u540D\u55AE:\r\n\u7A0B\u5F0F
     : \u912D\u79C9\u8C50\u3001\u8449\u6B32\u79BE\r\n\u7F8E\u8853 : \u5C39\u6C9B\u87A2\u3001\u65BD\u4EA6\u606C\r\n\u97F3\u6A02
     : \u90CE\u8208\u6668\r\n\r\n\u518D\u6B21\u611F\u8B1D !"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 86b44560fc87dc84186f17296ad3062a, type: 2}
+  m_sharedMaterial: {fileID: -2620541958846486284, guid: 86b44560fc87dc84186f17296ad3062a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27339,13 +27342,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 105
-  m_fontSizeBase: 105
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -27389,6 +27392,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356958607}
   m_CullTransparentMesh: 1
+--- !u!114 &356958611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356958607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676094fc0061e4c498257c807f321e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 10
 --- !u!1001 &357425167
 PrefabInstance:
   m_ObjectHideFlags: 0
