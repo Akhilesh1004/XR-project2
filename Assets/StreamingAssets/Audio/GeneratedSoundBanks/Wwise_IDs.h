@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_DREAM_BGM = 1384642536U;
+        static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_MASTER_BGM = 3563492127U;
         static const AkUniqueID PLAY_NOTE_A = 2785768342U;
         static const AkUniqueID PLAY_NOTE_B = 2785768341U;
@@ -40,6 +41,24 @@ namespace AK
         } // namespace BGM_STATE
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEP_MATERIAL
+        {
+            static const AkUniqueID GROUP = 684570577U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BALLPIT = 4067911033U;
+                static const AkUniqueID DREAM = 2120052594U;
+                static const AkUniqueID FOAMMAT = 606807020U;
+                static const AkUniqueID SCHOOL = 3661816265U;
+                static const AkUniqueID WATER = 2654748154U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP_MATERIAL
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

@@ -89,9 +89,49 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "684570577",
+      "Name": "Footstep_Material",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material",
+      "GUID": "{D71E8EC1-9734-4635-8270-D35945F68A6C}",
+      "Switches": [
+       {
+        "Id": "606807020",
+        "Name": "FoamMat",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\FoamMat",
+        "GUID": "{47344735-30FF-46DA-9261-7CC5E6E1DFBB}"
+       },
+       {
+        "Id": "2120052594",
+        "Name": "Dream",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\Dream",
+        "GUID": "{CBD9416A-2AED-4A8D-883D-B72201BACE56}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\Water",
+        "GUID": "{C104324F-FD89-4BC7-B53E-461FB2F00FEE}"
+       },
+       {
+        "Id": "3661816265",
+        "Name": "School",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\School",
+        "GUID": "{25AAA779-5D2B-4687-9201-7B08FC4EA058}"
+       },
+       {
+        "Id": "4067911033",
+        "Name": "BallPit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\BallPit",
+        "GUID": "{0D1050BB-9C26-4E73-AE13-AB8C8C6F1C62}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{B794ED99-3988-C120-44C9-8E3468EF7173}"
+  "FileHash": "{D57FAA2E-1B08-A26E-625B-DCFAA1AB5232}"
  }
 }

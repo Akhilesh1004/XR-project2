@@ -10,11 +10,107 @@
     "Type": "User",
     "GUID": "{2247F40C-B06D-4A1C-9387-CBE83960CF5A}",
     "Language": "SFX",
-    "Hash": "{F675FBCF-68CA-D201-E4E9-EE9B02AEDC03}",
+    "Hash": "{D4B00AC9-DE46-7C4E-009F-A77917EB7FAA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
     "Media": [
+     {
+      "Id": "18774633",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Barefoot_skin_impact_#2-1778091676291.wav",
+      "CachePath": "3C/{3C47BEDA-1630-70F9-8A06-7992308F0F5E}.wem"
+     },
+     {
+      "Id": "28712941",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Rubber_sneaker_sole__#1-1778091551325.wav",
+      "CachePath": "24/{2402DD5E-1CEC-EC89-0F82-77EADB17298B}.wem"
+     },
+     {
+      "Id": "39856233",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soft_muffled_cloth_f_#3-1778091233678.wav",
+      "CachePath": "4C/{4C8BBC16-3BDF-0B61-7A2E-96098FCE8534}.wem"
+     },
+     {
+      "Id": "135416998",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "plastic ball1.wav",
+      "CachePath": "06/{067EB79A-DB99-2A6A-4A00-6A82FD835074}.wem"
+     },
+     {
+      "Id": "193609348",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shallow_water_wading_#3-1778091376234.wav",
+      "CachePath": "96/{96D8533B-1585-D818-710C-D83E6214F654}.wem"
+     },
+     {
+      "Id": "202318573",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Barefoot_skin_impact_#2-1778091846546.wav",
+      "CachePath": "6F/{6F0FFAC3-F22C-AEC9-2DF2-482A7925D403}.wem"
+     },
+     {
+      "Id": "251204340",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Barefoot_skin_impact_#2-1778091788886.wav",
+      "CachePath": "11/{11125DC6-7CE0-7BD6-7304-B46631DDD4C4}.wem"
+     },
+     {
+      "Id": "275604077",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soft_muffled_cloth_f_#4-1778091182912.wav",
+      "CachePath": "3F/{3FA625DA-7693-2493-BD60-CE5E4BC7081E}.wem"
+     },
+     {
+      "Id": "343433004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Barefoot_skin_impact_#2-1778091885512.wav",
+      "CachePath": "D5/{D5613C64-E1FE-B99A-7541-B0AACBBA2BF2}.wem"
+     },
+     {
+      "Id": "376141780",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shallow_water_wading_#1-1778091362410.wav",
+      "CachePath": "78/{78825C6C-C296-CAAC-2A2C-84E632D653F6}.wem"
+     },
+     {
+      "Id": "423387272",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soft_muffled_cloth_f_#3-1778091258365.wav",
+      "CachePath": "C1/{C15B2CE5-C5CD-5F48-E484-00F1855F20E2}.wem"
+     },
+     {
+      "Id": "473905685",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "plastic ball2.wav",
+      "CachePath": "82/{82BC3D80-A3BA-F71A-3AA7-19F928D7D28A}.wem"
+     },
      {
       "Id": "478166025",
       "Language": "SFX",
@@ -40,12 +136,68 @@
       "CachePath": "B8/{B8646E52-7088-344D-37A8-3296BE599603}.wem"
      },
      {
+      "Id": "707856113",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shallow_water_wading_#4-1778091385851.wav",
+      "CachePath": "27/{27EEBAFD-C903-DD87-9207-016B3FEF67A2}.wem"
+     },
+     {
+      "Id": "726814039",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soft_muffled_cloth_f_#2-1778091286575.wav",
+      "CachePath": "31/{31476697-36D5-6B7B-F5A8-98D819090CFF}.wem"
+     },
+     {
       "Id": "806380124",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Zhi di so.wav",
       "CachePath": "DC/{DCB0B3D9-7126-7260-8CCD-C91D89DA2103}.wem"
+     },
+     {
+      "Id": "827312705",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "plastic ball3.wav",
+      "CachePath": "68/{68F8A058-CCE6-3D2C-A74D-89ED5EC953FA}.wem"
+     },
+     {
+      "Id": "855382042",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Rubber_sneaker_sole__#4-1778091515643.wav",
+      "CachePath": "CC/{CCD8ABBC-4C1F-6D0D-57EE-79CCC0D0CBA8}.wem"
+     },
+     {
+      "Id": "886052060",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Rubber_sneaker_sole__#4-1778091538346.wav",
+      "CachePath": "83/{832DB02A-CE2E-9C51-A910-17AA52EF4784}.wem"
+     },
+     {
+      "Id": "912217143",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Rubber_sneaker_sole__#3-1778091511343.wav",
+      "CachePath": "B2/{B2713C45-672B-368B-594A-EFB4B2D1B7EC}.wem"
+     },
+     {
+      "Id": "931584496",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "plastic ball.wav",
+      "CachePath": "C0/{C05F5737-5F2B-D51F-7083-2FFE46D7BF31}.wem"
      },
      {
       "Id": "987720715",
@@ -62,6 +214,14 @@
       "Location": "Memory",
       "ShortName": "dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248.wav",
       "CachePath": "52/{5295C35F-A17B-727A-8572-88A34A01387F}.wem"
+     },
+     {
+      "Id": "1023659857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Shallow_water_wading_#2-1778091370270.wav",
+      "CachePath": "6B/{6BF78265-3782-ACF5-A43D-540B774EB601}.wem"
      }
     ],
     "Events": [
@@ -76,6 +236,128 @@
       "MediaRefs": [
        {
         "Id": "1021866025"
+       }
+      ]
+     },
+     {
+      "Id": "1602358412",
+      "Name": "Play_Footstep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Footstep",
+      "GUID": "{D99F1FBF-CA4D-447D-B74B-52957B50DFA4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.16518",
+      "DurationMax": "0.52984",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "684570577",
+         "Id": "606807020",
+         "GUID": "{47344735-30FF-46DA-9261-7CC5E6E1DFBB}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "18774633"
+         },
+         {
+          "Id": "202318573"
+         },
+         {
+          "Id": "251204340"
+         },
+         {
+          "Id": "343433004"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "684570577",
+         "Id": "2654748154",
+         "GUID": "{C104324F-FD89-4BC7-B53E-461FB2F00FEE}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "193609348"
+         },
+         {
+          "Id": "376141780"
+         },
+         {
+          "Id": "707856113"
+         },
+         {
+          "Id": "1023659857"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "684570577",
+         "Id": "2120052594",
+         "GUID": "{CBD9416A-2AED-4A8D-883D-B72201BACE56}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "39856233"
+         },
+         {
+          "Id": "275604077"
+         },
+         {
+          "Id": "423387272"
+         },
+         {
+          "Id": "726814039"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "684570577",
+         "Id": "3661816265",
+         "GUID": "{25AAA779-5D2B-4687-9201-7B08FC4EA058}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "28712941"
+         },
+         {
+          "Id": "855382042"
+         },
+         {
+          "Id": "886052060"
+         },
+         {
+          "Id": "912217143"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "684570577",
+         "Id": "4067911033",
+         "GUID": "{0D1050BB-9C26-4E73-AE13-AB8C8C6F1C62}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "135416998"
+         },
+         {
+          "Id": "473905685"
+         },
+         {
+          "Id": "827312705"
+         },
+         {
+          "Id": "931584496"
+         }
+        ]
        }
       ]
      },
@@ -159,9 +441,49 @@
       "DurationMin": "0",
       "DurationMax": "0"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "684570577",
+      "Name": "Footstep_Material",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material",
+      "GUID": "{D71E8EC1-9734-4635-8270-D35945F68A6C}",
+      "Switches": [
+       {
+        "Id": "606807020",
+        "Name": "FoamMat",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\FoamMat",
+        "GUID": "{47344735-30FF-46DA-9261-7CC5E6E1DFBB}"
+       },
+       {
+        "Id": "2120052594",
+        "Name": "Dream",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\Dream",
+        "GUID": "{CBD9416A-2AED-4A8D-883D-B72201BACE56}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\Water",
+        "GUID": "{C104324F-FD89-4BC7-B53E-461FB2F00FEE}"
+       },
+       {
+        "Id": "3661816265",
+        "Name": "School",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\School",
+        "GUID": "{25AAA779-5D2B-4687-9201-7B08FC4EA058}"
+       },
+       {
+        "Id": "4067911033",
+        "Name": "BallPit",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footstep_Material\\BallPit",
+        "GUID": "{0D1050BB-9C26-4E73-AE13-AB8C8C6F1C62}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{8BC141F9-7CF7-DC3A-BBFB-2D032C62BB07}"
+  "FileHash": "{A7876182-71F6-316B-5B78-3596A02FDE1A}"
  }
 }

@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - music_box
-  - SpectatorCamera
+  - School
+  - FoamMat
+  - BallPit
+  - Water
   layers:
   - Default
   - TransparentFX

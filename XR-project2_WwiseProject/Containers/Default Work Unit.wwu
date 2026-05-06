@@ -725,6 +725,719 @@
 						</MusicSwitchContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Footsteps" ID="{4244B604-4AC4-49F5-B8FB-3EFFC479C4B8}" ShortID="486725198">
+					<ChildrenList>
+						<SwitchContainer Name="SW_Player_Footstep" ID="{1BD63361-0793-4CF3-96EC-B184823C7404}" ShortID="7906521">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Dream" ID="{CBD9416A-2AED-4A8D-883D-B72201BACE56}" WorkUnitID="{5D03C07F-B261-4115-91EA-3324C77F6270}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Footstep_Material" ID="{D71E8EC1-9734-4635-8270-D35945F68A6C}" WorkUnitID="{5D03C07F-B261-4115-91EA-3324C77F6270}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="RC_Water" ID="{80C0ADAB-0E82-46C8-956F-AC93DD786407}" ShortID="912270603">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Shallow_water_wading_#1-1778091362410" ID="{4AC9688D-7512-4C8F-B133-0CB999AE2B0C}" ShortID="518493119">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shallow_water_wading_#1-1778091362410" ID="{310004CA-676B-40C8-929A-6C1046D05399}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.87347"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Shallow_water_wading_#1-1778091362410.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="376141780"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shallow_water_wading_#1-1778091362410" ID="{310004CA-676B-40C8-929A-6C1046D05399}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Shallow_water_wading_#2-1778091370270" ID="{107ED20F-2030-457E-97C9-34E2FDB0C786}" ShortID="90941188">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shallow_water_wading_#2-1778091370270" ID="{32C2D3F2-6F71-4A57-8D4F-A29B079185DB}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.52984"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Shallow_water_wading_#2-1778091370270.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1023659857"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shallow_water_wading_#2-1778091370270" ID="{32C2D3F2-6F71-4A57-8D4F-A29B079185DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Shallow_water_wading_#3-1778091376234" ID="{9C34D231-8E8F-47D1-971C-C1106569FDBD}" ShortID="321673581">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shallow_water_wading_#3-1778091376234" ID="{1531D501-E2E8-4998-ACD5-114DF5BC8AD0}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.24974"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.70176"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Shallow_water_wading_#3-1778091376234.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="193609348"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shallow_water_wading_#3-1778091376234" ID="{1531D501-E2E8-4998-ACD5-114DF5BC8AD0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Shallow_water_wading_#4-1778091385851" ID="{828B14FD-B7EF-43F3-8017-EED548A86544}" ShortID="590344181">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shallow_water_wading_#4-1778091385851" ID="{64F4378D-1A60-4D07-B817-106D605AB70D}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.41362"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.87487"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Shallow_water_wading_#4-1778091385851.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="707856113"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shallow_water_wading_#4-1778091385851" ID="{64F4378D-1A60-4D07-B817-106D605AB70D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_Dream" ID="{027E84AF-D8CD-437A-880F-813AD7DE0F34}" ShortID="636073247">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Soft_muffled_cloth_f_#2-1778091286575" ID="{BC14BE0D-452E-452B-9FC0-EF71618B2946}" ShortID="472039416">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Soft_muffled_cloth_f_#2-1778091286575" ID="{C6CB0C14-6D6B-4E0A-A2BF-C15EA97FDF28}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.63286"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.05719"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soft_muffled_cloth_f_#2-1778091286575.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="726814039"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Soft_muffled_cloth_f_#2-1778091286575" ID="{C6CB0C14-6D6B-4E0A-A2BF-C15EA97FDF28}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Soft_muffled_cloth_f_#3-1778091233678" ID="{F1FA5034-0629-4527-AEB9-2A5B6E4C231F}" ShortID="977021158">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Soft_muffled_cloth_f_#3-1778091233678" ID="{907E59BA-CE26-4C26-87B3-12048D936837}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.24176"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.68581"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soft_muffled_cloth_f_#3-1778091233678.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="39856233"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Soft_muffled_cloth_f_#3-1778091233678" ID="{907E59BA-CE26-4C26-87B3-12048D936837}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Soft_muffled_cloth_f_#3-1778091258365" ID="{A7036B41-87BC-4868-BE53-0C2123FB0863}" ShortID="162512970">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Soft_muffled_cloth_f_#3-1778091258365" ID="{88DE5FD6-D809-4CCD-95AC-6E3C10A42757}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.37264"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.61188"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soft_muffled_cloth_f_#3-1778091258365.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="423387272"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Soft_muffled_cloth_f_#3-1778091258365" ID="{88DE5FD6-D809-4CCD-95AC-6E3C10A42757}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Soft_muffled_cloth_f_#4-1778091182912" ID="{DE00219B-38AE-4C11-B9AA-C86C328D5826}" ShortID="100495207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Soft_muffled_cloth_f_#4-1778091182912" ID="{A5B74271-0F5E-4243-969D-E90A3C82B482}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.4678"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.89993"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soft_muffled_cloth_f_#4-1778091182912.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="275604077"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Soft_muffled_cloth_f_#4-1778091182912" ID="{A5B74271-0F5E-4243-969D-E90A3C82B482}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_School" ID="{A1BE56C3-212A-4647-9DBD-0D231C2867CA}" ShortID="272080097">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rubber_sneaker_sole__#1-1778091551325" ID="{FA3AED7D-8BC4-4D8A-83C7-489FC5167E40}" ShortID="388358538">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rubber_sneaker_sole__#1-1778091551325" ID="{FEC26FBF-665A-43E7-99AE-75DE145C4486}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.4242"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.58938"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Rubber_sneaker_sole__#1-1778091551325.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="28712941"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rubber_sneaker_sole__#1-1778091551325" ID="{FEC26FBF-665A-43E7-99AE-75DE145C4486}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rubber_sneaker_sole__#3-1778091511343" ID="{2B9BBC00-D938-4BBC-A84F-70C2D68A2356}" ShortID="49704724">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rubber_sneaker_sole__#3-1778091511343" ID="{2F8DF200-8124-4CCC-8DDE-6C57D8F0E052}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.43348"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.62504"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Rubber_sneaker_sole__#3-1778091511343.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="912217143"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rubber_sneaker_sole__#3-1778091511343" ID="{2F8DF200-8124-4CCC-8DDE-6C57D8F0E052}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rubber_sneaker_sole__#4-1778091515643" ID="{D96E0303-2C08-49C8-B542-C109C1956342}" ShortID="934937295">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rubber_sneaker_sole__#4-1778091515643" ID="{33678A54-D6DB-4F06-AF2F-F6325F186482}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.61843"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.78635"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Rubber_sneaker_sole__#4-1778091515643.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="855382042"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rubber_sneaker_sole__#4-1778091515643" ID="{33678A54-D6DB-4F06-AF2F-F6325F186482}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rubber_sneaker_sole__#4-1778091538346" ID="{097AFDB7-6EEF-49DB-8ADA-AF98C84817A3}" ShortID="1063494610">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rubber_sneaker_sole__#4-1778091538346" ID="{A4CD1ED5-E178-4AFF-B0E4-0D042702E05D}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.39639"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.64752"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Rubber_sneaker_sole__#4-1778091538346.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="886052060"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rubber_sneaker_sole__#4-1778091538346" ID="{A4CD1ED5-E178-4AFF-B0E4-0D042702E05D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_BallPit" ID="{AB3B3E6C-62A3-490A-96C3-E4AE8306C276}" ShortID="517682252">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="plastic ball1" ID="{01A47976-6199-47D6-B1F8-57E72AEFAE1B}" ShortID="129856140">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plastic ball1" ID="{AAF8901E-CFF7-4A04-A0FA-0AC0672D20A3}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.09551"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.53616"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>plastic ball1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="135416998"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plastic ball1" ID="{AAF8901E-CFF7-4A04-A0FA-0AC0672D20A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plastic ball2" ID="{B398D954-A8F4-43CB-840B-620692E246DC}" ShortID="70142964">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plastic ball2" ID="{6C2B1168-6DB0-4B87-95F1-DB9F37B7C68E}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.58175"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.98715"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>plastic ball2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="473905685"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plastic ball2" ID="{6C2B1168-6DB0-4B87-95F1-DB9F37B7C68E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plastic ball3" ID="{86869FFF-584E-40A5-90DE-84D23BD26156}" ShortID="161385079">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plastic ball3" ID="{BE85C226-3C7C-4A7F-891E-1A5D2A76934A}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.19098"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.59048"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>plastic ball3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="827312705"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plastic ball3" ID="{BE85C226-3C7C-4A7F-891E-1A5D2A76934A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plastic ball" ID="{B5A4AE84-31E9-4DDC-86CB-E1473FB52102}" ShortID="246879512">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plastic ball" ID="{A7FF17F6-32DE-4CE7-A77A-93C56CC7DEF8}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.32472"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.81674"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>plastic ball.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="931584496"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plastic ball" ID="{A7FF17F6-32DE-4CE7-A77A-93C56CC7DEF8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_FoamMat" ID="{3A2BD28B-DA65-4740-B671-A1783C175E1F}" ShortID="552158671">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Barefoot_skin_impact_#2-1778091676291" ID="{B4524B5A-6F37-44D2-8AD9-ADE6AD4102F7}" ShortID="265539556">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Barefoot_skin_impact_#2-1778091676291" ID="{339023E6-4CD6-4B6E-A455-34F25DF38BB1}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.06612"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.35175"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Barefoot_skin_impact_#2-1778091676291.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="18774633"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Barefoot_skin_impact_#2-1778091676291" ID="{339023E6-4CD6-4B6E-A455-34F25DF38BB1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Barefoot_skin_impact_#2-1778091788886" ID="{7FDC56AF-F1BE-499A-A58E-E4908D19729D}" ShortID="364713866">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Barefoot_skin_impact_#2-1778091788886" ID="{8F6C38E4-7DEE-47F4-A0A3-EFA9580AA6A1}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.3214"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.58457"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Barefoot_skin_impact_#2-1778091788886.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="251204340"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Barefoot_skin_impact_#2-1778091788886" ID="{8F6C38E4-7DEE-47F4-A0A3-EFA9580AA6A1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Barefoot_skin_impact_#2-1778091846546" ID="{AD3F50BF-2E2C-474C-9E7C-38DE2B2B2D4F}" ShortID="741780502">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Barefoot_skin_impact_#2-1778091846546" ID="{5CDB5991-1CA9-4BE7-AEAD-41069628431C}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.26912"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Barefoot_skin_impact_#2-1778091846546.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="202318573"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Barefoot_skin_impact_#2-1778091846546" ID="{5CDB5991-1CA9-4BE7-AEAD-41069628431C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Barefoot_skin_impact_#2-1778091885512" ID="{6228BDED-E2EC-4B88-933E-6AC2D230A92B}" ShortID="122776196">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F616383E-A707-4F0F-BCCD-F00EB6DF2B61}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FDA39BB1-8424-45E9-80B6-6046D2BFD8EC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Barefoot_skin_impact_#2-1778091885512" ID="{4CCCE6FB-1344-4223-8B75-5DF2FA63A509}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.43111"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Barefoot_skin_impact_#2-1778091885512.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="343433004"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Barefoot_skin_impact_#2-1778091885512" ID="{4CCCE6FB-1344-4223-8B75-5DF2FA63A509}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="RC_BallPit" ID="{AB3B3E6C-62A3-490A-96C3-E4AE8306C276}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RC_FoamMat" ID="{3A2BD28B-DA65-4740-B671-A1783C175E1F}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RC_Water" ID="{80C0ADAB-0E82-46C8-956F-AC93DD786407}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RC_Dream" ID="{027E84AF-D8CD-437A-880F-813AD7DE0F34}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RC_School" ID="{A1BE56C3-212A-4647-9DBD-0D231C2867CA}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="FoamMat" ID="{47344735-30FF-46DA-9261-7CC5E6E1DFBB}"/>
+										<ItemList>
+											<ItemRef Name="RC_FoamMat" ID="{3A2BD28B-DA65-4740-B671-A1783C175E1F}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{C104324F-FD89-4BC7-B53E-461FB2F00FEE}"/>
+										<ItemList>
+											<ItemRef Name="RC_Water" ID="{80C0ADAB-0E82-46C8-956F-AC93DD786407}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dream" ID="{CBD9416A-2AED-4A8D-883D-B72201BACE56}"/>
+										<ItemList>
+											<ItemRef Name="RC_Dream" ID="{027E84AF-D8CD-437A-880F-813AD7DE0F34}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="School" ID="{25AAA779-5D2B-4687-9201-7B08FC4EA058}"/>
+										<ItemList>
+											<ItemRef Name="RC_School" ID="{A1BE56C3-212A-4647-9DBD-0D231C2867CA}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="BallPit" ID="{0D1050BB-9C26-4E73-AE13-AB8C8C6F1C62}"/>
+										<ItemList>
+											<ItemRef Name="RC_BallPit" ID="{AB3B3E6C-62A3-490A-96C3-E4AE8306C276}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

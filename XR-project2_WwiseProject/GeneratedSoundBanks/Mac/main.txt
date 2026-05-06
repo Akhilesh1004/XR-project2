@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1384642536	Play_Dream_BGM			\Default Work Unit\Play_Dream_BGM	
+	1602358412	Play_Footstep			\Default Work Unit\Play_Footstep	
 	2491771796	Stop_Piano_BGM			\Default Work Unit\Stop_Piano_BGM	
 	2785768334	Play_Note_Y			\Default Work Unit\Play_Note_Y	
 	2785768335	Play_Note_X			\Default Work Unit\Play_Note_X	
@@ -7,11 +8,41 @@ Event	ID	Name			Wwise Object Path	Notes
 	2785768342	Play_Note_A			\Default Work Unit\Play_Note_A	
 	4197936254	Play_Piano_BGM			\Default Work Unit\Play_Piano_BGM	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	684570577	Footstep_Material			\Default Work Unit\Footstep_Material	
+
+Switch	ID	Name	Switch Group			Notes
+	606807020	FoamMat	Footstep_Material			
+	2120052594	Dream	Footstep_Material			
+	2654748154	Water	Footstep_Material			
+	3661816265	School	Footstep_Material			
+	4067911033	BallPit	Footstep_Material			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18774633	Barefoot_skin_impact_#2-1778091676291	.cache\3C\{3C47BEDA-1630-70F9-8A06-7992308F0F5E}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_FoamMat\Barefoot_skin_impact_#2-1778091676291		54936
+	28712941	Rubber_sneaker_sole__#1-1778091551325	.cache\24\{2402DD5E-1CEC-EC89-0F82-77EADB17298B}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#1-1778091551325		31808
+	39856233	Soft_muffled_cloth_f_#3-1778091233678	.cache\4C\{4C8BBC16-3BDF-0B61-7A2E-96098FCE8534}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Dream\Soft_muffled_cloth_f_#3-1778091233678		85356
+	135416998	plastic ball1	.cache\06\{067EB79A-DB99-2A6A-4A00-6A82FD835074}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball1		77828
+	193609348	Shallow_water_wading_#3-1778091376234	.cache\96\{96D8533B-1585-D818-710C-D83E6214F654}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Water\Shallow_water_wading_#3-1778091376234		86880
+	202318573	Barefoot_skin_impact_#2-1778091846546	.cache\6F\{6F0FFAC3-F22C-AEC9-2DF2-482A7925D403}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_FoamMat\Barefoot_skin_impact_#2-1778091846546		51768
+	251204340	Barefoot_skin_impact_#2-1778091788886	.cache\11\{11125DC6-7CE0-7BD6-7304-B46631DDD4C4}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_FoamMat\Barefoot_skin_impact_#2-1778091788886		50624
+	275604077	Soft_muffled_cloth_f_#4-1778091182912	.cache\3F\{3FA625DA-7693-2493-BD60-CE5E4BC7081E}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Dream\Soft_muffled_cloth_f_#4-1778091182912		83068
+	343433004	Barefoot_skin_impact_#2-1778091885512	.cache\D5\{D5613C64-E1FE-B99A-7541-B0AACBBA2BF2}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_FoamMat\Barefoot_skin_impact_#2-1778091885512		82868
+	376141780	Shallow_water_wading_#1-1778091362410	.cache\78\{78825C6C-C296-CAAC-2A2C-84E632D653F6}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Water\Shallow_water_wading_#1-1778091362410		45508
+	423387272	Soft_muffled_cloth_f_#3-1778091258365	.cache\C1\{C15B2CE5-C5CD-5F48-E484-00F1855F20E2}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Dream\Soft_muffled_cloth_f_#3-1778091258365		46028
+	473905685	plastic ball2	.cache\82\{82BC3D80-A3BA-F71A-3AA7-19F928D7D28A}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball2		71608
 	478166025	Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940	.cache\59\{599F6611-C9C4-4E42-37FC-FB5F1E04418D}.wem		\Containers\Default Work Unit\scence 2\Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940		10477532
 	480352100	Zhi di so	.cache\BE\{BE29CD7C-BE9F-B3FE-0C4C-C83DE32477A2}.wem		\Containers\Default Work Unit\scence 2\Zhi di so		78260
 	541834474	Zhi di re	.cache\B8\{B8646E52-7088-344D-37A8-3296BE599603}.wem		\Containers\Default Work Unit\scence 2\Zhi di re		129244
+	707856113	Shallow_water_wading_#4-1778091385851	.cache\27\{27EEBAFD-C903-DD87-9207-016B3FEF67A2}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Water\Shallow_water_wading_#4-1778091385851		88656
+	726814039	Soft_muffled_cloth_f_#2-1778091286575	.cache\31\{31476697-36D5-6B7B-F5A8-98D819090CFF}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Dream\Soft_muffled_cloth_f_#2-1778091286575		81568
 	806380124	Zhi di la	.cache\DC\{DCB0B3D9-7126-7260-8CCD-C91D89DA2103}.wem		\Containers\Default Work Unit\scence 2\Zhi di la		86944
+	827312705	plastic ball3	.cache\68\{68F8A058-CCE6-3D2C-A74D-89ED5EC953FA}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball3		70568
+	855382042	Rubber_sneaker_sole__#4-1778091515643	.cache\CC\{CCD8ABBC-4C1F-6D0D-57EE-79CCC0D0CBA8}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#4-1778091515643		32336
+	886052060	Rubber_sneaker_sole__#4-1778091538346	.cache\83\{832DB02A-CE2E-9C51-A910-17AA52EF4784}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#4-1778091538346		48312
+	912217143	Rubber_sneaker_sole__#3-1778091511343	.cache\B2\{B2713C45-672B-368B-594A-EFB4B2D1B7EC}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#3-1778091511343		36876
+	931584496	plastic ball	.cache\C0\{C05F5737-5F2B-D51F-7083-2FFE46D7BF31}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball		86888
 	987720715	Zhi di si	.cache\59\{591F0BF3-E733-A264-2839-411CD724FC36}.wem		\Containers\Default Work Unit\scence 2\Zhi di si		96648
 	1021866025	dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248	.cache\52\{5295C35F-A17B-727A-8572-88A34A01387F}.wem		\Containers\Default Work Unit\scence 2\dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248		14106500
+	1023659857	Shallow_water_wading_#2-1778091370270	.cache\6B\{6BF78265-3782-ACF5-A43D-540B774EB601}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Water\Shallow_water_wading_#2-1778091370270		101824
 

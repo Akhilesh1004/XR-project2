@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5D03C07F-B261-4115-91EA-3324C77F6270}" SchemaVersion="133">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{5D03C07F-B261-4115-91EA-3324C77F6270}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5D03C07F-B261-4115-91EA-3324C77F6270}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Footstep_Material" ID="{D71E8EC1-9734-4635-8270-D35945F68A6C}">
+					<ChildrenList>
+						<Switch Name="Dream" ID="{CBD9416A-2AED-4A8D-883D-B72201BACE56}"/>
+						<Switch Name="Water" ID="{C104324F-FD89-4BC7-B53E-461FB2F00FEE}"/>
+						<Switch Name="BallPit" ID="{0D1050BB-9C26-4E73-AE13-AB8C8C6F1C62}"/>
+						<Switch Name="School" ID="{25AAA779-5D2B-4687-9201-7B08FC4EA058}"/>
+						<Switch Name="FoamMat" ID="{47344735-30FF-46DA-9261-7CC5E6E1DFBB}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
