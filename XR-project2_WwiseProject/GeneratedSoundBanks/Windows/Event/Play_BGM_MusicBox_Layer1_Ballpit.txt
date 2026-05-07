@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2975959041	Play_BGM_MusicBox_Layer1_Ballpit			\Default Work Unit\Play_BGM_MusicBox_Layer1_Ballpit	
-

@@ -78474,7 +78474,7 @@ MonoBehaviour:
   uiManager: {fileID: 937493660}
   useTestSong: 1
   poseChecker: {fileID: 1336832990}
-  requireCorrectPose: 1
+  requireCorrectPose: 0
 --- !u!114 &937493663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119102,7 +119102,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336832985}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c1199cb3795eab4ea092857d813caa0, type: 3}
   m_Name: 

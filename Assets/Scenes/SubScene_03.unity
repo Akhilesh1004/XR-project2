@@ -8352,7 +8352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGoodBear: 0
-  screamEvent: Play_SFX_Doll_Bad_Scream
+  screamEvent: 
   giggleEvent: Play_SFX_Doll_Bad_Giggle
   cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1 &318070321 stripped
@@ -12020,7 +12020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGoodBear: 0
-  screamEvent: Play_SFX_Doll_Bad_Scream
+  screamEvent: 
   giggleEvent: Play_SFX_Doll_Bad_Giggle
   cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1 &475591835
@@ -22654,7 +22654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGoodBear: 0
-  screamEvent: Play_SFX_Doll_Bad_Scream
+  screamEvent: 
   giggleEvent: Play_SFX_Doll_Bad_Giggle
   cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!65 &1070320711
@@ -26436,7 +26436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGoodBear: 0
-  screamEvent: Play_SFX_Doll_Bad_Scream
+  screamEvent: 
   giggleEvent: Play_SFX_Doll_Bad_Giggle
   cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1 &1242256130
@@ -38109,7 +38109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGoodBear: 0
-  screamEvent: Play_SFX_Doll_Bad_Scream
+  screamEvent: 
   giggleEvent: Play_SFX_Doll_Bad_Giggle
   cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!4 &1869062669 stripped
@@ -57754,7 +57754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGoodBear: 0
-  screamEvent: Play_SFX_Doll_Bad_Scream
+  screamEvent: 
   giggleEvent: Play_SFX_Doll_Bad_Giggle
   cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1001 &2052965812
