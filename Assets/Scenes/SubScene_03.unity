@@ -5102,11 +5102,11 @@ GameObject:
   - component: {fileID: 263386069}
   - component: {fileID: 263386068}
   - component: {fileID: 263386075}
-  - component: {fileID: 263386074}
   - component: {fileID: 263386073}
   - component: {fileID: 263386072}
   - component: {fileID: 263386071}
   - component: {fileID: 263386076}
+  - component: {fileID: 263386077}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -5238,28 +5238,6 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
---- !u!64 &263386074
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263386067}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -462981019419857548, guid: 38475d8ee69350a4b883b007bfbf839f, type: 3}
 --- !u!54 &263386075
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5336,6 +5314,27 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &263386077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263386067}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 42.18079, y: 0.99999994, z: 34.50844}
+  m_Center: {x: 15.352546, y: 12.76087, z: 5.005648}
 --- !u!1 &267395326
 GameObject:
   m_ObjectHideFlags: 0
