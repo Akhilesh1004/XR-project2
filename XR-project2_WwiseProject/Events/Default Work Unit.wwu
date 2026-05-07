@@ -248,50 +248,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_BGM_MusicBox_Full_Ending" ID="{8AE0929A-A1EC-4EFE-8C00-1DB76CBF7317}">
-					<ChildrenList>
-						<Action Name="" ID="{B1F0A3EF-B209-4916-8AA2-5BA97ACAB8CD}" ShortID="1003676255">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BGM_MusicBox_Full_Ending" ID="{99660636-E156-4CC8-A9BD-263B5420FAFE}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BGM_MusicBox_Layer1_Ballpit" ID="{E18A6799-B388-437F-9B4E-12E8BAFBAEE1}">
-					<ChildrenList>
-						<Action Name="" ID="{B1F0DDAD-5CA0-4ABA-A745-9C5626A4B64A}" ShortID="336214673">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BGM_MusicBox_Layer1_Ballpit" ID="{6FF047F5-32DE-43F8-B393-1FAF41BE3836}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BGM_MusicBox_Layer2_School" ID="{8FE49912-BD6A-434B-9D99-24EF01E51520}">
-					<ChildrenList>
-						<Action Name="" ID="{45064A9E-BAEF-4706-A60D-E358D9CC2A79}" ShortID="1001961033">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BGM_MusicBox_Layer2_School" ID="{E0A1768C-2BE6-4209-B0F5-3A9A0F380330}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BGM_MusicBox_Layer3_Home" ID="{7B746111-A002-46B3-8593-D4D71F0BE972}">
-					<ChildrenList>
-						<Action Name="" ID="{1970FD2B-4D75-4F54-9E83-8E5C8AF2BDD4}" ShortID="50192873">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BGM_MusicBox_Layer3_Home" ID="{AB273891-4325-4561-A599-CDECB38CDEAD}" WorkUnitID="{CE9B4965-370C-45D5-B9A4-E060903ACFC8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_SFX_MusicBox_Winding_Crank" ID="{7B897EF7-6F25-4DD0-B414-C806F0A2E126}">
 					<ChildrenList>
 						<Action Name="" ID="{EEDE10AC-C188-419A-9FEB-156E11051D4D}" ShortID="1067962600">

@@ -7,14 +7,11 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_SFX_Note_Pickup_02" ID="{7972D7EB-C2F8-4225-BCA6-D1A35569DBD7}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_AMB_Portal_Hum_Loop" ID="{B3C69BAC-7C10-4279-98E5-6DC11DAF3CFF}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BGM_MusicBox_Layer2_School" ID="{8FE49912-BD6A-434B-9D99-24EF01E51520}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BGM_MusicBox_Layer1_Ballpit" ID="{E18A6799-B388-437F-9B4E-12E8BAFBAEE1}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Dream_BGM" ID="{51DCD5F4-E813-445F-9C2B-2DDAB00D2142}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Doll_Bad_Scream" ID="{DB70CCC5-0AB6-446C-9505-988FB6404250}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footstep" ID="{D99F1FBF-CA4D-447D-B74B-52957B50DFA4}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Master_BGM" ID="{35945703-B9E8-44FB-9FAB-D69B6193616C}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Note_A" ID="{E5A1F08D-A003-458B-AE87-87300F27B950}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BGM_MusicBox_Layer3_Home" ID="{7B746111-A002-46B3-8593-D4D71F0BE972}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_MusicBox_Part_Insert" ID="{84029A31-B239-46FF-82EE-CBCAA3221100}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Note_Pickup_03" ID="{175798D2-E98A-47FE-9140-C344EB466915}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Note_Pickup_01" ID="{381A0965-1CF9-497B-88F0-B2588E1AC98F}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
@@ -29,7 +26,6 @@
 						<ObjectRef Name="Play_SFX_Door_Wood_Open" ID="{7AC9A245-BCC0-4EA5-81CF-C9EFDE8D1367}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Doll_Bad_Giggle" ID="{5FECE7A6-90B0-4ED8-875B-80E9036B530A}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Piano_BGM" ID="{BD21513A-285E-4EE8-8E10-95B65D470941}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BGM_MusicBox_Full_Ending" ID="{8AE0929A-A1EC-4EFE-8C00-1DB76CBF7317}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Note_B" ID="{5802E58C-CBFE-4F2C-A857-7A8F221C9322}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Piano_BGM" ID="{4FAD7093-082E-4F32-BD82-C61A4D3D5570}" WorkUnitID="{0235EC72-414D-4871-9C80-91CB84838F0B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
