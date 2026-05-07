@@ -74913,7 +74913,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a0c1987e695d8ed44ba86a269cca278f,
+    WwiseObjectReference: {fileID: 11400000, guid: 11626f2af834dc448ab9235ca66f316b,
       type: 2}
   useCallbacks: 0
   stopSoundOnDestroy: 1

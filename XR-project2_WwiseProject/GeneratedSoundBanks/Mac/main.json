@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2247F40C-B06D-4A1C-9387-CBE83960CF5A}",
     "Language": "SFX",
-    "Hash": "{5FB9B1CF-F739-BB75-4146-80EAA5AB2762}",
+    "Hash": "{7AC18CD1-6737-A45B-42B7-936B7C12BBAF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
@@ -304,6 +304,14 @@
       "CachePath": "83/{832DB02A-CE2E-9C51-A910-17AA52EF4784}.wem"
      },
      {
+      "Id": "906674178",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BGM_MusicBox_Layer3_Home.wav",
+      "CachePath": "18/{1806A4B5-BBFC-53D0-765B-CECAECF6B371}.wem"
+     },
+     {
       "Id": "912217143",
       "Language": "SFX",
       "Streaming": "false",
@@ -394,6 +402,20 @@
       "MediaRefs": [
        {
         "Id": "61295772"
+       }
+      ]
+     },
+     {
+      "Id": "3725977182",
+      "Name": "Play_BGM_MusicBox_Layer3_Home",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_MusicBox_Layer3_Home",
+      "GUID": "{BFA8176E-CBF2-48AD-BDB5-BB555DC03C32}",
+      "DurationType": "OneShot",
+      "DurationMin": "119.999725",
+      "DurationMax": "119.999725",
+      "MediaRefs": [
+       {
+        "Id": "906674178"
        }
       ]
      },
@@ -925,6 +947,6 @@
     ]
    }
   ],
-  "FileHash": "{6A5DDDD2-E0EC-DC46-E4B2-113218DF7783}"
+  "FileHash": "{1CD3AB9D-89A4-C942-67BD-A74B1E9536E0}"
  }
 }

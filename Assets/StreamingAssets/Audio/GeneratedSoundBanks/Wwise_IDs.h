@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMB_DOLL_GOOD_CRY_LOOP = 820856528U;
         static const AkUniqueID PLAY_AMB_PORTAL_HUM_LOOP = 4162896493U;
+        static const AkUniqueID PLAY_BGM_MUSICBOX_LAYER3_HOME = 3725977182U;
         static const AkUniqueID PLAY_DREAM_BGM = 1384642536U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_MASTER_BGM = 3563492127U;
