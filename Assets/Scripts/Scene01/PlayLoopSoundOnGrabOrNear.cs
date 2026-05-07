@@ -25,7 +25,14 @@ public class PlayLoopSoundOnGrabOrNear : MonoBehaviour
 
     public NoteCompletionManager noteCompletionManager;
 
-    bool count = false;
+    [Header("--- Wwise 音效設定 ---")]
+    [Tooltip("請依照音符填入對應的抓取聲，例如 Play_SFX_Note_Pickup_01")]
+    public string pickupEventName = "Play_SFX_Note_Pickup_01";
+    public string successEventName = "Play_SFX_Note_Place_Success";
+    public string failEventName = "Play_SFX_Note_Place_Fail";
+
+    private bool count = false;
+    private bool wasGrabbed = false; // 用來記錄上一幀的抓取狀態
 
     private void Start()
     {
@@ -49,33 +56,62 @@ public class PlayLoopSoundOnGrabOrNear : MonoBehaviour
                 audioSource.clip = loopClip;
             }
         }
-
-        
-
     }
 
     private void Update()
     {
-        Debug.Log(audioSource.clip.loadState);
+        // Debug.Log(audioSource.clip.loadState); // 建議註解掉，避免每幀印出造成 VR 卡頓
+
         bool grabbed = IsGrabbed();
         bool near = IsNearTarget();
 
+        // ==========================================
+        // Wwise: 抓取與放開音效判定
+        // ==========================================
+        if (grabbed && !wasGrabbed)
+        {
+            // 剛抓起的那一瞬間
+            AkSoundEngine.PostEvent(pickupEventName, gameObject);
+        }
+        else if (!grabbed && wasGrabbed)
+        {
+            // 剛鬆開手的那一瞬間
+            if (!near)
+            {
+                // 如果鬆開手時，音符不在目標區域內 -> 放錯了
+                AkSoundEngine.PostEvent(failEventName, gameObject);
+            }
+        }
+        wasGrabbed = grabbed; // 紀錄狀態供下一幀比對
+
+
+        // ==========================================
+        // 原本的 Loop 音效邏輯
+        // ==========================================
         if (grabbed || near)
         {
-            Debug.Log("START");
+            // Debug.Log("START");
             StartLoopSound();
         }
         else
         {
-            Debug.Log("STOP");
+            // Debug.Log("STOP");
             StopLoopSound();
         }
+
+        // ==========================================
+        // 遊戲計分與 Wwise: 放對音效判定
+        // ==========================================
         if (near && !count)
         {
             count = true;
             noteCompletionManager.AddCompletedCount();
+
+            // 剛進入正確範圍 -> 放對了
+            AkSoundEngine.PostEvent(successEventName, gameObject);
         }
-        if(!near && count)
+
+        if (!near && count)
         {
             count = false;
             noteCompletionManager.SubCompletedCount();
@@ -103,7 +139,7 @@ public class PlayLoopSoundOnGrabOrNear : MonoBehaviour
         }
 
         float dist = Vector3.Distance(a, b);
-        Debug.Log(dist);
+        // Debug.Log(dist); // 建議註解掉，避免造成 VR 卡頓
         return dist <= nearDistance;
     }
 
@@ -115,7 +151,7 @@ public class PlayLoopSoundOnGrabOrNear : MonoBehaviour
         if (!audioSource.isPlaying)
         {
             audioSource.Play();
-            Debug.Log(audioSource.isPlaying);
+            // Debug.Log(audioSource.isPlaying);
         }
     }
 

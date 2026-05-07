@@ -31,6 +31,7 @@ public class NoteCompletionManager : MonoBehaviour
         UpdateUI();
         CheckGameFinish();
     }
+
     public void SubCompletedCount()
     {
         if (gameFinished) return;

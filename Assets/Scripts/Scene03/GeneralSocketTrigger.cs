@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
 using UnityEngine.Rendering;
@@ -13,9 +13,10 @@ public class GeneralSocketTrigger : MonoBehaviour
     [Header("Correct Action")]
     public GameObject objectToActivate;
 
-    [Header("Wrong Action (Color)")]
+    [Header("Wrong Action (Color & Audio)")]
     public Volume globalVolume;
     public Color wrongColor = new Color(1f, 0.2f, 0.2f);
+    public string failEventName = "Play_SFX_Doll_Bad_Scream"; // 放錯時尖叫
 
     private ColorAdjustments colorAdjustments;
     private Color originalColor;
@@ -27,7 +28,7 @@ public class GeneralSocketTrigger : MonoBehaviour
             originalColor = colorAdjustments.colorFilter.value;
         }
         if (objectToActivate != null)
-                objectToActivate.SetActive(false);
+            objectToActivate.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,13 +41,19 @@ public class GeneralSocketTrigger : MonoBehaviour
         {
             Debug.Log("Correct object entered");
 
+            // --- 🎵 停止好娃娃的哭聲 ---
+            BearAudioController bearAudio = incomingObject.GetComponent<BearAudioController>();
+            if (bearAudio != null) bearAudio.StopGoodBearCry();
+
             if (objectToActivate != null)
                 objectToActivate.SetActive(true);
         }
-
         else if (wrongObjects.Contains(incomingObject))
         {
             Debug.Log("Wrong object entered");
+
+            // --- 🎵 壞娃娃放錯位置，發出尖叫 ---
+            AkSoundEngine.PostEvent(failEventName, gameObject);
 
             if (colorAdjustments != null)
                 colorAdjustments.colorFilter.value = wrongColor;

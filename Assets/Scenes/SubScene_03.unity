@@ -1159,6 +1159,22 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &55636409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55636398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c55203fbd9472c45a91a7b34bbb0b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGoodBear: 1
+  screamEvent: Play_SFX_Doll_Bad_Scream
+  giggleEvent: Play_SFX_Doll_Bad_Giggle
+  cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1 &55655422
 GameObject:
   m_ObjectHideFlags: 0
@@ -8198,6 +8214,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 316341388}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1be5825e16a302a4f915b3239bd4681b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 316341390}
     - targetCorrespondingSourceObject: {fileID: -5002938956245774456, guid: 1be5825e16a302a4f915b3239bd4681b,
         type: 3}
       insertIndex: -1
@@ -8319,6 +8339,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.15, y: 0.8, z: 0.15}
   m_Center: {x: -0.00013325027, y: 0.39888465, z: 0.0017755777}
+--- !u!114 &316341390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316341384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c55203fbd9472c45a91a7b34bbb0b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGoodBear: 0
+  screamEvent: Play_SFX_Doll_Bad_Scream
+  giggleEvent: Play_SFX_Doll_Bad_Giggle
+  cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1 &318070321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7556877271754113001, guid: 6f950a51c02bcd24c89b3cd250bc7c84,
@@ -10256,6 +10292,7 @@ MonoBehaviour:
   objectToActivate: {fileID: 263386067}
   globalVolume: {fileID: 15594070}
   wrongColor: {r: 1, g: 0.2, b: 0.2, a: 1}
+  failEventName: Play_SFX_Doll_Bad_Scream
 --- !u!65 &410663696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11845,6 +11882,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 468753672}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cbb4316eae4439341a591bd246291873,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 468753674}
     - targetCorrespondingSourceObject: {fileID: -1954959419997571405, guid: cbb4316eae4439341a591bd246291873,
         type: 3}
       insertIndex: -1
@@ -11966,6 +12007,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.89245516, z: 0.25}
   m_Center: {x: -0.00038444635, y: 0.41071185, z: -0.005640652}
+--- !u!114 &468753674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468753668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c55203fbd9472c45a91a7b34bbb0b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGoodBear: 0
+  screamEvent: Play_SFX_Doll_Bad_Scream
+  giggleEvent: Play_SFX_Doll_Bad_Giggle
+  cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1 &475591835
 GameObject:
   m_ObjectHideFlags: 0
@@ -22480,6 +22537,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1070320700}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9998c987cc939a444b1bcbaae6847971,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1070320701}
     - targetCorrespondingSourceObject: {fileID: 5525101295043151308, guid: 9998c987cc939a444b1bcbaae6847971,
         type: 3}
       insertIndex: -1
@@ -22580,6 +22641,22 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
+--- !u!114 &1070320701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070320696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c55203fbd9472c45a91a7b34bbb0b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGoodBear: 0
+  screamEvent: Play_SFX_Doll_Bad_Scream
+  giggleEvent: Play_SFX_Doll_Bad_Giggle
+  cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!65 &1070320711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26221,6 +26298,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1241515956}
+    - targetCorrespondingSourceObject: {fileID: 2105627422072434884, guid: 9c17d598fae962d40a9da109af76e8b6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1241515958}
     - targetCorrespondingSourceObject: {fileID: 3519973159164461666, guid: 9c17d598fae962d40a9da109af76e8b6,
         type: 3}
       insertIndex: -1
@@ -26342,6 +26423,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.8670213, z: 0.2}
   m_Center: {x: -0.00041139196, y: 0.41112116, z: 0.010075949}
+--- !u!114 &1241515958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241515952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c55203fbd9472c45a91a7b34bbb0b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGoodBear: 0
+  screamEvent: Play_SFX_Doll_Bad_Scream
+  giggleEvent: Play_SFX_Doll_Bad_Giggle
+  cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1 &1242256130
 GameObject:
   m_ObjectHideFlags: 0
@@ -37874,6 +37971,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1869012522}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e7d847ae148a2c4abf1a5bf1790f307,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1869012524}
     - targetCorrespondingSourceObject: {fileID: 8780504022632828907, guid: 4e7d847ae148a2c4abf1a5bf1790f307,
         type: 3}
       insertIndex: -1
@@ -37995,6 +38096,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.8, z: 0.15}
   m_Center: {x: -0.00022757344, y: 0.40296167, z: 0.007937952}
+--- !u!114 &1869012524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869012518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c55203fbd9472c45a91a7b34bbb0b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGoodBear: 0
+  screamEvent: Play_SFX_Doll_Bad_Scream
+  giggleEvent: Play_SFX_Doll_Bad_Giggle
+  cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!4 &1869062669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4339956883261696, guid: a198419e400959d4987717da50d5d7ca,
@@ -47391,6 +47508,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 55636408}
+    - targetCorrespondingSourceObject: {fileID: 1627255578527788, guid: 5f5b30dd83891694d94871bfea671b47,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 55636409}
   m_SourcePrefab: {fileID: 100100000, guid: 5f5b30dd83891694d94871bfea671b47, type: 3}
 --- !u!1 &1957673637
 GameObject:
@@ -57495,6 +57616,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2050704405}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e8303a0bdf2cfe4090d8333d2baff9e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2050704407}
     - targetCorrespondingSourceObject: {fileID: 9094518321381821301, guid: 4e8303a0bdf2cfe4090d8333d2baff9e,
         type: 3}
       insertIndex: -1
@@ -57616,6 +57741,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3, y: 0.6, z: 0.2}
   m_Center: {x: -0.0011959828, y: 0.40461442, z: 0.0016304683}
+--- !u!114 &2050704407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050704401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c55203fbd9472c45a91a7b34bbb0b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGoodBear: 0
+  screamEvent: Play_SFX_Doll_Bad_Scream
+  giggleEvent: Play_SFX_Doll_Bad_Giggle
+  cryEvent: Play_AMB_Doll_Good_Cry_Loop
 --- !u!1001 &2052965812
 PrefabInstance:
   m_ObjectHideFlags: 0

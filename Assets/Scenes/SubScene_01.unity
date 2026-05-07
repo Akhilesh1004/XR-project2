@@ -16819,6 +16819,9 @@ MonoBehaviour:
   autoFindGrabbable: 1
   ignoreYDistance: 0
   noteCompletionManager: {fileID: 1764316683}
+  pickupEventName: Play_SFX_Note_Pickup_01
+  successEventName: Play_SFX_Note_Place_Success
+  failEventName: Play_SFX_Note_Place_Fail
 --- !u!82 &76261799
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68703,6 +68706,9 @@ MonoBehaviour:
   autoFindGrabbable: 1
   ignoreYDistance: 0
   noteCompletionManager: {fileID: 1764316683}
+  pickupEventName: Play_SFX_Note_Pickup_01
+  successEventName: Play_SFX_Note_Place_Success
+  failEventName: Play_SFX_Note_Place_Fail
 --- !u!82 &367825173
 AudioSource:
   m_ObjectHideFlags: 0
@@ -144520,6 +144526,9 @@ MonoBehaviour:
   autoFindGrabbable: 1
   ignoreYDistance: 0
   noteCompletionManager: {fileID: 1764316683}
+  pickupEventName: Play_SFX_Note_Pickup_01
+  successEventName: Play_SFX_Note_Place_Success
+  failEventName: Play_SFX_Note_Place_Fail
 --- !u!82 &760465014
 AudioSource:
   m_ObjectHideFlags: 0
@@ -320709,6 +320718,9 @@ MonoBehaviour:
   autoFindGrabbable: 1
   ignoreYDistance: 0
   noteCompletionManager: {fileID: 1764316683}
+  pickupEventName: Play_SFX_Note_Pickup_03
+  successEventName: Play_SFX_Note_Place_Success
+  failEventName: Play_SFX_Note_Place_Fail
 --- !u!82 &1609437191
 AudioSource:
   m_ObjectHideFlags: 0
@@ -414051,6 +414063,9 @@ MonoBehaviour:
   autoFindGrabbable: 1
   ignoreYDistance: 0
   noteCompletionManager: {fileID: 1764316683}
+  pickupEventName: Play_SFX_Note_Pickup_02
+  successEventName: Play_SFX_Note_Place_Success
+  failEventName: Play_SFX_Note_Place_Fail
 --- !u!82 &2093275182
 AudioSource:
   m_ObjectHideFlags: 0
