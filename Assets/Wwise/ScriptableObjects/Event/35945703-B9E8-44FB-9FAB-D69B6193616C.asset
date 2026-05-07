@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_Master_BGM
   id: 3563492127
   guid: 35945703-B9E8-44FB-9FAB-D69B6193616C
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

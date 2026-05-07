@@ -34,6 +34,9 @@ public class PortalTeleporter : MonoBehaviour
         if (globalTeleporting) return;
         if (!other.CompareTag(triggerTag)) return;
 
+        // --- 🎵 音效新增：玩家碰到傳送門的瞬間播放進入音效 ---
+        AkSoundEngine.PostEvent("Play_SFX_Portal_Enter_Suck", gameObject);
+
         if (final_object != null) final_object.SetActive(true);
         localTriggered = true;
         StartCoroutine(TeleportRoutine());
@@ -136,7 +139,7 @@ public class PortalTeleporter : MonoBehaviour
         SceneManager.MoveGameObjectToScene(cameraRigRoot, targetScene);
         SceneManager.SetActiveScene(targetScene);
 
-        // --- 新增：Wwise BGM 狀態切換邏輯 ---
+        // --- Wwise BGM 狀態切換邏輯 ---
         SwitchWwiseBGMState(targetSceneName);
 
         yield return null;
@@ -155,9 +158,6 @@ public class PortalTeleporter : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    /// <summary>
-    /// 根據目標場景名稱切換 Wwise 的 BGM 狀態
-    /// </summary>
     private void SwitchWwiseBGMState(string sceneName)
     {
         string stateName = "Scene0"; // 預設
@@ -167,7 +167,6 @@ public class PortalTeleporter : MonoBehaviour
         else if (sceneName == "SubScene_02") stateName = "Scene2";
         else if (sceneName == "SubScene_03") stateName = "Scene3";
 
-        // 執行 Wwise 狀態切換指令
         AkSoundEngine.SetState("BGM_State", stateName);
         Debug.Log($"[Wwise] BGM State switched to: {stateName} (from Scene: {sceneName})");
     }

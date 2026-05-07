@@ -4415,6 +4415,7 @@ GameObject:
   - component: {fileID: 479379881}
   - component: {fileID: 479379884}
   - component: {fileID: 479379883}
+  - component: {fileID: 479379885}
   m_Layer: 0
   m_Name: Door Handle.011
   m_TagString: Untagged
@@ -4532,6 +4533,52 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1396999714319424966, guid: cd408a0ea9217f14ca1fec65ecc8cf52, type: 3}
+--- !u!114 &479379885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479379879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 479379883}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 694549376}
+        m_TargetAssemblyTypeName: ObjectControl, Assembly-CSharp
+        m_MethodName: PlayDoorHandleSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &499455425
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,9 +6230,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetToWatch: {fileID: 411307611}
   portalID: SubScene03
   objectToHide: {fileID: 694549370}
   objectToShow: {fileID: 1006600546}
+  portalObject: {fileID: 1866441538}
+  openAngleThreshold: 30
+  isMusicBox: 0
+  rotationThreshold: 0.5
+  musicBoxEventName: Play_SFX_MusicBox_Crank
 --- !u!1 &694645849
 GameObject:
   m_ObjectHideFlags: 0
@@ -8170,6 +8223,7 @@ GameObject:
   - component: {fileID: 840327539}
   - component: {fileID: 840327538}
   - component: {fileID: 840327537}
+  - component: {fileID: 840327541}
   m_Layer: 0
   m_Name: Door Handle.011
   m_TagString: Untagged
@@ -8287,6 +8341,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840327535}
   m_Mesh: {fileID: 1396999714319424966, guid: cd408a0ea9217f14ca1fec65ecc8cf52, type: 3}
+--- !u!114 &840327541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840327535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 840327537}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1760074273}
+        m_TargetAssemblyTypeName: ObjectControl, Assembly-CSharp
+        m_MethodName: PlayDoorHandleSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &849505589
 GameObject:
   m_ObjectHideFlags: 0
@@ -12028,9 +12128,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetToWatch: {fileID: 1803694131}
   portalID: SubScene01
   objectToHide: {fileID: 1247872564}
   objectToShow: {fileID: 57882045}
+  portalObject: {fileID: 957999670}
+  openAngleThreshold: 30
+  isMusicBox: 0
+  rotationThreshold: 0.5
+  musicBoxEventName: Play_SFX_MusicBox_Crank
 --- !u!1 &1259271970
 GameObject:
   m_ObjectHideFlags: 0
@@ -12305,6 +12411,7 @@ GameObject:
   - component: {fileID: 1306107270}
   - component: {fileID: 1306107271}
   - component: {fileID: 1306107272}
+  - component: {fileID: 1306107273}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -12421,6 +12528,27 @@ MonoBehaviour:
     MaxAngle:
       Constrain: 0
       Value: 0
+--- !u!114 &1306107273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306107267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToWatch: {fileID: 0}
+  portalID: 
+  objectToHide: {fileID: 0}
+  objectToShow: {fileID: 0}
+  portalObject: {fileID: 0}
+  openAngleThreshold: 10
+  isMusicBox: 1
+  rotationThreshold: 0.5
+  musicBoxEventName: Play_SFX_MusicBox_Winding_Crank
 --- !u!1 &1306798170
 GameObject:
   m_ObjectHideFlags: 0
@@ -14854,6 +14982,7 @@ GameObject:
   - component: {fileID: 1599859772}
   - component: {fileID: 1599859775}
   - component: {fileID: 1599859774}
+  - component: {fileID: 1599859776}
   m_Layer: 0
   m_Name: Door Handle.012
   m_TagString: Untagged
@@ -14971,6 +15100,52 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4440878853323226104, guid: cd408a0ea9217f14ca1fec65ecc8cf52, type: 3}
+--- !u!114 &1599859776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599859770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 1599859774}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1837147064}
+        m_TargetAssemblyTypeName: ObjectControl, Assembly-CSharp
+        m_MethodName: PlayDoorHandleSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1613981091
 GameObject:
   m_ObjectHideFlags: 0
@@ -16290,9 +16465,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetToWatch: {fileID: 518091125}
   portalID: FinalScene
   objectToHide: {fileID: 1760074267}
   objectToShow: {fileID: 0}
+  portalObject: {fileID: 1345997277}
+  openAngleThreshold: 30
+  isMusicBox: 0
+  rotationThreshold: 0.5
+  musicBoxEventName: Play_SFX_MusicBox_Crank
 --- !u!1 &1766794108
 GameObject:
   m_ObjectHideFlags: 0
@@ -16555,6 +16736,7 @@ GameObject:
   - component: {fileID: 1798843221}
   - component: {fileID: 1798843224}
   - component: {fileID: 1798843223}
+  - component: {fileID: 1798843225}
   m_Layer: 0
   m_Name: Door Handle.010
   m_TagString: Untagged
@@ -16672,6 +16854,52 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7401792012293950037, guid: cd408a0ea9217f14ca1fec65ecc8cf52, type: 3}
+--- !u!114 &1798843225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798843219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 1798843223}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1247872570}
+        m_TargetAssemblyTypeName: ObjectControl, Assembly-CSharp
+        m_MethodName: PlayDoorHandleSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1800912897
 GameObject:
   m_ObjectHideFlags: 0
@@ -17185,9 +17413,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672307de7d4e7e947b4cd21841b61c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetToWatch: {fileID: 1439596944}
   portalID: SubScene02
   objectToHide: {fileID: 1837147058}
   objectToShow: {fileID: 1461923991}
+  portalObject: {fileID: 14807425}
+  openAngleThreshold: 30
+  isMusicBox: 0
+  rotationThreshold: 0.5
+  musicBoxEventName: Play_SFX_MusicBox_Crank
 --- !u!1 &1859123039
 GameObject:
   m_ObjectHideFlags: 0
@@ -20868,6 +21102,7 @@ GameObject:
   - component: {fileID: 2022156563990275405}
   - component: {fileID: 8945266475168491605}
   - component: {fileID: 8945266475168491604}
+  - component: {fileID: 8945266475168491606}
   m_Layer: 0
   m_Name: Handle_MusicBox_Mat_0
   m_TagString: Untagged
@@ -20920,6 +21155,52 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1958729696823160979, guid: 648ff819e34738544a8cf74c398a34c4, type: 3}
+--- !u!114 &8945266475168491606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8945266475168491603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: 8945266475168491604}
+  _whenRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1306107273}
+        m_TargetAssemblyTypeName: ObjectControl, Assembly-CSharp
+        m_MethodName: PlayMusicBoxCrankSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenMove:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!23 &8960721099575536997
 MeshRenderer:
   m_ObjectHideFlags: 0
