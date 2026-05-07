@@ -1,11 +1,30 @@
 Event	ID	Name			Wwise Object Path	Notes
+	820856528	Play_AMB_Doll_Good_Cry_Loop			\Default Work Unit\Play_AMB_Doll_Good_Cry_Loop	
+	1258396217	Play_SFX_Note_Place_Fail			\Default Work Unit\Play_SFX_Note_Place_Fail	
 	1384642536	Play_Dream_BGM			\Default Work Unit\Play_Dream_BGM	
 	1602358412	Play_Footstep			\Default Work Unit\Play_Footstep	
+	1726924710	Play_SFX_Note_Place_Success			\Default Work Unit\Play_SFX_Note_Place_Success	
+	2333827413	Play_SFX_MusicBox_Winding_Crank			\Default Work Unit\Play_SFX_MusicBox_Winding_Crank	
+	2466555133	Play_BGM_MusicBox_Full_Ending			\Default Work Unit\Play_BGM_MusicBox_Full_Ending	
 	2491771796	Stop_Piano_BGM			\Default Work Unit\Stop_Piano_BGM	
+	2730032790	Play_SFX_MusicBox_Part_Insert			\Default Work Unit\Play_SFX_MusicBox_Part_Insert	
 	2785768334	Play_Note_Y			\Default Work Unit\Play_Note_Y	
 	2785768335	Play_Note_X			\Default Work Unit\Play_Note_X	
 	2785768341	Play_Note_B			\Default Work Unit\Play_Note_B	
 	2785768342	Play_Note_A			\Default Work Unit\Play_Note_A	
+	2806819781	Play_SFX_Note_Pickup_01			\Default Work Unit\Play_SFX_Note_Pickup_01	
+	2806819782	Play_SFX_Note_Pickup_02			\Default Work Unit\Play_SFX_Note_Pickup_02	
+	2806819783	Play_SFX_Note_Pickup_03			\Default Work Unit\Play_SFX_Note_Pickup_03	
+	2975959041	Play_BGM_MusicBox_Layer1_Ballpit			\Default Work Unit\Play_BGM_MusicBox_Layer1_Ballpit	
+	3040057572	Play_BGM_MusicBox_Layer2_School			\Default Work Unit\Play_BGM_MusicBox_Layer2_School	
+	3244725865	Play_SFX_Door_Wood_Open			\Default Work Unit\Play_SFX_Door_Wood_Open	
+	3450949859	Play_SFX_Doll_Bad_Giggle			\Default Work Unit\Play_SFX_Doll_Bad_Giggle	
+	3563492127	Play_Master_BGM			\Default Work Unit\Play_Master_BGM	
+	3685337724	Play_SFX_Portal_Enter_Suck			\Default Work Unit\Play_SFX_Portal_Enter_Suck	
+	3697232071	Play_SFX_Door_Handle_Turn			\Default Work Unit\Play_SFX_Door_Handle_Turn	
+	3725977182	Play_BGM_MusicBox_Layer3_Home			\Default Work Unit\Play_BGM_MusicBox_Layer3_Home	
+	4056061935	Play_SFX_Doll_Bad_Scream			\Default Work Unit\Play_SFX_Doll_Bad_Scream	
+	4162896493	Play_AMB_Portal_Hum_Loop			\Default Work Unit\Play_AMB_Portal_Hum_Loop	
 	4197936254	Play_Piano_BGM			\Default Work Unit\Play_Piano_BGM	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -18,31 +37,63 @@ Switch	ID	Name	Switch Group			Notes
 	3661816265	School	Footstep_Material			
 	4067911033	BallPit	Footstep_Material			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3086301423	BGM_State			\Default Work Unit\BGM_State	
+
+State	ID	Name	State Group			Notes
+	748895195	None	BGM_State			
+	1544306476	Scene1	BGM_State			
+	1544306477	Scene0	BGM_State			
+	1544306478	Scene3	BGM_State			
+	1544306479	Scene2	BGM_State			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	13945645	SFX_Note_Place_Success	.cache\B5\{B56B354D-CC60-F6EF-3C05-7D69E7AB3965}.wem		\Containers\Default Work Unit\SFX_Note_Place_Success		230496
 	18774633	Barefoot_skin_impact_#2-1778091676291	.cache\3C\{3C47BEDA-1630-70F9-8A06-7992308F0F5E}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_FoamMat\Barefoot_skin_impact_#2-1778091676291		54936
 	28712941	Rubber_sneaker_sole__#1-1778091551325	.cache\24\{2402DD5E-1CEC-EC89-0F82-77EADB17298B}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#1-1778091551325		31808
 	39856233	Soft_muffled_cloth_f_#3-1778091233678	.cache\4C\{4C8BBC16-3BDF-0B61-7A2E-96098FCE8534}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Dream\Soft_muffled_cloth_f_#3-1778091233678		85356
+	61295772	AMB_Portal_Hum_Loop	.cache\46\{46BDC2E2-2660-84BD-63D2-2CE072E90ACA}.wem		\Containers\Default Work Unit\AMB_Portal_Hum_Loop		1013856
 	135416998	plastic ball1	.cache\06\{067EB79A-DB99-2A6A-4A00-6A82FD835074}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball1		77828
 	193609348	Shallow_water_wading_#3-1778091376234	.cache\96\{96D8533B-1585-D818-710C-D83E6214F654}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Water\Shallow_water_wading_#3-1778091376234		86880
 	202318573	Barefoot_skin_impact_#2-1778091846546	.cache\6F\{6F0FFAC3-F22C-AEC9-2DF2-482A7925D403}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_FoamMat\Barefoot_skin_impact_#2-1778091846546		51768
 	251204340	Barefoot_skin_impact_#2-1778091788886	.cache\11\{11125DC6-7CE0-7BD6-7304-B46631DDD4C4}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_FoamMat\Barefoot_skin_impact_#2-1778091788886		50624
+	266369814	BGM_MusicBox_Layer2_School	.cache\81\{8156003E-9F5B-1675-764E-D4B73D20D78B}.wem		\Containers\Default Work Unit\BGM_MusicBox_Layer2_School		21176240
 	275604077	Soft_muffled_cloth_f_#4-1778091182912	.cache\3F\{3FA625DA-7693-2493-BD60-CE5E4BC7081E}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Dream\Soft_muffled_cloth_f_#4-1778091182912		83068
+	328068410	BGM_MusicBox_Full_Ending	.cache\86\{86802317-1597-F2AA-8131-C34CAB7A4603}.wem		\Containers\Default Work Unit\BGM_MusicBox_Full_Ending		63521376
 	343433004	Barefoot_skin_impact_#2-1778091885512	.cache\D5\{D5613C64-E1FE-B99A-7541-B0AACBBA2BF2}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_FoamMat\Barefoot_skin_impact_#2-1778091885512		82868
+	366637341	SFX_Note_Pickup_02	.cache\7D\{7D23415F-F60E-D142-3EF7-96706A87C0E3}.wem		\Containers\Default Work Unit\SFX_Note_Pickup_02		553056
+	371525884	SFX_Doll_Bad_Giggle	.cache\49\{49B416CF-9EFB-7F0A-0177-722FB79765A0}.wem		\Containers\Default Work Unit\SFX_Doll_Bad_Giggle		1090656
 	376141780	Shallow_water_wading_#1-1778091362410	.cache\78\{78825C6C-C296-CAAC-2A2C-84E632D653F6}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Water\Shallow_water_wading_#1-1778091362410		45508
 	423387272	Soft_muffled_cloth_f_#3-1778091258365	.cache\C1\{C15B2CE5-C5CD-5F48-E484-00F1855F20E2}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Dream\Soft_muffled_cloth_f_#3-1778091258365		46028
+	436667727	SFX_Note_Pickup_01	.cache\65\{658CF2A5-A114-32DC-33CB-4226B106C44F}.wem		\Containers\Default Work Unit\SFX_Note_Pickup_01		975456
+	468492319	Indoor_Playground_Memory_2026-04-30T052843	.cache\62\{629E68B7-9667-6B6B-8680-B4C93C5FCBCD}.wem		\Containers\Default Work Unit\scence 2\Master_BGM_Switch\New Music Playlist Container_01\BGM_Scene1\Indoor_Playground_Memory_2026-04-30T052843		10584028
 	473905685	plastic ball2	.cache\82\{82BC3D80-A3BA-F71A-3AA7-19F928D7D28A}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball2		71608
 	478166025	Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940	.cache\59\{599F6611-C9C4-4E42-37FC-FB5F1E04418D}.wem		\Containers\Default Work Unit\scence 2\Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T173940		10477532
 	480352100	Zhi di so	.cache\BE\{BE29CD7C-BE9F-B3FE-0C4C-C83DE32477A2}.wem		\Containers\Default Work Unit\scence 2\Zhi di so		78260
+	481343764	SFX_Portal_Enter_Suck	.cache\02\{02168C6E-F554-7823-6895-50921F611992}.wem		\Containers\Default Work Unit\SFX_Portal_Enter_Suck		213216
+	484918409	SFX_Note_Place_Fail	.cache\DF\{DF6E8FA5-3390-2818-2C2C-2DC0B72213F9}.wem		\Containers\Default Work Unit\SFX_Note_Place_Fail		437856
+	497062086	Collective_Unconscious_2026-04-30T052432	.cache\2C\{2CEE6679-CA22-EDAB-B87F-38A65C5F06EF}.wem		\Containers\Default Work Unit\scence 2\Master_BGM_Switch\New Music Playlist Container\BGM_Scene0\Collective_Unconscious_2026-04-30T052432		10584028
+	527240803	SFX_MusicBox_Part_Insert	.cache\B3\{B33BBEED-BB22-B988-0ED8-3586029D4CF6}.wem		\Containers\Default Work Unit\SFX_MusicBox_Part_Insert		1950816
 	541834474	Zhi di re	.cache\B8\{B8646E52-7088-344D-37A8-3296BE599603}.wem		\Containers\Default Work Unit\scence 2\Zhi di re		129244
+	579797328	Bedroom_Shadows_2026-04-30T055334	.cache\7F\{7FB74330-EC61-0463-71A5-ABFCC5C07543}.wem		\Containers\Default Work Unit\scence 2\Master_BGM_Switch\New Music Playlist Container_03\BGM_Scene3\Bedroom_Shadows_2026-04-30T055334		10584028
+	593819367	BGM_MusicBox_Layer1_Ballpit	.cache\1F\{1F96865B-6CFA-4C05-3699-DF0C40A0A911}.wem		\Containers\Default Work Unit\BGM_MusicBox_Layer1_Ballpit		21168048
 	707856113	Shallow_water_wading_#4-1778091385851	.cache\27\{27EEBAFD-C903-DD87-9207-016B3FEF67A2}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Water\Shallow_water_wading_#4-1778091385851		88656
+	712411937	SFX_Door_Handle_Turn	.cache\20\{207FCD52-FCF2-F102-2F47-355AAC770183}.wem		\Containers\Default Work Unit\SFX_Door_Handle_Turn		783456
 	726814039	Soft_muffled_cloth_f_#2-1778091286575	.cache\31\{31476697-36D5-6B7B-F5A8-98D819090CFF}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Dream\Soft_muffled_cloth_f_#2-1778091286575		81568
+	772789167	SFX_Note_Pickup_03	.cache\1A\{1A028F2E-DCC6-86BB-E094-C01805CF5DF4}.wem		\Containers\Default Work Unit\SFX_Note_Pickup_03		230496
+	801715184	SFX_Doll_Bad_Scream	.cache\05\{05EB7702-85D5-29C8-26E5-37920E442643}.wem		\Containers\Default Work Unit\SFX_Doll_Bad_Scream		437856
 	806380124	Zhi di la	.cache\DC\{DCB0B3D9-7126-7260-8CCD-C91D89DA2103}.wem		\Containers\Default Work Unit\scence 2\Zhi di la		86944
 	827312705	plastic ball3	.cache\68\{68F8A058-CCE6-3D2C-A74D-89ED5EC953FA}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball3		70568
 	855382042	Rubber_sneaker_sole__#4-1778091515643	.cache\CC\{CCD8ABBC-4C1F-6D0D-57EE-79CCC0D0CBA8}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#4-1778091515643		32336
+	873423020	dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248	.cache\86\{868E010D-5B5D-996C-4B7B-27878C55F37F}.wem		\Containers\Default Work Unit\scence 2\Master_BGM_Switch\New Music Playlist Container_02\BGM_Scene2\dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248		14106500
 	886052060	Rubber_sneaker_sole__#4-1778091538346	.cache\83\{832DB02A-CE2E-9C51-A910-17AA52EF4784}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#4-1778091538346		48312
+	906674178	BGM_MusicBox_Layer3_Home	.cache\18\{1806A4B5-BBFC-53D0-765B-CECAECF6B371}.wem		\Containers\Default Work Unit\BGM_MusicBox_Layer3_Home		21168048
 	912217143	Rubber_sneaker_sole__#3-1778091511343	.cache\B2\{B2713C45-672B-368B-594A-EFB4B2D1B7EC}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#3-1778091511343		36876
 	931584496	plastic ball	.cache\C0\{C05F5737-5F2B-D51F-7083-2FFE46D7BF31}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball		86888
+	977575692	SFX_MusicBox_Winding_Crank	.cache\D2\{D23E5F79-2AC2-E3D1-7ED5-2C0336B04B4B}.wem		\Containers\Default Work Unit\SFX_MusicBox_Winding_Crank		298200
 	987720715	Zhi di si	.cache\59\{591F0BF3-E733-A264-2839-411CD724FC36}.wem		\Containers\Default Work Unit\scence 2\Zhi di si		96648
+	997378424	AMB_Doll_Good_Cry_Loop	.cache\05\{05EA239A-5DF9-6091-6CC1-024C2E13D5F9}.wem		\Containers\Default Work Unit\AMB_Doll_Good_Cry_Loop		1950816
 	1021866025	dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248	.cache\52\{5295C35F-A17B-727A-8572-88A34A01387F}.wem		\Containers\Default Work Unit\scence 2\dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248		14106500
 	1023659857	Shallow_water_wading_#2-1778091370270	.cache\6B\{6BF78265-3782-ACF5-A43D-540B774EB601}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_Water\Shallow_water_wading_#2-1778091370270		101824
+	1040594688	SFX_Door_Wood_Open	.cache\15\{156AECE5-2989-0C0C-4D85-1A7CDE10F99F}.wem		\Containers\Default Work Unit\SFX_Door_Wood_Open		384096
 

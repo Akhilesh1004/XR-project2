@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_DOOR_HANDLE_TURN = 3697232071U;
         static const AkUniqueID PLAY_SFX_DOOR_WOOD_OPEN = 3244725865U;
         static const AkUniqueID PLAY_SFX_MUSICBOX_PART_INSERT = 2730032790U;
+        static const AkUniqueID PLAY_SFX_MUSICBOX_WINDING_CRANK = 2333827413U;
         static const AkUniqueID PLAY_SFX_NOTE_PICKUP_01 = 2806819781U;
         static const AkUniqueID PLAY_SFX_NOTE_PICKUP_02 = 2806819782U;
         static const AkUniqueID PLAY_SFX_NOTE_PICKUP_03 = 2806819783U;
