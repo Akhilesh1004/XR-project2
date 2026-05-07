@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3697232071",
+    "Type": "Event",
+    "GUID": "{A199C89F-F58D-498D-B892-AF874583B88F}",
+    "Language": "SFX",
+    "Hash": "{20315C51-4584-4111-C26B-5D1A25605C54}",
+    "ObjectPath": "Play_SFX_Door_Handle_Turn",
+    "ShortName": "Play_SFX_Door_Handle_Turn",
+    "Path": "Event/Play_SFX_Door_Handle_Turn.bnk",
+    "Media": [
+     {
+      "Id": "712411937",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Door_Handle_Turn.wav",
+      "Path": "Media/712411937.wem",
+      "CachePath": "20/{207FCD52-FCF2-F102-2F47-355AAC770183}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3697232071",
+      "Name": "Play_SFX_Door_Handle_Turn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Door_Handle_Turn",
+      "GUID": "{A199C89F-F58D-498D-B892-AF874583B88F}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.08",
+      "DurationMax": "4.08",
+      "MediaRefs": [
+       {
+        "Id": "712411937"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D1A5253D-503B-C7AD-98FD-51F1C6BDFEF4}"
+ }
+}

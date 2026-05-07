@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{35945703-B9E8-44FB-9FAB-D69B6193616C}",
     "Language": "SFX",
-    "Hash": "{C58EEB8A-23E2-8F09-ADC1-8BB286C4F279}",
+    "Hash": "{A545F6A5-A741-EC03-32AA-654BB5318CB6}",
     "ObjectPath": "Play_Master_BGM",
     "ShortName": "Play_Master_BGM",
     "Path": "Event/Play_Master_BGM.bnk",
@@ -157,6 +157,6 @@
     ]
    }
   ],
-  "FileHash": "{1214DF2D-6B10-F1EA-83A3-36C9E1B89B38}"
+  "FileHash": "{CECA2A15-60A3-BC6B-972A-AF33D63CD68C}"
  }
 }

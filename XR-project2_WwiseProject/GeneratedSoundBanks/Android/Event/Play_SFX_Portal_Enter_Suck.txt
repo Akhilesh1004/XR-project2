@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3685337724	Play_SFX_Portal_Enter_Suck			\Default Work Unit\Play_SFX_Portal_Enter_Suck	
+

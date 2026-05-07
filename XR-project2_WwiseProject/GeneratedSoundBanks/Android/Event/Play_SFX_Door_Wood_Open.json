@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Android",
+  "BasePlatform": "Android",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3244725865",
+    "Type": "Event",
+    "GUID": "{7AC9A245-BCC0-4EA5-81CF-C9EFDE8D1367}",
+    "Language": "SFX",
+    "Hash": "{801F15EA-1E5B-1EEC-9DFA-0DF72BD94946}",
+    "ObjectPath": "Play_SFX_Door_Wood_Open",
+    "ShortName": "Play_SFX_Door_Wood_Open",
+    "Path": "Event/Play_SFX_Door_Wood_Open.bnk",
+    "Media": [
+     {
+      "Id": "1040594688",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Door_Wood_Open.wav",
+      "Path": "Media/1040594688.wem",
+      "CachePath": "15/{156AECE5-2989-0C0C-4D85-1A7CDE10F99F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3244725865",
+      "Name": "Play_SFX_Door_Wood_Open",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Door_Wood_Open",
+      "GUID": "{7AC9A245-BCC0-4EA5-81CF-C9EFDE8D1367}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "1040594688"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{572D8DB1-4C15-E3A2-43FE-8A226B8AAC44}"
+ }
+}

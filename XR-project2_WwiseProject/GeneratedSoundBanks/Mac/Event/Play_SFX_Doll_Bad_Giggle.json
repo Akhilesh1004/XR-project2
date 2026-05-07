@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3450949859",
+    "Type": "Event",
+    "GUID": "{5FECE7A6-90B0-4ED8-875B-80E9036B530A}",
+    "Language": "SFX",
+    "Hash": "{CEC5D6BB-4C07-ADB0-BEE0-0288FF95CFF3}",
+    "ObjectPath": "Play_SFX_Doll_Bad_Giggle",
+    "ShortName": "Play_SFX_Doll_Bad_Giggle",
+    "Path": "Event/Play_SFX_Doll_Bad_Giggle.bnk",
+    "Media": [
+     {
+      "Id": "371525884",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Doll_Bad_Giggle.wav",
+      "Path": "Media/371525884.wem",
+      "CachePath": "49/{49B416CF-9EFB-7F0A-0177-722FB79765A0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3450949859",
+      "Name": "Play_SFX_Doll_Bad_Giggle",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Doll_Bad_Giggle",
+      "GUID": "{5FECE7A6-90B0-4ED8-875B-80E9036B530A}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.68",
+      "DurationMax": "5.68",
+      "MediaRefs": [
+       {
+        "Id": "371525884"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{5B26B418-B9E4-1136-1FF2-D028C2CABC0C}"
+ }
+}

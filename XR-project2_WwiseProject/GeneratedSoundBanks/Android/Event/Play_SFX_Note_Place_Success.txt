@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1726924710	Play_SFX_Note_Place_Success			\Default Work Unit\Play_SFX_Note_Place_Success	
+

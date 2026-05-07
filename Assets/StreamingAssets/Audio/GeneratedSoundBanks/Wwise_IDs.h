@@ -13,6 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMB_DOLL_GOOD_CRY_LOOP = 820856528U;
+        static const AkUniqueID PLAY_AMB_PORTAL_HUM_LOOP = 4162896493U;
+        static const AkUniqueID PLAY_BGM_MUSICBOX_FULL_ENDING = 2466555133U;
+        static const AkUniqueID PLAY_BGM_MUSICBOX_LAYER1_BALLPIT = 2975959041U;
+        static const AkUniqueID PLAY_BGM_MUSICBOX_LAYER2_SCHOOL = 3040057572U;
+        static const AkUniqueID PLAY_BGM_MUSICBOX_LAYER3_HOME = 3725977182U;
         static const AkUniqueID PLAY_DREAM_BGM = 1384642536U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_MASTER_BGM = 3563492127U;
@@ -21,6 +27,17 @@ namespace AK
         static const AkUniqueID PLAY_NOTE_X = 2785768335U;
         static const AkUniqueID PLAY_NOTE_Y = 2785768334U;
         static const AkUniqueID PLAY_PIANO_BGM = 4197936254U;
+        static const AkUniqueID PLAY_SFX_DOLL_BAD_GIGGLE = 3450949859U;
+        static const AkUniqueID PLAY_SFX_DOLL_BAD_SCREAM = 4056061935U;
+        static const AkUniqueID PLAY_SFX_DOOR_HANDLE_TURN = 3697232071U;
+        static const AkUniqueID PLAY_SFX_DOOR_WOOD_OPEN = 3244725865U;
+        static const AkUniqueID PLAY_SFX_MUSICBOX_PART_INSERT = 2730032790U;
+        static const AkUniqueID PLAY_SFX_NOTE_PICKUP_01 = 2806819781U;
+        static const AkUniqueID PLAY_SFX_NOTE_PICKUP_02 = 2806819782U;
+        static const AkUniqueID PLAY_SFX_NOTE_PICKUP_03 = 2806819783U;
+        static const AkUniqueID PLAY_SFX_NOTE_PLACE_FAIL = 1258396217U;
+        static const AkUniqueID PLAY_SFX_NOTE_PLACE_SUCCESS = 1726924710U;
+        static const AkUniqueID PLAY_SFX_PORTAL_ENTER_SUCK = 3685337724U;
         static const AkUniqueID STOP_PIANO_BGM = 2491771796U;
     } // namespace EVENTS
 

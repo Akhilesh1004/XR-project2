@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2975959041",
+    "Type": "Event",
+    "GUID": "{E18A6799-B388-437F-9B4E-12E8BAFBAEE1}",
+    "Language": "SFX",
+    "Hash": "{63A97D49-27D5-0FEC-F74F-86E7317F692E}",
+    "ObjectPath": "Play_BGM_MusicBox_Layer1_Ballpit",
+    "ShortName": "Play_BGM_MusicBox_Layer1_Ballpit",
+    "Path": "Event/Play_BGM_MusicBox_Layer1_Ballpit.bnk",
+    "Media": [
+     {
+      "Id": "593819367",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "BGM_MusicBox_Layer1_Ballpit.wav",
+      "Path": "Media/593819367.wem",
+      "CachePath": "1F/{1F96865B-6CFA-4C05-3699-DF0C40A0A911}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2975959041",
+      "Name": "Play_BGM_MusicBox_Layer1_Ballpit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_MusicBox_Layer1_Ballpit",
+      "GUID": "{E18A6799-B388-437F-9B4E-12E8BAFBAEE1}",
+      "DurationType": "OneShot",
+      "DurationMin": "119.999725",
+      "DurationMax": "119.999725",
+      "MediaRefs": [
+       {
+        "Id": "593819367"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F21D8454-9A97-79A4-EB21-53154F1C0B73}"
+ }
+}

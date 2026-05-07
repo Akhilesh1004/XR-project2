@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "820856528",
+    "Type": "Event",
+    "GUID": "{E1F837E5-A90B-4A66-892A-E5F17287E70C}",
+    "Language": "SFX",
+    "Hash": "{C512DA0F-DDDE-B89C-C295-75854E6D99AB}",
+    "ObjectPath": "Play_AMB_Doll_Good_Cry_Loop",
+    "ShortName": "Play_AMB_Doll_Good_Cry_Loop",
+    "Path": "Event/Play_AMB_Doll_Good_Cry_Loop.bnk",
+    "Media": [
+     {
+      "Id": "997378424",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Doll_Good_Cry_Loop.wav",
+      "Path": "Media/997378424.wem",
+      "CachePath": "05/{05EA239A-5DF9-6091-6CC1-024C2E13D5F9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "820856528",
+      "Name": "Play_AMB_Doll_Good_Cry_Loop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_AMB_Doll_Good_Cry_Loop",
+      "GUID": "{E1F837E5-A90B-4A66-892A-E5F17287E70C}",
+      "DurationType": "OneShot",
+      "DurationMin": "10.16",
+      "DurationMax": "10.16",
+      "MediaRefs": [
+       {
+        "Id": "997378424"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{58CF6353-90BA-BE34-F7FF-EAE44DC9E4E3}"
+ }
+}

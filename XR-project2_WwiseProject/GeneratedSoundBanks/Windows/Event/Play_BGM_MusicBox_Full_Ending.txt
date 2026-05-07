@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2466555133	Play_BGM_MusicBox_Full_Ending			\Default Work Unit\Play_BGM_MusicBox_Full_Ending	
+

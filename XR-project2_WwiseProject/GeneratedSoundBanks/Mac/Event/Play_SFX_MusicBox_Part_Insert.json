@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2730032790",
+    "Type": "Event",
+    "GUID": "{84029A31-B239-46FF-82EE-CBCAA3221100}",
+    "Language": "SFX",
+    "Hash": "{55DED2A1-90AC-F671-F800-775D5FF9130D}",
+    "ObjectPath": "Play_SFX_MusicBox_Part_Insert",
+    "ShortName": "Play_SFX_MusicBox_Part_Insert",
+    "Path": "Event/Play_SFX_MusicBox_Part_Insert.bnk",
+    "Media": [
+     {
+      "Id": "527240803",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_MusicBox_Part_Insert.wav",
+      "Path": "Media/527240803.wem",
+      "CachePath": "B3/{B33BBEED-BB22-B988-0ED8-3586029D4CF6}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2730032790",
+      "Name": "Play_SFX_MusicBox_Part_Insert",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_MusicBox_Part_Insert",
+      "GUID": "{84029A31-B239-46FF-82EE-CBCAA3221100}",
+      "DurationType": "OneShot",
+      "DurationMin": "10.16",
+      "DurationMax": "10.16",
+      "MediaRefs": [
+       {
+        "Id": "527240803"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9BC7B4D3-3DC2-8C6F-04B4-20F5D8882414}"
+ }
+}

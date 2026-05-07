@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2806819782	Play_SFX_Note_Pickup_02			\Default Work Unit\Play_SFX_Note_Pickup_02	
+

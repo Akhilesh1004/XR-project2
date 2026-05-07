@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1726924710",
+    "Type": "Event",
+    "GUID": "{9D024E9B-F118-4A81-89C1-94B5FFBB9C7F}",
+    "Language": "SFX",
+    "Hash": "{15C4306E-DEE2-9FDA-59EA-07F6910569B9}",
+    "ObjectPath": "Play_SFX_Note_Place_Success",
+    "ShortName": "Play_SFX_Note_Place_Success",
+    "Path": "Event/Play_SFX_Note_Place_Success.bnk",
+    "Media": [
+     {
+      "Id": "13945645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Note_Place_Success.wav",
+      "Path": "Media/13945645.wem",
+      "CachePath": "B5/{B56B354D-CC60-F6EF-3C05-7D69E7AB3965}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1726924710",
+      "Name": "Play_SFX_Note_Place_Success",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Note_Place_Success",
+      "GUID": "{9D024E9B-F118-4A81-89C1-94B5FFBB9C7F}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2",
+      "DurationMax": "1.2",
+      "MediaRefs": [
+       {
+        "Id": "13945645"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{370FF5F4-F993-373F-B262-02630535B2F3}"
+ }
+}

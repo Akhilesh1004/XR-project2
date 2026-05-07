@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3725977182	Play_BGM_MusicBox_Layer3_Home			\Default Work Unit\Play_BGM_MusicBox_Layer3_Home	
+

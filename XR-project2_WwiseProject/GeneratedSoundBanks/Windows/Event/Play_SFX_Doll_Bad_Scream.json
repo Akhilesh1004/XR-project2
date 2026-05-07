@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4056061935",
+    "Type": "Event",
+    "GUID": "{DB70CCC5-0AB6-446C-9505-988FB6404250}",
+    "Language": "SFX",
+    "Hash": "{9F709972-BA8F-2082-85BB-3390DF16DA1A}",
+    "ObjectPath": "Play_SFX_Doll_Bad_Scream",
+    "ShortName": "Play_SFX_Doll_Bad_Scream",
+    "Path": "Event/Play_SFX_Doll_Bad_Scream.bnk",
+    "Media": [
+     {
+      "Id": "801715184",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SFX_Doll_Bad_Scream.wav",
+      "Path": "Media/801715184.wem",
+      "CachePath": "05/{05EB7702-85D5-29C8-26E5-37920E442643}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4056061935",
+      "Name": "Play_SFX_Doll_Bad_Scream",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_SFX_Doll_Bad_Scream",
+      "GUID": "{DB70CCC5-0AB6-446C-9505-988FB6404250}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.28",
+      "DurationMax": "2.28",
+      "MediaRefs": [
+       {
+        "Id": "801715184"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{55682B5D-403A-5181-B9BB-BB15E691EEF8}"
+ }
+}
