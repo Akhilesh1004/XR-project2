@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{2247F40C-B06D-4A1C-9387-CBE83960CF5A}",
     "Language": "SFX",
-    "Hash": "{543E7006-962E-A73A-51CC-34DE9631CB8A}",
+    "Hash": "{F039EDD6-5EB1-C107-4360-5488E66C4112}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\main",
     "ShortName": "main",
     "Path": "main.bnk",
@@ -88,28 +88,12 @@
       "CachePath": "11/{11125DC6-7CE0-7BD6-7304-B46631DDD4C4}.wem"
      },
      {
-      "Id": "266369814",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "BGM_MusicBox_Layer2_School.wav",
-      "CachePath": "81/{8156003E-9F5B-1675-764E-D4B73D20D78B}.wem"
-     },
-     {
       "Id": "275604077",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Soft_muffled_cloth_f_#4-1778091182912.wav",
       "CachePath": "3F/{3FA625DA-7693-2493-BD60-CE5E4BC7081E}.wem"
-     },
-     {
-      "Id": "328068410",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "BGM_MusicBox_Full_Ending.wav",
-      "CachePath": "86/{86802317-1597-F2AA-8131-C34CAB7A4603}.wem"
      },
      {
       "Id": "343433004",
@@ -240,14 +224,6 @@
       "CachePath": "7F/{7FB74330-EC61-0463-71A5-ABFCC5C07543}.wem"
      },
      {
-      "Id": "593819367",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "BGM_MusicBox_Layer1_Ballpit.wav",
-      "CachePath": "1F/{1F96865B-6CFA-4C05-3699-DF0C40A0A911}.wem"
-     },
-     {
       "Id": "707856113",
       "Language": "SFX",
       "Streaming": "false",
@@ -326,14 +302,6 @@
       "Location": "Memory",
       "ShortName": "Rubber_sneaker_sole__#4-1778091538346.wav",
       "CachePath": "83/{832DB02A-CE2E-9C51-A910-17AA52EF4784}.wem"
-     },
-     {
-      "Id": "906674178",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "BGM_MusicBox_Layer3_Home.wav",
-      "CachePath": "18/{1806A4B5-BBFC-53D0-765B-CECAECF6B371}.wem"
      },
      {
       "Id": "912217143",
@@ -426,60 +394,6 @@
       "MediaRefs": [
        {
         "Id": "61295772"
-       }
-      ]
-     },
-     {
-      "Id": "2466555133",
-      "Name": "Play_BGM_MusicBox_Full_Ending",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_MusicBox_Full_Ending",
-      "GUID": "{8AE0929A-A1EC-4EFE-8C00-1DB76CBF7317}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "328068410"
-       }
-      ]
-     },
-     {
-      "Id": "2975959041",
-      "Name": "Play_BGM_MusicBox_Layer1_Ballpit",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_MusicBox_Layer1_Ballpit",
-      "GUID": "{E18A6799-B388-437F-9B4E-12E8BAFBAEE1}",
-      "DurationType": "OneShot",
-      "DurationMin": "119.999725",
-      "DurationMax": "119.999725",
-      "MediaRefs": [
-       {
-        "Id": "593819367"
-       }
-      ]
-     },
-     {
-      "Id": "3040057572",
-      "Name": "Play_BGM_MusicBox_Layer2_School",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_MusicBox_Layer2_School",
-      "GUID": "{8FE49912-BD6A-434B-9D99-24EF01E51520}",
-      "DurationType": "OneShot",
-      "DurationMin": "120.046165",
-      "DurationMax": "120.046165",
-      "MediaRefs": [
-       {
-        "Id": "266369814"
-       }
-      ]
-     },
-     {
-      "Id": "3725977182",
-      "Name": "Play_BGM_MusicBox_Layer3_Home",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_BGM_MusicBox_Layer3_Home",
-      "GUID": "{7B746111-A002-46B3-8593-D4D71F0BE972}",
-      "DurationType": "OneShot",
-      "DurationMin": "119.999725",
-      "DurationMax": "119.999725",
-      "MediaRefs": [
-       {
-        "Id": "906674178"
        }
       ]
      },
@@ -1011,6 +925,6 @@
     ]
    }
   ],
-  "FileHash": "{2822A762-09CB-6670-ABBD-4BBD4CDB2BF2}"
+  "FileHash": "{BA0DE2BE-7D6E-11FB-5345-1680C0F595CE}"
  }
 }
