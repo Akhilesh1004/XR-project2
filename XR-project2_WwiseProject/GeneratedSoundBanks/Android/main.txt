@@ -19,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3563492127	Play_Master_BGM			\Default Work Unit\Play_Master_BGM	
 	3685337724	Play_SFX_Portal_Enter_Suck			\Default Work Unit\Play_SFX_Portal_Enter_Suck	
 	3697232071	Play_SFX_Door_Handle_Turn			\Default Work Unit\Play_SFX_Door_Handle_Turn	
+	3725977182	Play_BGM_MusicBox_Layer3_Home			\Default Work Unit\Play_BGM_MusicBox_Layer3_Home	
 	4056061935	Play_SFX_Doll_Bad_Scream			\Default Work Unit\Play_SFX_Doll_Bad_Scream	
 	4162896493	Play_AMB_Portal_Hum_Loop			\Default Work Unit\Play_AMB_Portal_Hum_Loop	
 	4197936254	Play_Piano_BGM			\Default Work Unit\Play_Piano_BGM	
@@ -80,6 +81,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	855382042	Rubber_sneaker_sole__#4-1778091515643	.cache\CC\{CCD8ABBC-4C1F-6D0D-57EE-79CCC0D0CBA8}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#4-1778091515643		32336
 	873423020	dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248	.cache\86\{868E010D-5B5D-996C-4B7B-27878C55F37F}.wem		\Containers\Default Work Unit\scence 2\Master_BGM_Switch\New Music Playlist Container_02\BGM_Scene2\dreamcore_Mary_Had_a_Little_Lamb_Piano_Accompaniment_in_G_Major_2026-04-29T174248		14106500
 	886052060	Rubber_sneaker_sole__#4-1778091538346	.cache\83\{832DB02A-CE2E-9C51-A910-17AA52EF4784}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#4-1778091538346		48312
+	906674178	BGM_MusicBox_Layer3_Home	.cache\18\{1806A4B5-BBFC-53D0-765B-CECAECF6B371}.wem		\Containers\Default Work Unit\BGM_MusicBox_Layer3_Home		21168048
 	912217143	Rubber_sneaker_sole__#3-1778091511343	.cache\B2\{B2713C45-672B-368B-594A-EFB4B2D1B7EC}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_School\Rubber_sneaker_sole__#3-1778091511343		36876
 	931584496	plastic ball	.cache\C0\{C05F5737-5F2B-D51F-7083-2FFE46D7BF31}.wem		\Containers\Default Work Unit\Footsteps\SW_Player_Footstep\RC_BallPit\plastic ball		86888
 	977575692	SFX_MusicBox_Winding_Crank	.cache\D2\{D23E5F79-2AC2-E3D1-7ED5-2C0336B04B4B}.wem		\Containers\Default Work Unit\SFX_MusicBox_Winding_Crank		298200
